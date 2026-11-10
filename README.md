@@ -18,21 +18,58 @@ Sistem informasi berbasis web untuk mendokumentasikan dan menyediakan akses terh
 
 ## Instalasi
 
-1. Clone repository:
-   git clone https://github.com/tutsukardi/usada-system.git
+### 1. Clone Repository
+git clone https://github.com/tutsukardi/usada-system.git
 
-2. Masuk ke direktori proyek:
-   cd usada-system
+### 2. Masuk ke Direktori Proyek
+cd usada-system
 
-3. Install dependensi:
-   composer install
+### 3. Install Dependencies
+composer install
 
-4. Salin file konfigurasi `env` menjadi `.env`, kemudian sesuaikan konfigurasi database.
+### 4. Buat Database
 
-5. Jalankan server:
-   php spark serve
+Buat database MySQL dengan nama:
+CREATE DATABASE usada_bali;
 
-6. Buka aplikasi melalui `http://localhost:8080`.
+Database dapat dibuat melalui phpMyAdmin atau MySQL.
+
+### 5. Konfigurasi Environment
+
+Salin file konfigurasi bawaan `env` menjadi `.env`.
+
+Untuk Windows PowerShell:
+Copy-Item env .env
+
+Untuk Linux/macOS:
+cp env .env
+
+Kemudian buka file `.env` dan sesuaikan konfigurasi berikut:
+
+```ini
+CI_ENVIRONMENT = development
+
+database.default.hostname = localhost
+database.default.database = usada_bali
+database.default.username = root
+database.default.password =
+database.default.DBDriver = MySQLi
+database.default.DBPrefix =
+database.default.port = 3306
+```
+
+Sesuaikan konfigurasi database dengan lingkungan lokal masing-masing.
+
+**Catatan:** File `.env` tidak disertakan dalam repository. Setiap developer perlu membuat file tersebut secara mandiri berdasarkan template `env`.
+
+### 6. Jalankan Aplikasi
+php spark serve
+
+### 7. Akses Aplikasi
+
+Buka browser dan akses:
+
+http://localhost:8080
 
 ## Status Pengembangan
 
