@@ -193,6 +193,32 @@ class UsadaModel extends Model
     }
 
     /**
+     * Mencari entri Usada berdasarkan bahan pengobatan.
+     */
+    public function cariBahan(string $bahan): array
+    {
+        $bahan = trim($bahan);
+
+        if ($bahan === '') {
+            return [];
+        }
+
+        $rows = $this->queryEntri()
+            ->join(
+                'pengobatan pg',
+                'pg.id_entri = e.id_entri',
+                'inner'
+            )
+            ->like('pg.bahan_asli', $bahan)
+            ->groupBy('e.id_entri')
+            ->orderBy('e.id_entri', 'ASC')
+            ->get()
+            ->getResultArray();
+
+        return $this->bentukData($rows);
+    }
+
+    /**
      * Daftar 30 nama Wuku berdasarkan urutannya.
      */
     public function daftarWuku(): array

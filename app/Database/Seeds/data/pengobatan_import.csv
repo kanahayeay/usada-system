@@ -1,0 +1,943 @@
+﻿1,1,kompres,"akar kayu toktok, rempah-rempah, akar kentut balu, umbi kunir warangan, air jeruk",hidung,-,dikompres
+2,1,jamu,"ketan gajih, santen kané, bawang ditambus, garam arang",-,-,diminum
+3,1,bedak,"dedaunan (yang tumbuh diperempatan), lidi sapu (3 batang, diusahakan agar jangan ada yang menyapa saat ditusuk), trikatuka/kasuna jangu, air cuka tahunan",sampai kaki,-,diurapkan
+4,2,kompres,"akar kayu toktok, akar rempah-rempah, akar kaliapuh, akar kentut balu, akar uku-uku, kunir warangan, air jeruk",hidung,-,dikompres
+5,2,jamu,"bunga belingbing putih, santan kané (direbus terlebih dahulu), bawang goreng, garam arang",-,-,diminum
+6,2,bedak,"buah kayu podi, rempah-rempah (bermacam-macam)",badan,-,-
+7,2,bedak,"aba, trikatuka, air cuka tahunan",kaki,-,-
+8,2,bedak,"umbi paspasan, bawang adas","bawah perut antara pusar dan kemaluan, juga pada pinggang",-,-
+9,2,jamu,"lempuyang, lublub empag, minyak kelapa",-,-,ditelan
+10,3,sembur,"kotoran subatah maling (digoreng tanpa minyak), rempah-rempah",ubun-ubun,-,disemburkan sebanyak 3 kali.
+11,3,tetes,"beligo harum, temu tis (direbus sekedarnya), bawang (dibakar dengan bara yang sangat panas)",-,-,ditetes
+12,3,boreh,"kakap, daun sirih (uratnya satu arah), lempuyang (dibersihkan terlebih dahulu), garam (dibedel)",-,-,-
+13,3,sembur,"daun sirih (tumbuhnya liar), inti lempuyang, rempah-rempah (bermacam-macam)",-,-,disembur
+14,3,bedak,"daun kakap léko, lempuyang, lengkuas, santan kané",seluruh tubuh,-,diurapkan
+15,4,tetes,"umbi-umbian/temu-temu (semua jenis untuk obat), pancor badung, pancer kayu toktok (diulek sampai halus (timbung), dibiarkan sampai berembun)",hidung,-,dikompres esok paginya
+16,4,sembur,lada jawa (3 biji),mata,-,disembur
+17,4,urap,"daging kemiri, bawang adas","pinggang, bagian perut antara pusar dengan kemaluan",-,diurapkan
+18,4,sembur,"bunga kamboja, kencur/cekuh lanang, maswi jebug arum, rempah-rempah",jidat,-,disembur
+19,5,kompres,"kencur, jebug arum, ketumbar bolong",hidung,-,dikompres
+20,5,gosok,"kencur, jebug arum, ketumbar bolong",bagian yang sakit,-,digosok
+21,5,jamu,"induk kunir warangan, apuh bubuk, air jeruk",-,-,diminum
+22,5,sembur,"daun ancak, rempah-rempah",perut,-,disembur
+23,5,oles,"bangsing beringin (putih-putihnya), kesimbukan cemeng (ujungnya), bawang adas",siksikan,-,dioleskan
+24,5,bedak,"sembung gantung, daun dapdap dumela, lempuyang, lenga lurungan (direbus)",-,-,-
+25,6,oles,"kulit telur ayam (dibakar), bawang putih, jangu, air liur merah",-,-,dioleskan dengan bulu ayam
+26,6,bedak,"kulit balung kering, minyak kelapa (dipanaskan)",-,-,dioleskan dengan bulu ayam
+27,7,kompres,"akar uku-uku, akar kayu padi, akar kayu toktok, akar kayu basa-basa, akar entut balu, akar kaliapuh, induk kunir warangan, air jeruk",hidung,-,dikompres
+28,7,bedak,"kulit kuwah, rempah-rempah",-,-,-
+29,7,bedak,"babakan empag, bawang putih, jangu, air cuka tahunan",kaki,-,-
+30,7,jamu,"kulit kendal batuka, bawang putih, jangu, air busuk tahunan",-,-,diminum
+31,7,sembur,"jebug arum, rempah-rempah",jidat,-,disembur
+32,7,oles,"isi tingkih, bawang adas",pinggang dan dibawah perut,-,dioleskan
+33,7,boreh,"linjong empag, lempuyang (dipanaskan)",-,-,-
+34,8,tambal,"kunir warangan, buah asem yang sudah dikuliti, minyak kelapa (ditambus, ditutup dengan daun rajutan daun kelapa didapur, diikat dengan benang tridatu, sesudah 3 hari dikupak dan dibersihkan) daun asem deha, babakan kelapa hijau (direbus sampai betul-betul masak)",-,-,-
+35,8,jamu,"ujung tumpang payuk (7 penggal), bawang putih, jangu, air cuka, garam arang",-,-,diminum
+36,10,kompres,"kunir warangan, kencur lanang, montong lempuyang, air jeruk linglang",hidung,-,-
+37,10,jamu,"bangket kunir, apuh bubuk, air jeruk",-,-,diminum
+38,10,bedak,"akar cabe bun dakep, bawang putih, jangu, duri uang (sudah membusuk menahun)",badan,-,-
+39,10,bedak,"akar awar-awar putih, bawang putih, jangu, air cuka",kaki,-,-
+40,10,sembur,"kencur lanang, maswi, jebug arum",jidat sampai ke pangkal telinga,-,disembur 2x
+41,10,boreh,"cacing sirih, lempuyang, air kelapa (direbus)",-,-,-
+42,11,kompres,"montong kunir, montong lempuyang, kencur, lengkuas (ditimbung pada bambu), air jeruk linglang (diperciki)",hidung,-,dikompres
+43,11,jamu,"akar sulatri, akar yokasti, jinten hitam, garam uku (ditempatkan pada bejana dari tembaga)",-,-,diminum
+44,11,sembur,"kulit kepah, isi rempah-rempah, akar pucuk putih, pulasari, bawang adas",perut,-,disembur
+45,11,bedak,"kerokan bunga tanjung, rempah-rempah",badan,-,-
+46,11,bedak,"kulit cermen, kesuna, jangu, air cuka menahun",kaki,-,-
+47,12,tetes,"sulasih harum, miana hitam, sarilungid, air jeruk",hidung,-,diteteskan
+48,12,jamu,"akar pancvasona, santan kané, garam uku (dikukus)",-,-,diminum
+49,12,sembur,"kарkар kumeros, lempuyang, garam (diulet)",-,-,-
+50,12,urap,"umbi paspasan, umbi kasa, bawang adas",pinggang dan uluhati,-,diurap
+51,12,bedak,"daun dapdap (sudah busuk), rempah-rempah",-,-,-
+52,12,bedak,"kunir apuh bubuk, air jeruk",kaki,-,-
+53,12,boreh,"sembung, ujung daun dapdap, cacing sirih, minyak kelapa (direbus)",-,-,-
+54,12,sembur,"daun jeruk, rempah-rempah",jidatnya sampai ke pangkal bahu,-,disembur
+55,13,kompres,"kunir warangan, apuh bubuk (diambil dengan kedua tangan, jangan bergerak), air jeruk",hidung,-,dikompres
+56,13,bedak,"daun dapdap, air perasan banglé",tubuh,-,ditempelkan
+57,13,bedak,"ujung kayu pulé, ujung sembung gantung, lempuyang (direbus)",-,-,-
+58,13,bedak,"air perasan temu giri, lengkuas, kunir, air jeruk, garam uku",-,-,-
+59,14,kompres,"lempuyang, lengkuas, kunir, air jeruk (diperciki)",hidung,-,dikompres
+60,14,jamu,"perasan kunir, pamor bubuk, air jeruk",-,-,diminum
+61,14,bedak,"kulit empag, rempah-rempah",tubuh,-,-
+62,14,bedak,"kulit cermen, kunir, kesuna jangu, air cuka menahun",kaki,-,-
+63,14,boreh,"pucuk kayu pulé, pucuk sembung gantung, lempuyang, santan kané (direbus)",-,-,-
+64,15,kompres,"akar kayu padi, akar kaliapuh, induk kunir, air jeruk",hidung,-,dikompres
+65,15,jamu,"beras ketan gajih (diayak), cendana jenggi, air jeruk, garam uku",-,-,diminum
+66,15,boreh,"kikisan dapdap wong, rempah-rempah",badan,-,-
+67,15,bedak,kesuna jangu,"kaki, ditengah",-,-
+68,16,jamu,"jeruk purut, ditambus, rempah-rempah (diiris tipis dan diulek), air jeruk (dicampur), garam hitam (campuran)",-,-,"campurannya dilulurkan pada perut terlebih dahulu, tidak diperbolehkan makan pada malam hari, sebaiknya dimakan pada pagi hari"
+69,16,bedak,"linjong surén, kesuna, jangu, air cuka",badan,-,-
+70,16,boreh,"cacing sirih, lempuyang, minyak kelapa (dimasak)",-,-,-
+71,17,jamu,"daun kecemcem putih, santan kané (dikukus, campurannya), lunak tanek (dipanggang), garam uku",-,-,diminum
+72,17,obat,"urat daun dapdap, pantat bawang putih (3 biji)",pusar,-,-
+73,17,boreh,"kulit kayu tanjung, rempah-rempah",tubuh,-,-
+74,17,bedak,"buah aba, air cuka",kaki,-,-
+75,17,obat,"pucuk sentul (3 pucuk), kalayan (3 pucuk), lengkuas, pulasai, bawang, adas",pinggang dan uluhati,-,diraba
+76,17,boreh,"daun kapkap léko (7 lembar), lempuyang, lengkuas, santan kané (direbus)",-,-,-
+77,18,kompres,"sulasih harum, sari lungid, ginten hitam, air jeruk",hidung,-,dikompres
+78,18,suksuk,"perasan lengkuas, air jeruk, air cendana",rambut,-,dipasang pada malam hari
+79,18,jamu,"gantang sembung gantung, iragan ketan gajih, asam dipanggang, bawang ditambus, garam uku",-,-,diminum
+80,18,bedak,"kencur lanang, lengkuas, beras mes",badan,-,-
+81,18,bedak,"kulit mpag, kesuna jangu, air cuka tahurian",kaki,-,-
+82,18,urap,"umbi paspasan, bawang, adas",pinggang dan juga diatas alat kelamin,-,diurap
+83,18,boreh,"lublub mpag, lempuyang, minyak kelapa",-,-,ditelan
+84,18,oles,"kapkap kumeros (dicuci terlebih dahulu), garam (dibedel)",badan,-,dioleskan lalu disembur
+85,19,oles,"kulit telur (yang baru ditetaskan dibakar), kesuna, jangu, air liur merah atau Idubang (diulek dicampur )",-,-,dioles
+86,20,obat,"buah jeruk purut, rempah-rempah (berjumlah 1, jangan berlebihan, diiris dan dilembutkan, ditaruh), buah jeruk (selanjutnya dibakar, setelah matang diremas dicampur), garam uku",-,-,"dimakan, tidak diperkenankan memakan nasi selama satu malam"
+87,20,bedak,"linjong surén, kesuna, jangu, air cuka menahun",badan,-,dioleskan
+88,21,urap,"kulit kepah (dipanaskan pada besi), air jeruk",-,-,diurapkan dengan bulu ayam
+89,21,obat,"daun asam yang masih muda, babakan kelapa hijau (semuanya di rebus)",-,-,-
+90,21,obat,"air pandus, kulit tenggulun, rempah-rempah selengkapnya (semuanya direbus)",-,-,-
+91,22,minum,"getah kaliombo, sajeng lahingan, gula pasir, garam uku",-,-,diminum
+92,22,bedak,"linjong surén, kesuna jangu",-,-,-
+93,23,minum,"tirisan bambu ampel, sari kuning",-,-,diminum
+94,23,urap,"umbi paspasan, umbi kasa, bawang, adas","pinggang, diatas alat kelamin atau siksikan",-,diurap
+95,23,bedak,"kerikan dapdap, rempah-rempah",-,-,-
+96,23,air penyejuk,daun dapdap,pinggang,-,diembunkan
+97,24,jamu,"sarana, damining lobak, cabai bun bungkut (ditakar dengan cawan pungsed), garam (campurannya), arang",-,-,diminum
+98,24,sembur,kulit pule dari kuburan,perut,-,disembur
+99,24,bedak,"kulit tingulun, rempah-rempah",tubuh,-,-
+100,24,bedak,"kulit pangi kedi, kesuna, jangu, air cuka menahun",kaki,-,-
+101,24,urap,"damun-damuh, bawang, adas","pinggang, atas kelamin",-,diurap
+102,25,jamu,"dapdap wong sakawit, rerambutan kélor, kesuna, jangu, air cuka menahun, garam uku",-,-,diminum
+103,25,sembur,"daun kowang, kesuna, jangu, rempah-rempah",perut,-,disembur
+104,25,bedak,"kayu padi, rempah-rempah",badan,-,-
+105,25,bedak,"kulit bobok, kesuna jangu",kaki,-,-
+106,25,oles,"damuh-damuh, bawang adas","pinggang, atas kelamin",-,-
+107,25,boreh,"pucuk daun pule, cacing sedah, lempuyang, santen kané (selanjutnya direbus)",-,-,-
+108,26,tetes,"akar limo, akar jeruk, induk kunir warangan, maswi",hidung,-,diasab
+109,26,sembur,"kemiri, kelapa dibakar, bawang, adas",-,-,disembur
+110,26,jamu,"jebug arum, sintok, garam uku",-,-,-
+111,27,sembur,"kotoran subatah maling, bunga kamboja, bunga kenanga, rempah-rempah (dihaluskan)",ubun-ubun,-,disembur
+112,27,bedak,"kencur, lengkuas, beras mes",tubuh,-,-
+113,27,urap,"kapkap, lempuyang, garam",seluruh tubuh,-,"diurapkan, selanjutnya dibersihkan"
+114,27,jamu,"pucuk sembung bangkai, pucuk kesimbukan hitam (3 pucuk), kelapa (dibakar), garam uku",-,-,diminum
+115,27,urap,"umbi kayu tawa, bawang, adas",pinggang dan bawah alat kelamin,-,diurap
+116,27,boreh,"pucuk pulé, pucuk sembung banglé, pucuk dapdap, lempuyang, lengkuas, santan (lalu direbus)",-,-,-
+117,28,jamu,"jeruk purut (dilubangi diisi), rempah-rempah (1 buah, diulek supaya halus, selanjutnya dibakar)",-,"jangan diminum pada malam hari, minumlah dipagi hari",diminum
+118,28,bedak,"linjong surén, kesuna, jangu, air cuka menahun",seluruh tubuh,-,dibedaki
+119,29,tetes,"akar rempah-rempah, akar kentut balu, akar uku-uku, induk kunir warangan, air jeruk",hidung,-,ditetes
+120,29,jamu,"bunga belimbing buluh, santan kané, tum rebus, bawang (dibakar), garam uku (dicampur)",-,-,diminum
+121,29,bedak,"gempong sedah, rempah-rempah",tubuh,-,-
+122,29,bedak,"buah kayu aba, kesuna, jangu",kaki,-,-
+123,29,urap,"damuh-damuh, bawang, adas",pinggang dan atas alat kelamin,-,diurap
+124,29,boreh,"kapkap, lengkuas, merica (masing-masing 3 buah), santan kané (direbus)",-,-,diurapkan
+125,30,jamu,"nyali itik, kunir, air jeruk linglang, garam uku",-,-,diminum
+126,30,sembur,"daun jeruti muda (dipanggang), lempuyang, temutis, gambiran anom",tengah dadanya dan tulang belakang,-,disembur
+127,31,kompres,"labu harum, temu tis (direbus), (setelah matang diisi) bawang bakar",hidung,-,dikompres
+128,31,jamu,"daun kayu pangégér, kesuna jangu, air cuka menahun, garam arang",-,-,-
+129,31,bedak,"daun dapdap busuk, rempah-rempah, (dibakar, setelah matang dicampur) air cendana",tubuh,-,-
+130,31,bedak,"kulit empag, kesuna jangu, air cuka menahun",kaki,-,-
+131,31,urap,"dumut dadari, bawang",pinggang dan atas alat kelamin,-,diurap
+132,31,boreh,"daun empag, lempuyang, minyak kelapa (dimasak)",-,-,-
+133,32,kompres,"kayu padi, kaliapuh, kayu toktok, bumbu-bumbu (sama banyaknya), induk kunir, air jeruk",hidung,-,dikompres
+134,32,jamu,"ketan gajih, santen kané, bawang (dibakar), garam arang",-,-,diminum
+135,32,bedak,"kerikan dapdap, rempah-rempah",tubuh,-,-
+136,32,bedak,"kulit pohon kamboja, kesuna, jangu",kaki,-,-
+137,32,urap,"kemiri, bawang, adas",pinggang sampai perut atas alat kelamin,-,diurap
+138,32,boreh,"daun kapkap, lengkuas, merica (3 biji), minyak kelapa (dimasak)",-,-,-
+139,33,obat,"kulit pohon kepah (dipanaskan pada besi), air jeruk",-,-,-
+140,33,jamu,"daun asam (yang masih muda), kulit kelapa mulung (direbus)",-,-,diminum
+141,34,jamu,"ketan gajih, santan kané, garam uku",-,-,diminum
+142,34,bedak,"akar paksor, kesuna jangu, air cuka menahun",seluruh tubuh,-,-
+143,34,boreh,"kapkap léko, lengkuas, santan kané (lalu direbus)",-,-,-
+144,35,kompres,"akar kasinén, induk kunir warangan, akar nasi-nasi, air jeruk",hidung,-,dikompres
+145,35,sembur,"meswi, jebug arum, batang cengkeh, kencur lanang, ketumbar bolong (3 buah)",ubun-ubun sampai kepangkal tenggorokan,-,disembur
+146,36,[1] oles,"kunir warangan (diulek), air jeruk (dicampur)",-,-,diolesi
+147,36,[1] bedak,"akar teter, akar tuju musna, akar cabaibun, dapdap, kesuna, jangu, air cuka",punggung,-,-
+148,37,jamu,"wed kasiné, santan kané (dikukus), bawang (lalu dibakar dan dicampur), garam uku",-,-,diminum
+149,37,bedak,"kerikan dapdap, rempah-rempah",tubuh,-,-
+150,37,bedak,"kulit pohon kamboja, kesuna jangu, air cuka",kaki,-,-
+151,37,sembur,"daun bawang, rempah-rempah",perut,-,disemburkan
+152,37,urap,"umbi kayu tawa, bawang, adas",siksikan,-,diurapkan
+153,38,sembur,"kulit kayu wangkal, ketumbar, lengkuas",pada lukanya,-,disembur
+154,38,jamu,tunas muda lengkuas (direbus),-,-,diminum
+155,39,obat,"akar kebo kapasang, kesuna, jangu, air cuka",bahu,-,-
+156,39,oles,hanyutan kemiri dilaut (dicari minyaknya),bahu,-,dioles
+157,40,tetes,"daun dapdap dumela, atin bawang",diarap matanya,-,tetes
+158,40,air,daun kelor (diremas),muka,-,cuci muka
+159,40,urap,kesimbukan hitam,punggungnya dan juga diatas kelaminnya,-,-
+160,40,bedak,"akar awar-awar putih, kesuna jangu, air cuka",tangan dan kaki,-,-
+161,42,jamu,"daun kecemcem putih (yang masih muda), santan kané, asam (dipanggang), garam uku",-,-,diminum
+162,42,obat,"rerambutan kayu dapdap, pantat kesuna (3 buah)",papuser,-,-
+163,42,sembur,"kulit kayu bunut, wot, kesuna jangu",perut,-,disembur
+164,42,urap,"pucuk sentul, pucuk jambu biji, kelayahan pandan (3 pucuk), pulasai, bawang, adas",pinggang dan atas kelaminnya,-,diurap
+165,43,oles,"kunir warangan (diulek), air jeruk",-,-,diolesi
+166,43,bedak,"teter (akar), tuju musna (akar), cabai bun dakep (akar), kesuna, jangu, air cuka",punggung (yang terasa sakit),-,-
+167,44,jamu,"umbi lobak, air jeruk linglang, garam arang",-,-,diminum
+168,44,sembur,"kulit kayu pulé (yang tumbuh dikuburan), terasi merah, rempah-rempah",perut,-,disembur
+169,44,bedak,"kerikan kayu tanjung, cabai bun bungkut, merica (3 biji), rempah-rempah",badan,-,-
+170,44,bedak,"kulit kayu langsat lutung, kesuna jangu, air cuka menahun",kaki,-,-
+171,45,jamu,"kepitan kecemcem putih, ketan gajih, santan kané (diayak dan dicampur), bawang (dibakar), garam uku",-,-,-
+172,45,bedak,"kulit kayu dapdap (diambil jangan berlebihan), rempah-rempah lengkap (dibakar), air cendana",badan,-,-
+173,45,bedak,"kulit pohon kamboja, kesuna jangu, air cuka",kaki,-,-
+174,45,sembur,"buah nagasari, kencur lanang, maswi, jebug arum, batang cengkeh",ubun-ubun sampai ke pangkal bahu,-,disembur
+175,45,boreh,"pucuk kayu pulė, pucuk sembung, pucuk dapdap, santan kané (dipanasi dalam kuali)",-,-,-
+176,47,jamu,"akar pancarsona, santan kané (direbus, dicampur), bawang bakar, garam arang",-,-,diminum
+177,47,kompres,"bongkak kelapa nyambulung, sari kuning (dibakar)",hidung,-,dikompres
+178,47,sembur,"kulit kayu kowang, rempah-rempah",perut,-,disembur
+179,47,urap,"daun bayam luhur, bawang, adas",punggung sampai di atas kelamin,-,diurap
+180,47,bedak,"kulit mpag, kesuna jangu, air cuka",kaki,-,-
+181,47,boreh,"pucuk dapdap, cacing sirih, lempuyang, minyak kelapa (dipanaskan pada kuali)",badan,-,-
+182,48,sembur,merica gundil,kedua mata,-,disembur
+183,48,kompres,"pancer kayu toktok, pancer badung, semua jenis temu-temu (semuanya ditumis, selanjutnya ditaruh pada bambu lalu direbus, setelah matang didinginkan dan pada pagi hari di pupuh)",hidung,-,dikompres
+184,49,kompres,"akar nasi-nasi, induk kunir warangan, air jeruk linglang",hidung,-,dikompres
+185,49,jamu,"jebug arum, sintok, ketumbar bolong",-,-,digosok perlahan
+186,49,bedak,"kerikan majagawu, rempah-rempah selengkapnya",tubuh,-,-
+187,49,bedak,"buah aba, kesuna jangu, air cuka",kaki,-,-
+188,49,sembur,"uku-uku, rempah-rempah",ubun-ubun,-,disembur
+189,49,boreh,"montong lengkuas, montong lempuyang, santan kané (semuanya dipanaskan)",-,-,-
+190,50,sembur,"kulit kayu pancar petok (dipanggang), ketumbar, lengkuas, kencur",-,-,disembur
+191,50,sembur,"daun nyungla, rempah-rempah",mulutnya sampai kepangkal leher,-,disembur
+192,50,urap,"akar jaruju, bawang, adas, air sisa dari berkumur, kulit badung, asam (dipanggang selanjutnya direndam)",punggung sampai diatas alat kelamin,-,diurap
+193,51,tetes,"induk kunii warangan, pamor bubuk (diambil mempergunakan kedua tangan, jangan bergerak)",hidung,-,"ditetes, diharapkan berdiri pada saat memberi obat tetes"
+194,51,bedak,"akar paya puuh, tulang tikus putih, sarang burung puuh, kulit penyu bersisik, kesuna, jangu, air cuka",kaki,-,-
+195,51,air,daun cabai bun dakep (direbus),kaki,-,dibasuh
+196,52,jamu,"nenas hijau kumarusa, sari kuning (semuanya dikukus)",-,-,diminum
+197,52,urap,"umbi kasa, umbi paspasan, bawang adas",punggung sampai di atas kelamin,-,diurap
+198,53,sembur,"buah kepah, ketumbar, lengkuas (semuanya dinyahnyah)",bagian tubuh yang berwarna merah,-,disembur
+199,53,urap,"kayu dingin-dingin (diambil semuanya dari daun, kulit, dan juga akarnya), bawang, adas",punggung,-,diurap
+200,53,boreh,"daun kapkap léko, lengkuas, lempuyang, santan kané (dipanaskan)",-,-,-
+201,54,jarau,"pancer kayu pulé, perasan banglé, duri (yang sudah membusuk selama setahun), garam uku",-,"pada saat ditelan, dicampur dengan pisang sasih yang sudah matang",ditelan
+202,54,kompres,"induk kunir warangan, pamor bubuk, air jeruk",hidung,-,dikompres
+203,54,bedak,"sampah jalan (yang ada diperempatan), lidi sapu (3 batang, ditusuk jangan ada yang menyapa), beras merah, rempah-rempah",tubuh,-,-
+204,54,bedak,"kerikan langsat lutung, kesuna, jangu, air cuka",kaki,-,-
+205,54,boreh,"pucuk sembung gantung, pucuk dapdap, cacing sirih, santan kané (semuanya dipanaskan)",-,-,-
+206,54,sembur,"kencur lanang, maswi, jebug arum",ubun-ubun sampai kepangkal telinga,-,disembur
+207,55,bedak,"moha bulun bawon (diambil semuanya), kesuna jangu, air cuka",kaki dan juga tubuhnya,-,-
+208,55,boreh,"pucuk kayu pulé (3 pucuk), lempuyang, lengkuas kapur, minyak wayang (dipanaskan)",-,-,-
+209,55,sembur,rempah-rempah,ubun-ubun sampai kepangkal telinga,-,disembur
+210,56,obat,"sinh dumela, kacemcem dumela, ketumbar, lengkuas, lunak tanek, minyak lurungan (dibakar)",alat kelamin,-,-
+211,56,oles,"air cuka (yang keadaannya baik, dipanaskan)",-,-,dioleskan menggunakan bulu ayam
+212,56,urap,"bangsing beringin (dicari putihnya), bawang, adas",punggung dan diatas kelamin,-,diurap
+213,56,bedak,"kulit cermen, kesuna jangu, air cuka",kaki,-,-
+214,56,air mandi,daun dapdap (direbus),-,-,dipakai mandi saat menjelang pagi
+215,57,jamu,"induk kunir warangan, pamor bubuk, air jeruk linglang",-,-,diminum
+216,57,sembur,rempah-rempah,perut,-,disembur
+217,57,bedak,"buah kayu putih, rempah-rempah",tubuh,-,-
+218,57,bedak,"kulit pohon kamboja, kesuna jangu, air cuka",kaki,-,-
+219,57,urap,"pucuk daun kesimbukan nitam, pohon dingin-dingin (diambil selengkapnya), bawang, adas",punggung sampai di atas kelamin,-,diurap
+220,57,boreh,"cacing sirih, lempuyang, minyak lurungan (dipanaskan)",-,-,-
+221,58,tetes,"akar katang-katang putih, akar teleng putih, akar bunga ratna putih, akar limau, induk kunir warangan, air jeruk",hidung,-,ditetes
+222,58,jamu,"banglé (segenggam), sinanga, pancar plulé, rempah-rempah, garam (satu cééng ditutup, lalu dinyahnyah)",-,-,diminum
+223,58,sembur,"kulit pang kedi, kesuna jangu, ketumbar bolong (3 biji)",perut,-,-
+224,58,sembur,"kencur, batang cengkeh, jebug arum",ubun-ubun sampai kepangkal telinga,-,-
+225,59,kompres,"wed kaliapuh, kunir, air jeruk",hidung,-,dikompres
+226,59,jamu,"akar kasiné, santan kané (dikukus), air jeruk, garam uku",-,-,diminum
+227,59,urap,"akar kenanga, lengkuas, pulasai, bawang, adas",punggung sampai keatas alat kelamin,-,diurap
+228,59,bedak,"kerikan dapdap, rempah-rempah",tubuh,-,-
+229,59,bedak,"kulit dagdag, kesuna, jangu, air cuka",kaki,-,-
+230,59,boreh,"pucuk pulé, pucuk sembung gantung, cacing sirih, minyak lurungan (semuanya dipanaskan)",-,-,-
+231,60,oles,"warirang merah, guci-guci (diambil semuanya), kesuna, jangu, air cuka, minyak kelapa (ditetesi, campur semuanya)",-,-,dioleskan menggunakan bulu ayam
+232,60,tetes,"akar katang-katang putih, akar bunga ratna putih, akar leleng putih, induk kunir warangan, air jeruk linglang",hidung,-,ditetesi
+233,61,tetes,"induk kunir warangan, pamor bubuk, air jeruk",hidung,-,ditetesi
+234,61,jamu,"sembung-gantung, asam tanek (dipanggang), garam arang (dicampurkan)",-,-,diminum
+235,61,urap,"akar sulatri, akar sikasti, kencur lanang, maswi, jebug arum, rempah-rempah",-,-,diurap pada bagian yang merasa bebal
+236,61,bedak,"kerikan dapdap, rempah-rempah lengkap",tubuh,-,-
+237,61,bedak,"kerikan mpag, kesuna jangu, air cuka",kaki,-,-
+238,61,urap,"dingin-dingin (selengkapnya), pulasai, bawang, adas",punggung sampai diatas kelamin,-,diurap
+239,61,boreh,"linjong mpag, lempuyang, minyak kelapa (dipanaskan)",-,-,-
+240,62,tetes,"semua jenis montong, lempuyang, kencur, kunir (ditimbung pada bambu)",hidung,-,ditetesi pada pagi hari
+241,62,bedak,"akar madori putih, akar awar-awar putih, rambut dibakar, kesuna jangu, air cuka",tubuh,-,-
+242,62,urap,"rerambutan canging, bawang adas",punggung sampai atas kelamin (Bali: Siksikan),-,diurap
+243,62,jamu,"rerambutan dapdap, santan kané (direbus), adonan ketan gajih, garam uku",-,-,diminum
+244,63,sembur,"bunga kamboja, bunga kenanga, kotoran subatah maling (dinyahnyah semuanya), rempah-rempah",-,-,disembur
+245,63,boreh,"kapkap kumeros, lempuyang (direbus dicampur bumbu dan jangan lupa diisi garam, diperas)",tubuh,-,bangketnya disemburkan
+246,63,bedak,"daun dapdap (yang sudah busuk), rempah-rempah, air cendana (semuanya dibakar seadanya)",tubuh,-,-
+247,63,bedak,"kulit kayu kamboja, kesuna jangu, air cuka",kaki,-,-
+248,63,tetes,"sulasih harum, rempah-rempah, sari kuning, air jeruk",hidung,-,ditetesi
+249,63,urap,"umbi kayu tawa, pulasai, bawang adas",punggung sampai diatas kelamin (Bali: Siksikan),-,diurap
+250,63,boreh,"lublub mpag, lempuyang, minyak kelapa (lalu dipanaskan)",-,-,-
+251,64,kompres,"sulasih harum, miana hitam, sari kuning, garam uku (sedikit)",hidung,-,dikompres
+252,64,jamu,"buah belimbing buluh, santan kané (dikukus), (sesudah matang) bawang (yang sudah dibakar), garam uku",-,-,diminum
+253,64,sembur,"daun kenanga, daun melati, rempah-rempah",Ukirannya (Bibir?),-,disembur
+254,64,sembur,"kotoran subatah maling, rempah-rempah (semuanya dinyahnyah)",ubun-ubun,-,disembur
+255,64,bedak,"gempong sirih, rempah-rempah",tubuh,-,-
+256,64,bedak,"kunir warangan, pamor bubuk, air jeruk",kaki,-,-
+257,64,urap,"damuh-damuh, pulasai, bawang adas",punggung sampai diatas kelamin,-,diurap
+258,65,sembur,merica jawa (3 butir),kedua matanya,-,disembur
+259,66,obat,"induk kunir warangan, asam (yang sudah dikuliti), minyak kelapa (ditambus)",bokong,-,"ditempelkan, dibuka setelah dua hari (jangan dibuka jika baru satu hari), ditambal labang dapur (diikat dengan benang tridatu)"
+260,66,pencuci luka,"asam muda, kelopak kelapa hijau (direbus sampai benar-benar matang)",-,-,-
+261,67,obat,"dapdap wong sakawit, rambut kelor, kesuna jangu, air cuka, garam, arang",-,-,diminum
+262,67,sembur,"daun kowang, rempah-rempah, kesuna jangu",perut,-,disembur
+263,67,urap,"akar pisang gedangsaba, bawang, adas",punggung sampai di atas kelamin,-,diurap
+264,68,panerag,"kapkap kumeros, lempuyang, garam (dibedel)",-,-,-
+265,68,jamu,"tombong, santan kané (dikukus), ayam, arang",-,-,diminum
+266,68,bedak,"kerikan kayu dapdap, rempah-rempah",tubuh,-,-
+267,68,bedak,"kulit mpag, kesuna jangu, air cuka",kaki,-,-
+268,68,urap,"kulit turi putih, bawang, adas",punggung dan di atas kelamin,-,diurap
+269,68,boreh,"lempuyang, lengkuas, bawang (dibakar), air santan kané",-,-,-
+270,69,kompres,"bungkah nyuh mulung (dibakar), sari kuning, jinten hitam",hidung,-,dikompres
+271,69,jamu,"wed kendal bituka, kesuna jangu, air cuka, garam arang",-,-,diminum
+272,69,urap,"wed silagwi lanang, bawang adas",punggung sampai di bawah perut (siksikan),-,diurap
+273,70,jamu,"ketan gajih (diayak), kelapa (dibakar), garam uku",-,-,diminum
+274,70,bedak,"kerikan dapdap, rempah-rempah",tubuh,-,-
+275,70,urap,"damuh-damuh, pulasahi, bawang, adas",punggung sampai ke bawah perut di atas kelamin (siksikan),-,diurap
+276,70,kompres,"bongkak kelapa mulung, sari kuning, bawang (dibakar)",hidung,-,dikompres
+277,70,sembur,"lamba-lamba, daun dapdap kuning (ditelungkupkan), rempah-rempah",-,-,disembur
+278,71,sembur,"bunga kamboja, bunga kenanga, kotoran subatah maling (dinyahnyah), rempah-rempah",ubun-ubun,-,disembur
+279,71,kompres,"buah labu harum, temu tis (direbus), bawang (dibakar)",hidung,-,dikompres
+280,71,bedak,"lengkuas, kencur, beras mes",tubuh,-,-
+281,71,bedak,"akar cabai bun dakep, kesuna, jangu",kaki,-,-
+282,71,urap,"akar pisang gedang saba, bawang, adas",-,-,diurap
+283,71,boreh,"linjong mpag, lempuyang, santan kané (dipanaskan dengan air)",-,-,-
+284,72,jamu,"dapdap wong (diambil daun batang hingga akarnya), rambut kelor, kesuna jangu, air cuka menahun, garam arang",-,-,diminum
+285,72,sembur,"daun kowang, kesuna jangu, rempah-rempah selengkapnya",perut,-,disembur
+286,72,bedak,"buah kayu podi, rempah-rempah selengkapnya",tubuh,-,-
+287,72,bedak,"kulit empag, kesuna jangu, air cuka",kaki,-,-
+288,72,urap,"kulit kayu turi putih, bawang, adas",punggung sampai di bawah perut di atas kelamin,-,diurap
+289,72,boreh,"cacing sirih, lempuyang, minyak kelapa (dipanaskan)",-,-,-
+290,73,jamu,"akar daluman, santan kané (dikukus), bawang (dibakar), garam uku",-,-,diminum
+291,73,bedak,"kerikan dapdap, rempah-rempah",tubuh,-,-
+292,73,bedak,"kesuna, jangu, uku-uku, air cuka",kaki,-,-
+293,73,boreh,"pucuk daun pulé, pucuk sembung, pucuk dapdap, lempuyang, santan kané (dipanaskan)",-,-,-
+294,74,kompres,"induk kunir, pamor bubuk, air jeruk",hidung,-,dikompres
+295,74,bedak,"akar wadori kuning, kesuna jangu, air cuka",tubuh,-,-
+296,74,sembur,merica jawa,mulut,-,disembur
+297,74,sembur,"daun saksak, rempah-rempah (dicampur)",langit-langit mulut,-,disembur
+298,74,suksuk,"getah lengkuas, air cendana, air jeruk",rambut,-,-
+299,74,bedak,"kulit kayu kamboja, kesuna, jangu, air cuka",kaki,-,-
+300,74,boreh,"daun empag, lempuyang, minyak kelapa (dipanaskan)",-,-,-
+301,75,kompres,"akar kayu padi, induk kunir warangan, air jeruk",hidung,-,dikompres
+302,75,sembur,"kotoran subatah maling (dinyahnyah), bunga kenanga, bunga kamboja, rempah-rempah",ubun-ubun,-,disembur
+303,75,bedak,"kayu padi, rempah-rempah",tubuh,-,-
+304,75,bedak,"buah aba, kesuna, jangu, air cuka",kaki,-,-
+305,75,urap,"embung bambu, jelepung muda, bawang, adas",punggung sampai ke bawah perut di atas kelamin,-,diurap
+306,75,jamu,"ketan gajih (diayak), kelapa dibakar (dicampur), garam arang",-,-,diminum
+307,76,kompres,"pucuk tumpang payuk (7 helai), pucuk bawang adas",hidung,-,dikompres
+308,76,sembur,"kerikan kepundung putih, kerikan sentul, ketumbar, lengkuas",kaki,yang terasa bebal,disembur
+309,76,boreh,"daun asem muda, kulit kelapa hijau",-,-,-
+310,77,kompres,"kayu padi, kaliapuh, kayu toktok, bumbu-bumbu (diambil akarnya), lengkuas kapur, induk kunir warangan, air jeruk",hidung,-,dikompres
+311,77,sembur,merica jawa,mata,-,disembur
+312,77,bedak,"kerikan kayu majagawu, rempah-rempah",tubuh,-,-
+313,77,bedak,"kulit kayu kamboja, kesuna jangu, air cuka",kaki,-,-
+314,77,sembur,"kencur lanang, batang cengkeh, meswi, jebug arum",ubun-ubun sampai ke pangkal tangan,-,disembur
+315,77,jamu,"bunga blimbing buluh, santan kané (direbus), bawang (dibakar), garam uku",-,-,diminum
+316,78,kompres,"cendana jenggi, lengkuas kapur, akar rumput gelagah, induk kunir, air jeruk",hidung,-,dikompres
+317,78,jamu,"asaban mangga jenggi, beras jenggi, beras merah, lengkuas kapur, garam uku",-,-,diminum
+318,78,bedak,"akar awar-awar (merambat pada tembok), kesuna jangu, air arak menahun","tubuh, kaki",-,-
+319,78,sembur,"kulit kayu ancak, rempah-rempah",perut,-,disembur
+320,78,sembur,"batang cengkeh, jebug arum, ketumbar bolong (3 buah)",ubun-ubun,-,disembur
+321,79,kompres,"akar kayu toktok, kentut balu, bumbu-bumbu, uku-uku, kunir warangan, air jeruk",hidung,-,dikompres
+322,79,sembur,"kerikan majagawu, rempah-rempah",ubun-ubun sampai ke pangkal lengan,-,disembur
+323,79,jamu,"bunga belimbing putih, santan kané (direbus), bawang (dibakar), garam arang",-,-,diminum
+324,79,bedak,"kerikan pohon dapdap, rempah-rempah",tubuh,-,-
+325,79,bedak,"daun liligundi kuning (jatuh ke tanah), kesuna jangu, air cuka",kaki,-,-
+326,79,sembur,"dedaunan layu, daun dapdap kuning, rempah-rempah (dipanggang)",-,-,disembur
+327,79,urap,"akar dingin-dingin, bawang, adas",punggung sampai ke bawah perut di atas kelamin,-,diurap
+328,80,jamu,"rerambutan kayu dapdap, rambutan dalungdung, santan kané (dikukus), bawang (dibakar), garam uku",-,-,diminum
+329,80,bedak,"kerikan kayu dapdap, rempah-rempah gegambiran",tubuh,-,-
+330,81,kompres,"semua jenis akar, kayu toktok, jeruk purut, karak, bumbu-bumbu, induk kunir warangan, ketumbar bolong (3 buah), air jeruk",hidung,-,dikompres
+331,81,sembur,"bunga kamboja, bunga kenanga, kencur lanang, jebug arum, maswi, rempah-rempah",ubun-ubun,-,disembur
+332,81,bedak,"kulit pohon kepah, induk kunir warangan, rempah-rempah, pamor bubuk",tubuh,-,-
+333,82,sembur,"kerikan kepundung putih, kerikan sentul, ketumbar, lengkuas (dinyahnyah)",-,-,disembur
+334,82,boreh,montong kecicang (dibakar),-,-,-
+335,84,penuwed,telur ayam hitam baru,-,"diikat benang hitam 3 kali putaran, disembur 3 kali, direbus, setelah matang dilafalkan mantra Penuwed",-
+336,85,jamu,"santan, air cuka menahun",-,-,diminum
+337,85,sembur,"kulit bunut wot, kesuna jangu",perut,-,disembur
+338,85,sembur,"rerambutan dapdap, jit kesuna (3 buah)",papusernya,-,disembur
+339,85,bedak,"kerikan dapdap, rempah-rempah",tubuh,-,-
+340,85,bedak,"induk kunir, pamor bubuk, air jeruk",tubuh,-,-
+341,85,pijat,"santan kané, air jeruk",tubuh,-,diurut
+342,86,kompres,"bangket lengkuas, kemenyan madu, cendana, air jeruk",hidung,-,dikompres
+343,86,suksuk,"bangket lengkuas, cendana, air jeruk",-,-,-
+344,86,bedak,"daun dapdap (sudah membusuk), rempah-rempah, air cendana",tubuh,-,-
+345,86,bedak,"kulit kayu kamboja, kesuna jangu, air cuka",kaki,-,-
+346,87,kompres,"induk kunir, pamor bubuk, air jeruk",hidung,-,dikompres
+347,87,urap,"ludah merah, kesuna jangu",bahu,-,diurap
+348,87,bedak,"kerikan kayu bunga kenanga, kerikan kayu dapdap, rempah-rempah",tubuh,-,-
+349,87,bedak,"akar awar-awar (yang merambat ditembok), kesuna jangu, air cuka",kaki,-,-
+350,87,urap,"akar jarak, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap dilaksanakan pada hari Kajeng Kliwon
+351,88,sembur,"kulit kayu pulé (yang tumbuh dikuburan), pucuk yip (dikerik), banglé (3 iris), rempah-rempah",-,-,disembur
+352,88,bedak,"kulit kayu tigaron, rempah-rempah",badan,-,-
+353,88,jamu,"lublub kayu pulé, bangket banglé, air cuka, garam arang (dicampur)",-,-,diminum
+354,88,urap,"akar kenanga, lengkuas, pulasahi, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+355,89,jamu,"akar kendal bituka, kesuna jangu, air cuka",-,-,diminum
+356,89,bedak,"kulit ampyun, kesuna jangu, air cuka",kaki,-,-
+357,90,kompres,"bunga sulasih harum, miana hitam, sari kuning, air jeruk",hidung,-,dikompres
+358,90,jamu,"bunga belimbing putih, santan kané (dipanaskan), bawang (dibakar), garam uku",-,-,diminum
+359,90,bedak,"beras yang lemes, lengkuas, kencur lanang",tubuh,-,-
+360,90,bedak,"kulit kayu empag, kesuna jangu, air cuka",kaki,-,-
+361,90,boreh,"cacing sirih, lempuyang, minyak kelapa (semuanya dipanaskan)",-,-,-
+362,91,kompres,"kencur, sintok, maswi, jebug arum, ketumbar bolong (3 buah)",hidung,-,dikompres
+363,91,jamu,"kunir warangan, pamor bubuk, air jeruk",-,-,diminum
+364,91,bedak,"akar awar awar, kesuna jangu, air cuka",kaki,-,-
+365,91,urap,"umbi kayu tawa, bawang adas",pinggang sampai kebawah perut,-,diurap
+366,91,boreh,"pucuk sembung-gantung, pucuk pulé, lempuyang, minyak kelapa (semuanya dipanaskan)",-,-,-
+367,92,obat,"kulit pangi (dibakar), kesuna jangu, air ludah merah",-,-,-
+368,92,pereda sakit,air cuk (dipanaskan),-,-,-
+369,93,sembur,"kemiri, kelapa (dipanggang), bawang adas",-,-,disembur
+370,94,obat,"daun uyah-uyah bercabang, daun kayu apit (yang tumbuh mengapit jalan), daun canging (yang durinya tembus), daun kamedangan, ilalang, kerikan pemangseg, kerikan iyip, akar pisang lilit, lempuyang (dikikih dihadapan dapur, beralaskan ayak), kesuna jangu, rempah-rempah",tubuh yang terkena penyakit,-,disembur
+371,94,jamu,"pancar pulé, banglé, pamor bubuk (sedikit), air cuka, garam uku",-,-,diminum
+372,94,urap,"kulit pohon bunga kenanga, daun damuh-damuh, unteng lengkuas, pulasahi, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+373,95,sembur,"kulit kayu kepudung putih, kerikan dapdap, ketumbar, lengkuas (dinyahnyah)",-,-,disembur
+374,95,obat,air cuka (dipanaskan),-,-,-
+375,96,jamu,"tombong, sari kuning, santan kané (direbus), garam uku (dicampur)",-,-,diminum
+376,96,sembur,kerikan dapdap,perut,"dengan kepala berada di timur laut, dikerik jangan melangkahi rempah-rempah",disembur
+377,96,urap,"damuh-damuh, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+378,96,bedak,"kerikan juwet putih, rempah-rempah",tubuh,-,-
+379,96,bedak,"langsat lutung, kesuna jangu, air cuka",kaki,-,dilaksanakan pada hari Kajeng Kliwon
+380,97,bedak,"berbagai jenis akar (awar-awar putih, teter, terung bolo, paporot, tibajenu, tinga-tinga culung, rumput belulang), kesuna jangu, air cuka",tubuh,-,-
+381,97,kompres,"induk kunir warangan, pamor bubuk, air jeruk",hidung,-,dikompres
+382,98,jamu,"daun inja lilit, bawang (dibakar), garam uku",-,-,diminum
+383,98,obat,"kulit kayu merak kuning, unteng kunir",puser,-,-
+384,98,bedak,"kerikan dapdap, kerikan kayu cendana, rempah-rempah",tubuh,-,-
+385,98,bedak,"kulit kayu bunga jepun, kesuna jangu",kaki,-,-
+386,98,urap,"umbi kayu-tawa, bawang adas",keseluruh tubuh,-,diurapkan
+387,99,obat,"nenas hijau, kumerusa, sari kuning (direbus, setelah matang didinginkan)",-,-,diminum pada pagi hari
+388,99,urap,"umbi kasa, pucuk kesimbukan (3 helai, berwarna hitam), sari kuning, bawang adas",-,-,diurap
+389,99,minum,"bangsing beringin (yang masih muda), sari kuning (semuanya direbus)",-,-,diminum
+390,99,bedak,"kerikan dapdap, rempah-rempah",tubuh,-,-
+391,99,bedak,"kulit kayu book, kesuna jangu",kaki,-,-
+392,100,kompres,"pancer kayu toktok, akar basa-basa, akar nasi-nasi, induk kunir warangan, air jeruk",hidung,-,dikompres
+393,100,jamu,"sulasih harum, miana hitam, sari kuning, air jeruk, garam arang",-,-,diminum
+394,100,bedak,"kerikan kayu dapdap, kerikan kayu kenanga, rempah-rempah",tubuh,-,-
+395,100,bedak,"akar ligondi, kesuna jangu, air cuka",kaki,-,-
+396,101,jamu,"bunga blimbing buluh, santan kané (dikukus), bawang (dibakar), garam uku",-,-,diminum
+397,101,bedak,"daun dapdap (yang sudah membusuk), rempah-rempah",tubuh,-,-
+398,101,bedak,"uku-uku, kesuna jangu, air cuka",kaki,-,-
+399,101,urap,"unteng kemiri, bawang adas",pinggang sampai kebawah perut sampai diatas kelamin,-,diurap
+400,102,kompres,"darah lindung, sari kuning, air jeruk",hidung,-,dikompres
+401,102,oles,"uang timah (diasab), sari kuning, air jeruk",mata,-,diolesi
+402,102,obat warangan (keluar air),"kayu tai (diambil semuanya), bawang, adas, minyak kelapa",mata,-,ditambus lalu ditempel
+403,102,pereda sakit,"daun asam (yang masih muda), kulit kelapa hijau (selanjutnya direbus)",-,-,-
+404,102,urap,"akar pisang gedang saba, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+405,103,jamu,"obat racun (diantaranya pucuk ligondi muanina), kesuna jangu, air jeruk",-,-,diminum
+406,103,sembur,"kulit kayu pulé, kesuna jangu",perut,-,disembur
+407,103,bedak,"kulit empag, rempah-rempah",tubuh,-,-
+408,103,bedak,"kunir warangan, pamor bubuk, air jeruk",kaki,-,-
+409,103,jamu,"linjong empag, lempuyang, minyak kelapa (semuanya dipanaskan)",-,-,diminum
+410,104,jamu,"ketan gajih, madu, bawang (dibakar), minyak, garam uku, air jeruk",-,-,diminum
+411,104,bedak,"kulit tingulun, rempah-rempah",tubuh,-,-
+412,104,bedak,"kulit pohon besar, akarnya, kesuna jangu, air cuka",kaki,-,-
+413,104,boreh,"kapkap léko, lempuyang, lengkuas, santan kané (lalu dipanaskan)",-,-,-
+414,105,kompres,"sintok, maswi, jebug arum, ketumbar bolong (3 buah)",hidung,-,dikompres
+415,105,bedak,"kerikan majegahu, rempah-rempah",tubuh,-,-
+416,105,bedak,"akar cabaibun dakep, kesuna jangu, air cuka",kaki,-,-
+417,105,jamu,"daun daluman, santan kané, bawang (dibakar), garam arang",-,-,diminum
+418,106,kompres,"cendana jenggi, akar gelagah, lengkuas kapur, air jeruk",hidung,-,dikompres
+419,106,urap,"kesuna jangu, iduh merah",bahu,-,diurap
+420,106,bedak,"kerikan dapdap, rempah-rempah",badan,-,-
+421,106,bedak,"kulit kayu kamboja, kesuna jangu, air cuka",kaki,-,-
+422,106,jamu,"tombong, sari kuning, santan kané (dikukus), garam arang (dicampur)",-,-,diminum
+423,107,jamu,"obat racun (diantaranya kemuning seluruhnya), induk kunir warangan, lunak tanek (dipanggang), garam uku",-,-,diminum
+424,107,sembur,"kayu sangka temu tis, lempuyang, rempah-rempah",celah-celah dada sampai kepunggung,-,disembur
+425,107,bedak,"kulit kayu candigara, rempah-rempah",tubuh,-,-
+426,107,bedak,"tengeh, kesuna jangu",kaki,-,-
+427,108,oles,"kunir warangan, lunak-tanek, minyak lurungan (dibakar, setelah matang diisi asaban pinggan-batu)",-,-,dioles
+428,108,pereda sakit,air cuka (dipanaskan),-,-,-
+429,108,bedak,"buah kayu padi, rempah-rempah",tubuh,-,-
+430,109,sembur,"kapkap kumaros, lempuyang (diseseb dan dicuci hingga bersih, diremas dengan garam)",-,-,-
+431,109,jamu,"daun kecemcem putih, santan kané (direbus), bawang bakar, garam uku",-,-,diminum
+432,109,sembur,"bunga kenanga, bunga kamboja, kotoran subatah maling (dinyahnyah), rempah-rempah",ubun-ubun,-,disembur
+433,109,bedak,"beras lemes, kencur lanang, lengkuas",tubuh,-,-
+434,109,bedak,"kunir, pamor bubuk, air jeruk",kaki,-,-
+435,109,urap,"kulit tui putih, bawang, adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+436,109,boreh,"lublub empag, lempuyang, minyak kelapa (dipanaskan)",-,-,-
+437,110,kompres,"akar bunga ratna putih, akar bunga teleng putih, kunir warangan, air jeruk",hidung,-,dikompres
+438,110,bedak,"akar paya puwuh, akar tebu puwuh, sarang puwuh, tulang tikus kasa, pendok siksik, kesuna jangu",kaki,-,dipakai sebagai pelebur racun pada hari Kajeng Kliwon
+439,111,jamu,"daun lengkuas (ditumbuk), sari kuning, sidakari, kelabet, garam uku",-,-,diminum
+440,111,urap,"daun paiduh, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+441,112,sembur,"kerikan kepundung putih, ketumbar, lengkuas (semuanya dinyahnyah)",-,-,disembur
+442,112,pereda sakit,air cuka (dipanaskan),-,-,-
+443,113,jamu,"kulit buhu (dipanggang), gula garah",-,-,diminum
+444,113,urap,"umbi kayu tawa, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+445,113,obat pinggang,"daun dapdap (dihaluskan), bawang adas",pinggang,-,dipakai pada pagi hari
+446,113,bedak,"kulit kayu juwet putih, rempah-rempah",tubuh,-,-
+447,113,bedak,"daun liligundi kuning, kesuna jangu, air cuka",kaki,-,-
+448,114,jamu,"nyali itik, kunir warangan, garam uku",-,-,diminum
+449,114,sembur,"lempuyang, temu tis, isi kemiri (dipanggang), kelapa (dibakar), daun piduh, gambiran anom",sela-sela tulang dada dan punggung,-,disembur
+450,114,urap,"damuh-damuh, akar kelengisan, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+451,115,kompres,"semua jenis akar, kayu toktok, bumbu-bumbu, kaliapuh, uku-uku, induk kunir warangan, air jeruk",hidung,-,dikompres
+452,115,jamu,"ketan gajih, santan kané, bawang (dibakar), garam arang (dicampur)",-,-,diminum
+453,115,bedak,"kulit cermen, rempah-rempah",tubuh,-,-
+454,115,bedak,"akar cabai bun dakep, kesuna jangu, air cuka",kaki,-,-
+455,115,sembur,"kencur lanang, meswi, jebug arum, batang cengkeh, ketumbar (3 buah)",ubun-ubun sampai kepangkal telinga,-,disembur
+456,115,urap,"kemiri, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+457,115,boreh,"cacing sirih, lempuyang, santan kané (semuanya dipanaskan)",-,-,-
+458,116,panerag,"sulasih harum, miana hitam, beras merah, lempuyang",tubuh,-,-
+459,116,jamu,"tombong, santan (dikukus), bawang (dibakar), garam uku",-,-,diminum
+460,116,bedak,"gempong sirih, rempah-rempah",tubuh,-,-
+461,116,bedak,"kunir warangan, pamor bubuk, air jeruk",kaki,-,-
+462,116,urap,"kulit kayu turi putih, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+463,116,oles,"bangkwang botor, santan kané (dipanaskan)",mulut,-,dioleskan dengan bulu ayam
+464,117,urap,benih padi putih (diasab),sumsum tulang,-,diurap
+465,117,urap,"bangsing canging, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+466,117,sembur,"kapkap kumeros, lempuyang (diulek), garam",tubuh,-,disembur
+467,117,jamu,"sembung gantung (3 pucuk), lunak tanek, bawang (dibakar), garam arang",-,-,diminum pada pagi hari
+468,118,kompres,"buah baligo harum, temu tis (diiris kecil-kecil, dicampurkan pada beligo, lalu dikukus), bawang adas",hidung,-,dikompres
+469,118,jamu,"daun pengagér, jangu seguli, kesuna tunggal, garam uku",-,-,diminum
+470,118,bedak,"daun surén, kesuna jangu, air cuka",tubuh,-,-
+471,118,bedak,"kunir, pamor bubuk, air jeruk",kaki,-,-
+472,118,minum,"kulit tingulun, rempah-rempah",-,-,diminum
+473,119,bedak,"kulit ampiyung, kesuna jangu",kaki,-,-
+474,119,bedak,"kulit cermen (diasab), kencur, lengkuas, ketumbar bolong",ngemu-ngemunya,-,-
+475,119,bedak,"pucuk pulé, pucuk sembung gantung, cacing sirih, lempuyang, minyak kelapa (dipanaskan)",tubuh,-,-
+476,120,sembur,"bunga kamboja, bunga kenanga, meswi, jebug arum, batang cengkeh",ubun-ubun,-,disembur
+477,120,jamu,"jeruk purut (dikiruk), rempah-rempah (seharga 1, jangan berlebihan, ditaruh pada jeruk, lalu dibakar)",-,-,diminum pada pagi hari
+478,120,bedak,"akar bulu bawon, rempah-rempah",tubuh,-,-
+479,120,bedak,"kulit pohon bunga kamboja, kesuna jangu, air cuka",kaki,-,-
+480,121,jamu,"kunir, pamor bubuk (diambil dengan kedua tangan dan jangan bergerak), air jeruk",-,-,-
+481,121,tetes,"cendana jenggi, umbi rumput gelagah, induk kunir warangan, air jeruk",hidung,-,ditetesi
+482,121,bedak,"akar poksor, kesuna jangu",tubuh dan paha,-,-
+483,122,sembur,"beras lembut, lengkuas kapur, kencur lanang",luka yang sudah meletus,-,disembur
+484,122,bedak,"kerikan dapdap, rempah-rempah",tubuh,-,-
+485,122,pereda sakit,cuka menahun (dipanaskan),-,-,-
+486,123,jamu,"pohon kemuning (diambil semuanya dari daun batang dan akarnya), kunir warangan, lunak tanek (dipanggang), air jeruk, garam arang",-,-,diminum
+487,123,sembur,"daun kayu sangka, buah kayu sangka, kunir, lempuyang, temu tis, kesuna jangu",celah-celah dada dan punggung,-,disembur
+488,124,sembur,"bunga kamboja, bunga kenanga, kotoran subatah maling, kencur lanang, rempah-rempah (semuanya dinyahnyah)",ubun-ubun,-,disembur
+489,124,bedak,"daun dapdap (yang sudah membusuk), rempah-rempah, air cendana (semuanya dibakar)",tubuh,-,-
+490,124,bedak,"garam uku, kesuna jangu, air cuka",kaki,-,-
+491,124,urap,"damuh-damuh, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+492,124,jamu,"daun daluman, santan kané, bawang adas",-,-,diminum
+493,124,boreh,"santan kané, air jeruk",-,-,-
+494,125,tetes,"semua jenis akar, bumbu-bumbu, kentut balu, kayu toktok, kaliapuh, induk kunir (dicampur), air jeruk",hidung,-,ditetesi
+495,125,bedak,"buah kayu padi, rempah-rempah",tubuh,-,-
+496,125,bedak,"buah aba, kesuna jangu",kaki,-,-
+497,125,jamu,"sulasih harum, miana hitam, kelapa (dibakar sampai benar-benar kelihatan berwarna hitam), bawang bakar, garam uku",-,-,diminum
+498,125,boreh,"lublub empag, lempuyang, minyak lurungan (dipanaskan)",-,-,-
+499,126,urap,"daun paiduh, pulasahi, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+500,126,bedak,"gempong sirih, rempah-rempah",tubuh,-,-
+501,126,bedak,"daun madori kuning (yang benar-benar kuning), kesuna jangu, air cuka",kaki,-,-
+502,126,air mandi,daun dapdap yang berwarna hijau (direbus),-,-,dipakai mandi
+503,127,sembur,merica jawa (3 buah),mata,-,disembur
+504,127,bedak,"kapkap, merica, rempah-rempah",tubuh,-,-
+505,128,jamu,"ketan gajih, cendana jenggi, manik kakul, bawang (dibakar), garam arang",-,-,diminum
+506,128,bedak,"kulit tuwi putih, rempah-rempah",tubuhnya,-,-
+507,128,bedak,"uku-uku, kesuna jangu, air jeruk",kaki,-,-
+508,128,boreh,"santan kané, air jeruk linglang",-,-,-
+509,129,jamu,"ketan gajih (direndam pada air cendana jenggi dan sari lengkuas kapur), sabang kawa ( yang mereyap pada tembok), garam uku",-,-,diminum
+510,129,sembur,"kulit kayu dapdap ( dipanggang), rempah-rempah",perut,-,disembur
+511,129,urap,"damuh-damuh, pulasai, bawang, adas, kencur lanang, lengkuas",pinggang sampai dibawah perut diatas kelamin,-,diurap
+512,129,bedak,"kulit kamboja, kesuna jangu, air cuka",kaki,-,-
+513,129,sembur,"kencur, jebug arum, maswi, ketumbar bolong",ubun-ubun sampai ke pangkal telinga,-,disembur
+514,130,sembur,"daun kayu uyah bercabang, daun kamedangan, daun kayu apit (yang mengapit jalan), daun canging duri mametel, duri ilalang, kerikan pamangseg, lempuyag (dilakukan dihadapan brahma, beralaskan sidi, kesuna jangu dan rempah-rempah)",-,-,disembur
+515,130,urap,"sari lengkuas, pulasai, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+516,130,jamu,"induk kunir, pamor bubuk, air jeruk, garam arang",-,-,diminum
+517,131,oles,"daun kutat banu, ketumbar, lengkuas (diiris-iris)",-,-,dioles
+518,131,pereda sakit,"daun asam yang masih muda, kulit kelapa hijau (semuanya direbus)",-,-,-
+519,133,kompres,"akar (semua jenis), kayu toktok, bumbu-bumbu, kunir warangan, air jeruk",hidung,-,dikompres
+520,133,jamu,"akar pancarsona, santan kané (dikukus), bawang bakar, garam arang",-,-,diminum
+521,133,bedak,"gempong sirih, rempah-rempah",tubuh,-,-
+522,133,bedak,"induk kunir warangan, pamor-bubuk, air jeruk",kaki,-,-
+523,134,bedak,"akar paperon (semua jenis), tibajenu, terung bola, menuri kuning, kesuna jangu, air cuka",kaki,-,-
+524,134,bedak,"jahe pahit, lempuyang burung, beras merah, kesuna jangu, air cuka",tubuh,-,-
+525,134,kompres,"induk kunir warangan, pamor bubuk, air jeruk",hidung,-,dikompres
+526,135,jamu,"ketan gajih, santan kané, bawang adas, garam uku",-,-,diminum
+527,135,bedak,"kerikan kayu dapdap, jangan kayu (yang sudah kering), rempah-rempah",tubuh,-,-
+528,135,bedak,"buah aba, kesuna jangu, air cuka",kaki,-,-
+529,135,urap,"akar kelengisan, emben kayu canging, bawang adas",pinggang sampai kebawah perut atas kelamin,-,diurap
+530,135,boreh,"santan kané, air jeruk",-,-,-
+531,135,sembur,"kencur lanang, jebug arum, maswi, batang cengkeh",ubun-ubun sampai kepangkal telinga,-,disembur
+532,136,tetes,"akar jeruk (semua jenis), kayu padi, kaliapuh, induk kunir warangan, air jeruk",hidung,-,ditetes
+533,136,jamu,"pucer pule yang tumbuh di kuburan, bangle, air cuka, garam arang",-,-,diminum
+534,136,bedak,"buah kayu padi, rempah-rempah",tubuh,-,-
+535,136,bedak,"kulit kayu kamboja, kesuna jangu, air cuka",kaki,-,-
+536,136,sembur,merica jawa (11 buah),mata,-,disembur
+537,136,sembur,"merica jawa (11 buah), rempah-rempah",ubun-ubun sampai kepangkal telinga,-,disembur
+538,137,bedak,"lempuyang burung, jahe pahit, lengkuas kapur, beras merah, kesuna jangu, air jeruk",tubuh hingga kaki,-,-
+539,137,kompres,"induk kunir warangan, pamor bubuk, air jeruk",hidung,-,dikompres
+540,137,jamu,"sulasih harum, miana hitam, air jeruk, garam uku",-,-,diminum
+541,137,urap,"bangsing beringin yang masih muda, bawang adas",keseluruh tubuh,-,diurap
+542,137,air mandi,"kulit kayu tengulun, rempah-rempah (direbus semuanya)",-,-,dipakai mandi
+543,138,sembur,"kecemcem putih, kulit kayu buhu, ketumbar, lengkuas, kunir (semuanya dinyahnyah)",kaki,-,-
+544,138,sembur,"daun bunga melati, rempah-rempah",kepala,berdenyut,-
+545,138,boreh,"sulasih harum, miana hitam, beras lemes merah, air cendana",tubuh,-,-
+546,138,urap,"kesimbukan hitam, bawang adas",pinggang,-,-
+547,138,bedak,"kulit langsat lutung, kesuna jangu, air cuka",kaki,-,-
+548,138,boreh,"pucuk sembung gantung, cacing sirih, minyak kelapa (semuanya dipanaskan)",-,-,-
+549,139,jamu,"ketan gajih, santan kané, asaban manik kakul, garam uku",-,-,diminum
+550,139,kompres,"sulasih harum, miana hitam, sari kuning, air jeruk",hidung,-,dikompres
+551,139,sembur,"daun bunga melati, rempah-rempah",ubun-ubun sampai kepangkal telinga,-,disembur
+552,139,bedak,"gempong sirih, rempah-rempah",tubuh,-,-
+553,139,bedak,"ulekan dagdag (diulek sebanyak 3 kali), kesuna jangu, air cuka",kaki,-,-
+554,139,boreh,"santan kané, air jeruk (semuanya dipanaskan)",-,-,-
+555,140,jamu,"kulit kemiri (diletakkan pada tembok dan dibakar), kesuna jangu, air liur merah",-,-,diminum
+556,140,bedak,"kerikan kayu dapdap, rempah-rempah",tubuh,-,-
+557,140,bedak,"kulit langsat lutung, kesuna jangu, air cuka",kaki,-,-
+558,140,urap,"kulit pohon kenanga, sari lengkuas, pulasai, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+559,140,sembur,"kulit kecemcem putih, ketumbar, lengkuas, kunyit (dipanaskan dengan cara sederhana)",lambung,-,disembur
+560,141,kompres,"bunga belimbing putih, santan kané, bawang dibakar, garam arang",hidung,-,dikompres
+561,141,bedak,"induk kunir, kencur lanang, beras merah, rempah-rempah, air jeruk",tubuh,-,-
+562,141,sembur,"kencur lanang, jebug arum, meswi, batang cengkeh",ubun-ubun,-,disembur
+563,142,[1] kompres,"bangket lengkuas, air cendana, air jeruk",hidung,-,dikompres
+564,142,[1] jamu,"bunga belimbing buluh, santan kané (dikukus), bawang bakar, garam uku",-,-,diminum
+565,142,[1] bedak,"kerikan kayu dapdap, rempah-rempah",tubuh,-,-
+566,142,[1] bedak,"kulit empag, kesuna jangu, air cuka",kaki,-,-
+567,142,[1] urap,"beluntas, bawang adas",pinggang sampai kebawa perut di atas kelamin,-,diurap
+568,142,[1] sembur,"kencur lanang, meswi, batang cengkeh",kepala sampai ke pangkal telinga,-,disembur
+569,142,[1] boreh,"sembung bangke, pucuk pule, minyak kelapa (dipanaskan semua)",-,-,-
+570,142,[2] kompres,"bungak kelapa mulung (menghadap timur laut), sari kuning (dibakar setelah matang didinginkan)",hidung,-,dikompres
+571,142,[2] jamu,"irisan bambu, sari kuning, gula pasir",-,-,diminum
+572,142,[2] urap,"umbi kasa, pulasai, bawang adas",-,-,diurap
+573,142,[2] air mandi,daun dapdap (direbus),-,-,dipakai mandi saat dini hari menjelang pagi
+574,143,jamu,"akar kasine, akar siligui lanang, santan kané (dikukus), bawang (sudah dibakar), adas, garam uku",-,-,diminum
+575,143,sembur,"kulit pohon ancak, rempah-rempah",perutnya,-,disembur
+576,143,urap,"pucuk kesimbukan hitam, pucuk dingin-dingin, bawang-adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+577,143,bedak,"kerikan dapdap, rempah-rempah",tubuh,-,-
+578,143,bedak,"kulit langsat lutung, kesuna jangu, air cuka",kaki,-,-
+579,143,boreh,"linjong empag, lempuyang, santan kané (semuanya dipanaskan)",-,-,-
+580,144,kompres,"induk kunir warangan, pamor bubuk, air jeruk",hidung,-,dikompres
+581,144,jamu,"akar jeruk purut, sintok, ketumbar bolong (11 buah), air jeruk linglang",-,-,diminum
+582,144,bedak,"kerikan majagawu, rempah-rempah",tubuh,-,-
+583,144,bedak,"akar teter, akar awar-awar putih, akar maenuri kuning, akar liligundi lanang (semua jenis akar), kesuna jangu, air cuka",kaki,-,-
+584,144,boreh,"linjong empag, lengkuas, air lurungan",-,-,-
+585,145,kompres,"tombong, sari kuning (semuanya dikukus)",hidung,-,dikompres
+586,145,jamu,"lublub buu (semua jenis), kecemcem, kutuh, dapdap, kayu pule, asam (dipanggang), garam, arang",-,-,diminum
+587,145,bedak,"sembung gantung, lempuyang, rempah-rempah",tubuh,-,-
+588,145,bedak,"induk kunir warangan, pamor bubuk, air jeruk",kaki,-,-
+589,145,urap,"tuwi putih, pulasai, bawang-adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+590,145,boreh,"daun jeruk, cacing sirih, lempuyang, lengkuas, temu tis, santan kané (semuanya dipanaskan)",-,-,-
+591,146,jamu,"pucuk tumpang payuk (7 pucuk), adas, garam uku",-,-,diminum
+592,146,tambal,"daun kayu tai, bawang, adas",tubuh,bintik-bintik merah,ditambal
+593,146,pereda sakit,montong kecicang (dibakar),-,-,-
+594,146,bedak,"buah kayu padi, rempah-rempah",tubuh,-,-
+595,146,bedak,"akar menuri kuning, kesuna jangu, air cuka",kaki,-,-
+596,146,urap,"damuh-damuh, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+597,146,boreh,"pucuk belimbing besi, cacing sirih, lempuyang, minyak lurungan (semuanya dipanaskan)",-,-,-
+598,147,kompres,"sulasih harum, miana hitam, sari lungid, jinten hitam, air jeruk",hidung,-,dikompres
+599,147,jamu,"sibuh tembaga diasab, lunak tanek, pamor bubuk, air embun atau bayu/angin, air jeruk",-,-,diminum
+600,147,bedak,"kulit empag, rempah-rempah",tubuh,-,-
+601,148,jamu,"kendal bituka, kesuna jangu, air cuka",-,-,diminum
+602,148,kompres,"induk kunyit merah, pamor bubuk, air jeruk",hidung,-,dikompres
+603,148,bedak,"kulit pangi kedi, kesuna jangu, air cuka",tubuh,-,-
+604,148,urap,"kesimbukan hitam, bawang, adas",seluruh tubuh,-,diurap
+605,148,boreh,"daun jeruk bali, lengkuas, santan kané (semuanya dipanaskan)",-,-,-
+606,148,air mandi,daun tingulun (direbus),-,-,dipakai untuk mandi
+607,149,jamu,"getah kaliamba, tuak laingan, gula pasir",-,-,diminum
+608,149,bedak,"daun awar-awar (berwarna kuning), kesuna jangu",tubuh sampai ke kaki,-,dibedaki (dilulur perutnya dulu sebelum makan)
+609,150,kompres,"beligo harum, temu tis, bawang bakar (dikukus dan dicampur)",hidung,-,dikompres
+610,150,jamu,"sulasih harum, miana hitam, ketan gajih, santan kané, bawang (dibakar), garam uku",-,-,diminum
+611,150,bedak,"kencur lanang, beras mes",tubuh,-,-
+612,150,bedak,"kulit pangi, kesuna jangu, air cuka",kaki,-,-
+613,150,sembur,"kencur lanang, rempah-rempah",ubun-ubun sampai ke pangkal lengan,-,disembur
+614,150,urap,"damuh-damuh, bawang adas",seluruh tubuh,-,diurap
+615,150,boreh,"pucuk dapdap, lempuyang, santan kané, bawang bakar",-,-,-
+616,150,air mandi,"daun dapdap, daun cabai bun (direbus semuanya)",-,-,dipakai mandi
+617,151,obat racun,-,-,-,-
+618,152,jamu,"akar lutung putih, kunir warangan, lunak tanek (semuanya dipanggang), air jeruk, garam uku",-,-,diminum
+619,152,sembur,"daun kemoning, induk kunyit, rempah-rempah",dada dan punggung,-,disembur
+620,152,bedak,"daun bulun bawon, induk kunyit, rempah-rempah",tubuh sampai ke kaki,-,-
+621,152,boreh,"kapkap kumeros, lempuyang burung, santan kané (dipanaskan semua)",-,-,-
+622,152,sembur,"kencur lanang, meswi, jebug arum",ubun-ubun sampai ke pangkal telinga,-,disembur
+623,153,sembur,"kulit pohon gatep, kulit pohon kepundung putih, ketumbar, lengkuas, kunyit (dipanaskan sekedarnya)",tubuh,-,disembur pada bagian tubuh yang bengkak
+624,153,jamu,"tombong, santan kane, sari kuning (dikukus), bawang (dibakar), garam uku",-,-,diminum
+625,153,bedak,"daun dapdap (yang sudah membusuk), rempah-rempah",tubuh,-,-
+626,153,bedak,"kulit kayu kamboja, kesuna jangu, air cuka",kaki,-,-
+627,153,wangwang taneng,"umbi paspasan, bawang adas",-,-,-
+628,153,urap,"embung bambu, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+629,153,pencegah rasa sakit,"daun asam (yang masih muda), kulit pohon kelapa hijau (semuanya direbus)",-,-,-
+630,153,boreh,"pucuk sembung gantung, lempuyang, santan kané (dipanaskan)",-,-,-
+631,154,jamu,"akar tempuyak, akar jeruk, akar limo, akar kunyit, akar lengkuas, air jeruk",-,-,diminum
+632,154,bedak,"kerikan majegawu, rempah-rempah",tubuh,-,-
+633,154,bedak,"kulit langsat lutung, kesuna jangu, air cuka",kaki,-,-
+634,154,urap,"kulit kanangga, lengkuas, pulasahi, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+635,154,boreh,"cacing sirih, lempuyang, minyak lurungan (semuanya dipanaskan)",-,-,-
+636,155,jamu,"santan kané, cuka menahun, garam arang",-,-,diminum
+637,155,bedak,"daun liligundi, induk kunyit, tan kesuna jangu",tubuh sampai kaki,-,-
+638,155,obat pusar,"rarambutan dapdap, pantat kesuna (11 biji)",pusar,-,-
+639,155,urap,"pucuk sentul (3 pucuk), pucuk jambu biji (3 pucuk), lengkuas, bawang adas",pinggang sampai bawah perut diatas kelamin,-,diurap
+640,155,urap,"perasan santan kané, air jeruk",tubuh,saat tubuh terasa dingin,diurap
+641,155,sembur,"kulit bunut wot, kesuna jangu, air cuka",perut,-,disembur
+642,157,jamu,"akar bunga nagasari, akar bandangan, akat bandrangan, akar sokasti, lengkuas kapur, kemenyan madu, cendana jenggi, sari kuning, jinten cemeng, air jeruk",-,-,diminum
+643,157,bedak,"kapkap kumeros, induk kunyit, rempah-rempah",tubuh,-,-
+644,157,bedak,"bulu bawon (diambil semuanya), kesuna jangu, air cuka",kaki,-,-
+645,157,air mandi,"daun kelampuak putih, daun asam yang muda, daun lengkuas (semuanya direbus)",-,-,dipakai mandi
+646,158,jamu,"bun inja lilit, bawang (dibakar), garam arang",-,-,diminum
+647,158,urap,"umbi kayu tawa, bawang adas",pinggang sampai ke bawah perut di atas kelamin,-,diurap
+648,158,bedak,"kerikan dapdap, rempah-rempah",tubuh,-,-
+649,158,bedak,"kulit kayu empag, kesuna jangu, air cuka",kaki,-,-
+650,158,rendam,daun dapdap,pinggang,-,dipakai merendam pinggang pada pagi hari
+651,159,kompres,"tombong , sari kuning, santan kané (semuanya dikukus)",hidung,-,dikompres
+652,159,jamu,"daun pangégér, kesuna jangu, air cuka aren, jangu seguli",-,-,diminum
+653,159,bedak,"sembung gantung, lempuyang burung, kunyit, rempah-rempah",tubuh,-,-
+654,159,bedak,"mengkudu, induk kunyit, pamor bubuk",kaki,-,-
+655,159,sembur,"daun melati, rempah-rempah",jidat sampai pangkal telinga,-,disembur
+656,159,urap,"umbi paspasan, bawang adas",pinggang sampai ke bawah perut di atas kelamin,-,diurap
+657,159,boreh,"pucuk sembung (secukupnya), kayu pule, dapdap, cacing sirih, lempuyang, lengkuas, santan kané (semuanya dipanaskan)",-,-,-
+658,160,kompres,"akar rumput gelagah, akar teleng putih, cendana jenggi, air jeruk",hidung,-,dikompres
+659,160,jamu,"tebu hitam, garam uku",-,-,diminum
+660,160,bedak,"akar poksor, beras merah, kesuna jangu",tubuh sampai kekaki,-,dioles
+661,160,boreh,"gantang, sembung gantung, lemputang, lengkuas, santan kané (semuanya dipnaskan)",-,-,-
+662,160,urap,"kesuna jangu, alir liur merah",bahu,-,diurap pada bagian yang terasa teleng
+663,161,kompres,"akar gelagah, akar tlepungti, cendana jenggi, air jeruk",hidung,-,dikompres
+664,161,jamu,"akar tebu hitam, jinten hitam, sari kuning, garam uku",-,-,diminum
+665,161,bedak,"akar poksong, beras merah, kesuna jangu, sembung gantung, lempuyang, lengkuas, santan kané (semuanya dipanaskan)",tubuh dan kaki,-,-
+666,161,urap,"ludah merah, kesuna jangu",-,-,diurap
+667,162,sembur,merica jawa,-,-,disembur
+668,162,jamu,"lublub pule (tumbuh di kuburan), kunyit warangan, air jeruk purut",-,-,diminum
+669,162,bedak,"kulit tingulun, rempah-rempah",tubuh,-,-
+670,162,bedak,"akar kayu padi atau kayu api, kesuna jangu, air cuka",kaki,-,-
+671,162,boreh,"pucuk sembung gantung, pucuk pule, lempuyang, lengkuas, santan kané (semuanya dipanaskan)",-,-,-
+672,162,sembur,"kapkap kumeros, merica jawa",ubun-ubun sampai kepangkal telinga,-,disembur
+673,163,kompres,"bongkak kelapa mulung (dibakar), sari kuning",hidung,-,dikompres pada pagi hari
+674,163,jamu,"irisan kesimbukan hitam, sari kuning",-,-,diminum
+675,163,sate pulung,daging burung kiuh,-,-,-
+676,163,urap,"umbi paspasan, bawang adas",seluruh tubuh,-,diurap
+677,163,bedak,"kerikan kayu dapdap, rempah-rempah",tubuh,-,-
+678,163,bedak,"kulit kayu kamboja, kesuna jangu, air cuka",kaki,-,-
+679,163,boreh,"cacing sirih, lempuyang, minyak kelapa (semuanya dipanaskan)",-,-,-
+680,164,jamu,"lobak sininggit, air cuka, garam uku",-,-,diminum
+681,164,kompres,"lengkuas kapur, kencur lanang, sintok, meswi, jebug arum",-,-,dikompres
+682,164,sembur,"pangi-pangi, kesuna jangu",perut,-,disembur
+683,164,bedak,"akar cabai bun kedi, kesuna jangu, air cuka",tubuh hingga ke kaki,-,-
+684,164,urap,"lumut dedari, pulasai, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+685,164,boreh,"kapkap leko, lempuyang, lengkuas, santan kané (semuanya dipanaskan)",-,-,-
+686,165,sembur,"kulit kayu tigaron, ketumbar (semuanya dinyahnyah)",kaki,-,disembur
+687,165,sembur,"kepasilan (semua jenis), limo jeringga, lempuyang, temu tis, rempah-rempah",ulasan dada dan punggung,-,disembur
+688,165,sembur,"daun jambu putih yang telah jatuh, ketumbar, lengkuas, kunyit",kaki,tumbuh bintik-bintik,disembur
+689,165,pereda sakit,"daun asam muda, kulit kelapa hijau (semuanya di rebus)",-,-,-
+690,165,jamu,"tumpang payuk (7 penggal), bawang adas",-,-,diminum
+691,165,bedak,"kerikan kayu dapdap, rempah-rempah",tubuh,-,-
+692,165,bedak,"kulit empag, kesuna jangu, air cuka",kaki,-,-
+693,165,urap,"pucuk daun kesimbukan hitam, pucuk daun dingin-dingin, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+694,166,jamu,"komak-putih (4 biji), pucuk daun dingin-dingin (3 pucuk), kesimbukan hitam (3 pucuk), beras merah, bawang adas",-,-,diminum
+695,166,bedak,"linjong kayu suren, kesuna jangu",tubuh,-,-
+696,166,pijat,"santan kané, air jeruk",seluruh tubuh,terasa dingin,dipijit
+697,166,sembur,"daun dapdap (yang sudah berwarna kuning), kencur lanang, meswi, jebug arum",-,-,disembur
+698,167,kompres,"induk kunyit merah/kunyit warangan, pamor bubuk, air jeruk",hidung,-,dikompres
+699,167,jamu,"lublub pule, bangle, air cuka, garam uku",-,-,diminum
+700,167,sembur,"lamba-lamba, daun kowang, kesuna jangu, rempah-rempah",perut,-,disembur
+701,167,bedak,"akar cabai bun dakep, kesuna jangu",tubuh dan kaki,-,-
+702,167,urap,kesuna jangu,pinggang,-,diurap
+703,167,urap,"kulit kayu kanangga, sari lengkuas, pulasai, bawang adas",pinggang dan di bawah perut di atas kelamin,-,diurap
+704,167,air mandi,"daun dapdap, daun cabai pun dakep, daun liligundi (semuanya direbus)",-,-,dipakai mandi pada pagi hari
+705,168,kompres,"tombong, sari kuning (semuanya dikukus), bawang bakar",hidung,-,dikompres
+706,168,boreh,"lublub pule, buu, kecemcem, dapdap, kutuh, kemiri, bawang bakar, garam arang",-,-,-
+707,168,pijat,"kapkap kumeros, lempuyang (diseseb dibersihkan dan dibedel dicampur dengan garam), garam",-,-,dipijat
+708,168,obat,"bangket lengkuas, air cendana, air jeruk",kaki,-,-
+709,168,oles,"umbi paspasan, santan kané (dipanaskan), bawang (dibakar)",-,-,dioleskan dengan bulu ayam
+710,168,urap,"damuh-damuh, bawang adas",pinggang sampai kebawah perut di atas kelamin/siksikan,-,diurap
+711,168,bedak,"tangeh, kesuna jangu",kaki,-,-
+712,168,boreh,"bawang dibakar, minyak lurungan",-,-,-
+713,168,sembur,"daun uku-uku, rempah-rempah",dada,-,disembur
+714,169,jamu,"akar siligui, akar kasine, santan kané (semua dikukus), bawang dibakar, garam arang",-,-,-
+715,169,urap,"kulit turi putih, lengkuas kapur, pulasai, bawang adas",pinggang sampai ke bawah perut diatas kelamin,-,-
+716,169,bedak,"kerikan kayu kenanga, kerikan jerungga, rempah-rempah",tubuh,-,-
+717,169,bedak,"kulit kayu cermen, kesuna jangu",kaki,-,-
+718,169,minum,"daun lengkuas, daun sepet-sepet, klabet",-,-,diminum
+719,169,air mandi,"daun jambu biji, daun lengkuas, daun sepet-sepet, klebet (direbus)",-,-,dipakai mandi pada pagi hari
+720,170,kompres,"lengkuas kapur, wed juwet purut, cendana jenggi, inggu, ketumbar bolong (3 buah)",hidung,-,dikompres
+721,170,jamu,"tebu hitam (dibakar lalu dicelupkan), sarilungid, ketan gajih, jinten hitam, garam uku",-,-,diminum
+722,170,bedak,"buah nagasari, rempah-rempah",tubuh,-,-
+723,170,bedak,"buah kepah, kesuna jangu, air cuka",kaki,-,-
+724,170,urap,"akar jeruju, bawang adas",pinggang sampai ke bawah perut diatas kelamin,-,diurap
+725,170,boreh,"daun dapdap dumela, lempuyang, lengkuas, temu tis, santan kané (semuanya dipanaskan)",-,-,-
+726,170,air mandi,"daun tingulun, rempah-rempah (direbus)",-,-,dipakai mandi pada pagi hari
+727,170,sembur,"bunga kamboja, kencur lanang, meswi, jebug arum, batang cengkeh, ketumbar bolong (3 buah)",ubun-ubun sampai ke pangkal telinga,-,disembur
+728,171,kompres,"semut menyebrang jalan, lengkuas kapur, cendana jenggi, jinten hitam, menyan madu, inggu",hidung,-,dikompres pada hari Kajeng Kliwon
+729,171,sembur,"sulasih harum, sari lempuyang, sari lengkuas, ketumbar bolong, merica gundil",mata,-,disembur
+730,171,sembur,"bunga kamboja, bunga kenanga, kencur lanang, meswi, jebug arum, ketumbar bolong (3 buah)",ubun-ubun sampai kepangkal telinga,-,disembur
+731,171,jamu,"akar jeruk, induk kunyit, kemenyan madu, garam arang",-,-,diminum
+732,171,bedak,"kulit kayu jadma, kulit kepah, rempah-rempah",tubuh,-,-
+733,171,bedak,"getokan dagdag (menghadap timur laut, dipukul dengan batu sebanyak 3 kali), kesuna jangu, air cuka",kaki,-,-
+734,171,urap,"akar kelengisan, bawang adas",pinggang sampai ke bawah perut diatas kelamin,-,diurap
+735,171,boreh,"pucuk sembung gantung, pucuk pule, santan kané (semua dipanaskan)",-,-,-
+736,172,kompres,"tebu ratu, cendana jenggi, kemenyan madu, jinten hitam",hidung,-,dikompres
+737,172,jamu,"bungkak kelapa mulung, lublub buhu, lublub kecemcem, sari kuning (semuanya dibakar)",-,-,diminum
+738,172,bedak,"jahe pahit, lempuyang burung, beras merah, empol bambu (21 iris)",tubuh,-,-
+739,172,bedak,"akar wadori kuning, beras merah, kesuna jangu",kaki,-,-
+740,172,air mandi,"daun dapdap, daun tingulun (direbus)",-,-,dipakai mandi pada pagi hari
+741,173,tambal,"daun kayu ati, bawang adas",luka,jangan lewat sehari,ditambal
+742,173,pereda sakit,"daun lengkuas, daun kelampuak putih (semua direbus)",-,-,-
+743,173,minum,"induk kunyit merah, lunak tanek, pamor bubuk, malem (dipulung, dijadikan 3 pulung dan dimasukkan pada pisang)",-,-,ditelan
+744,174,penuwed,"telur ayam hitam (diikat dengan benang hitam sebanyak 3 putaran), kesuna jangu",-,-,disembur dengan kesuna jangu sebanyak 3 kali selanjutnya direbus lalu dimakan
+745,174,jamu,"akar timbul, komak putih (4 biji), beras merah, adas",-,-,diminum
+746,174,bedak,"daun awar-awar berwarna kuning, kesuna jangu, telur (dimantrai dengan mantra penuwed)",badan sampai kaki,-,-
+747,175,obat,"kotoran subatah maling (dinyahnyah), bunga kamboja, bunga kenanga, rempah-rempah, ketumbar bolong (3 buah)",ubun-ubun,-,disembur sebanyak 3 kali sambil ucapkan mentra penyambet
+748,175,sembur,"kerikan mejegawu, rempah-rempah",pangkal telinga,-,disembur
+749,175,suksuk,"air perasan lengkuas, air cendana, air jeruk",kepala,-,disuksuk pada malam hari
+750,175,kompres,"perasan air lengkuas, cendana, kemenyan madu",hidung,-,dikompres
+751,175,kompres,"kencur (diiris dan dihaluskan, dipulung dibungkus dengan gatem)",telinga,-,dikompres
+752,175,jamu,"daun kecemcem muda, santan kané (direbus), bawang bakar, garam uku",-,-,diminum
+753,175,bedak,"daun dapdap busuk, rempah-rempah (dibakar), air cendana",tubuh,-,-
+754,175,bedak,"induk kunyit merah, pamor bubuk, air jeruk",kaki,-,-
+755,175,urap,"umbi kasa, bawang adas",punggung sampai ke bawah perut diatas kelamin,-,diurap
+756,175,boreh,"daun dapdap muda, cacing sirih, lempuyang, minyak kelapa (dipanaskan)",-,-,-
+757,177,oles,"kulit kemiri pada tembok (dibakar), kesuna jangu (semua diiris dan dihaluskan), minyak kelapa",tubuh yang terkena penyakit,-,dioleskan dengan bulu ayam
+758,177,pereda sakit,cuka (direbus),-,-,-
+759,177,kompres,"lengkuas kapur, kemenyan madu, gunggung jinten hitam",hidung,-,kompres
+760,177,jamu,"akar jeruk purut, induk kunyit merah, pamor bubuk, air jeruk, garam arang",-,-,diminum
+761,177,bedak,"kulit pohon kepah, rempah-rempah",badan,-,-
+762,177,bedak,"kulit cermen, kesuna jangu, air cuka",kaki,-,-
+763,177,air mandi,"daun asam muda, daun kelampuak putih, daun kecicang, daun lengkuas (direbus)",-,-,dipakai mandi di pagi hari
+764,178,bedak,"tulang manusia mentah, kesuna jangu, air cuka",kaki,-,-
+765,178,kompres,"induk kunyit, pamor bubuk, air jeruk",hidung,-,dikompres
+766,179,pengasapan,"gumpang padi ciewa (padi yang diikat kecil-kecil sebagai simbolis Dewi Sri), ketan injin, rambut (semuanya dibakar)",-,-,-
+767,179,sembur,"kulit kecemcem putih, ketumbar, lengkuas (semuanya dinyahnyah)",lambung,-,disembur
+768,179,pereda sakit,montong kecicang bakar,-,-,-
+769,179,bedak,"daun sembung gantung, kesuna jangu",tubuh,-,-
+770,179,bedak,"daun liligundi yang berwarna kuning, kesuna jangu, air cuka",kaki,-,-
+771,179,boreh,"pucuk sembung gantung, lempuyang, temu tis, minyak kelapa (semuanya dipanaskan)",-,-,-
+772,180,kompres,"semua jenis akar kayu toktok, bumbu-bumbu, kentut balu, akar kaliapuh, kunyit merah, air jeruk",hidung,-,dikompres
+773,180,jamu,"bungkak kelapa mulung, lublub dapdap, lublub kecemcem, lublub buhu, lublub kutuh, bawang (ditambus)",-,-,diminum pada pagi hari
+774,180,bedak,"kulit tingulun, rempah-rempah",tubuh,-,-
+775,180,bedak,"buah aba, kesuna jangu, air cuka",kaki,-,-
+776,180,urap,"rerambutan dapdap, pulasahi, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+777,180,boreh,"pucuk sembung, pucuk dapdap, pucuk pule, lempuyang, santan kané (semuanya dipanaskan)",-,-,-
+778,180,sembur,"bunga naga sari, kencur lanang, meswi jebug arum, batang cengkeh, ketumbar bolong (masing-masing sebanyak 3 buah)",ubun-ubun sampai ke pangkal telinga,-,disembur
+779,181,panerag,"kapkap kumeros, lempuyang (dibedel dicampur dengan) air, garam",tubuh,-,-
+780,181,sembur,"kulit kepundung putih, kerikan sentul, ketumbar, lengkuas (dinyahnyah)",kaki,-,disembur
+781,181,bedak,"kulit pangi muda, kesuna jangu",kaki,-,-
+782,181,urap,"kulit turi putih, bawang adas",pinggang sampai kebawah perut diatas kelamin,-,diurap
+783,181,boreh,"pucuk sembung gantung, pucuk pule, cacing sirih, lempuyang (semuanya dipanaskan)",-,-,-
+784,182,jamu,"buah jeruk purut (dilubangi), rempah-rempah (masing-masing sebanyak 1 buah, diiris dan dialuskan, dimasukkan pada jeruk yang telah dilubangi, selanjutnya dibakar, setelah matang diisi air, dibedel)",-,-,diminum pada pagi hari dan jangan memakan sarinya
+785,182,bedak,"bulu bawon, daun awar-awar berawarna kuning, kesuna jangu, air cuka",tubuh sampai ke kaki,-,-
+786,182,sembur,rempah-rempah,ubun-ubun ke pangkal telinga,-,disembur
+787,182,air mandi,"daun cabai bun dakep, daun jerungga (direbus)",-,-,dipakai mandi pada pagi hari
+788,182,sembur,"kunyit merah, pamor bubuk",hulu hati,-,disembur
+789,184,jamu,"lublub pule, bangle, air cuka, garam arang",-,-,diminum
+790,184,kompres,"induk kunyit merah, pamor bubuk, air jeruk",hidung,-,dikompres
+791,184,sembur,"daun kowang, kesuna jangu, rempah-rempah",perut,-,disembur
+792,184,sembur,"bangle (3 iris), garam (dipanggang semuanya)",pinggang,-,disembur
+793,184,bedak,"kulit cermen, kesuna jangu",tubuh,-,-
+794,184,urap,"kanangga, sari lengkuas, bawang adas",perut bagian bawah diatas kelamin,-,diurap
+795,185,obat,"kerikan kepundung putih, sentul, dapdap, daun krepetan, sirih dumeros, daun belimbing besi berwarna kuning, kunyit merah, ketumbar, lengkuas (dinyahnyah)",-,-,-
+796,185,sembur,bebek kawasa,-,-,-
+797,185,pereda sakit,daun asam muda (direbus),-,-,-
+798,186,kompres,"montong kunyit, lempuyang lengkuas (ditimbung pada bambu)",hidung,-,dikompres pada pagi hari
+799,186,bedak,"akar poksor, sari lempuyang, kesuna jangu",tubuh,-,-
+800,186,sembur,"semua jenis daun garam-garam yang bercabang, daun kayu kamedangan, daun kayu pahit yang tumbuh mengapit jalan, kayu canging yang durinya tembus, ilalang, kerikan pemangseg, kesuna jangu, rempah-rempah, lempuyang diparut (dihadapan brahma beralaskan ayak)",tubuh bagian yang sakit,-,disembur
+801,186,jamu,"akar lempuyang, akar jeruk, lengkuas, air jeruk (dicampur), garam arang",-,-,diminum
+802,186,bedak,"kulit kayu kamboja, kesuna jangu, air cuka",kaki,-,-
+803,186,air mandi,"daun lengkuas, daun liligundi, daun cabai dakep (semuanya direbus)",-,-,dipakai mandi pada pagi hari
+804,187,jamu,"kendal bituka (seutuhnya), kesuna jangu, air cuka, garam uku",-,-,diminum
+805,187,bedak,"kulit ampiun, kesuna jangu",tubuh yang membengkak,-,-
+806,187,obat,"kerikan dapdap, rempah-rempah",-,jika terasa kaku sakitnya atau sarana uang disebutkan tidak ada,-
+807,187,boreh,"kapkap leko, lempuyang, lengkuas, temu tis, santan kané (semua dipanaskan)",-,-,-
+808,187,pereda sakit,"daun tingulun, rempah-rempah (semuanya direbus hingga matang)",-,-,-
+809,189,kompres,"akar jeruk purut, akar belimbing besi, induk kunyit merah, air jeruk",hidung,-,dikompres
+810,189,jamu,"tebu ratu (dibakar dengan hati hati), jinten hitam, gula pasir, garam uku",-,-,diminum
+811,189,bedak,"kulit kayu dapdap, lengkuas kapur, kencur lanang, meswi, jebuarum, batang cengkeh, ketumbar bolong (3 biji)",-,-,-
+812,189,minum,daun kelor (diremas),-,-,diminum
+813,189,oles,"oncolan kemiri yang hanyut ditengah laut (usahakan yang masih mentah, disembur bila sudah matang)",-,-,dioleskan
+814,189,pereda sakit,air cuka (dipanaskan),leher,-,-
+815,189,bedak,"kerikan majegawu, rempah-rempah",tubuh,-,-
+816,189,bedak,"kerikan langsat lutung, kesuna jangu, air cuka",kaki,-,-
+817,189,urap,"daun dapdap yang sedang-sedang tidak muda (diusahakan jangan terlalu tua), bawang adas",pinggang sampai ke bawah perut diatas kelamin,-,diurap
+818,189,boreh,"daun jeruk, lempuyang, lengkuas, santan kané (semuanya dipanaskan)",-,-,-
+819,190,kompres,"sulasih harum, miana hitam, sari kuning, jinten hitam",hidung,-,dikompres
+820,190,jamu,"akar pancarsona, santan kané (dibakar), garam uku",-,-,diminum
+821,190,bedak,"induk kunyit warangan, pamor bubuk, air jeruk",kaki,-,-
+822,190,boreh,"bawang adas, minyak lurungan",-,-,-
+823,190,sembur,"daun saksak, rempah-rempah",kepala sampai ke pangkal telinga,-,disembur
+824,190,suksuk,"bangket lengkuas, cendana, air",-,-,-
+825,190,sembur,"kotoran subatah maling (dinyahnyah), bunga sandat, bunga jepun, rempah-rempah",ubun-ubun,-,disembur
+826,191,jamu,"nyali itik, induk kunyit merah, air jeruk, garam arang",-,-,diminum
+827,191,oles,"umbi tunjung, ketan gajih, bawang adas",bahu,-,-
+828,191,kompres,"tombong, santan kané (direbus), pulasahi (dicampur)",hidung,-,dikompres
+829,191,bedak,"buah sirih, rempah-rempah",tubuh,-,-
+830,191,bedak,"kunyit, pamor bubuk, air jeruk",kaki,-,-
+831,191,urap,"damuh-damuh, bawang adas",punggung sampai ke bawah perut di atas kelamin,-,diurap
+832,191,boreh,"pucuk dapdap, cacing sirih, lempuyang, lengkuas, santan kané (semuanya dipanaskan)",-,-,-
+833,192,jamu,"bungkak kelapa mulung (dibakar), sari kuning (dicampur)",-,-,diminum
+834,193,kompres,"bungkak kelapa mulung (dibakar), sari kuning (dicampur)",hidung,-,dikompres
+835,193,jamu,"akar kasine, akar siligui, santan kané (dikukus), sari kuning (dicampur), garam uku",-,-,diminum
+836,193,bedak,"kerikan dapdap, rempah-rempah",tubuh,-,-
+837,193,urap,"batang tumbuhan merambat (tidak ada pohonnya), sari kuning, bawang adas",punggung sampai ke bawah perut di atas kelamin,-,diurap
+838,193,boreh,"pucuk sembung gantung, pucuk pule, lempuyang, santan kané (dipanaskan)",-,-,-
+839,194,jamu,"tumpang payuk (7 potong), bawang adas, garam arang",-,-,diminum
+840,194,obat,"daun kayu tai, bawang adas",luka yang berlubang,-,ditambal
+841,194,kompres,"akar teleng putih, kunyit, air jeruk linglang",hidung,-,dikompres
+842,194,bedak,"kulit pohon kepah, rempah-rempah",tubuh,-,-
+843,194,bedak,"kulit kayu bunga kamboja, kesuna jangu, air cuka",kaki,-,-
+844,194,pereda sakit,montong kecicang (dibakar),-,-,-
+845,194,air mandi,"daun lengkuas, daun asam, daun kelampuak putih (semua direbus)",-,-,dipakai mandi pada pagi hari
+846,195,kompres,"akar jeruk purut, akar limo, kunyit merah, air jeruk",hidung,-,dikompres
+847,195,jamu,"pucuk liligundi (11 pucuk), kesuna jangu, air cuka, garam uku",-,-,diminum
+848,195,sembur,"kulit kayu pule yang tumbuh di kuburan, kesuna jangu, rempah rempah",perut,-,disembur
+849,195,bedak,"daun liligundi yang sudah berwarna kuning (tua), kesuna jangu, air cuka (dicampur)","badan, kaki",-,-
+850,195,urap,"akar pohon bandrangan, bawang adas",punggung sampai ke bawah perut di atas kelamin,-,diurap
+851,195,boreh,"daun limo, daun linjong, empag, lempuyang, lengkuas, santan kané (dipanaskan)",-,-,-
+852,195,sembur,"kencur lanang, meswi, jebug arum, batang cengkeh",ubun-ubun sampai ke pangkal telinga,-,disembur
+853,196,jamu,"troktokan kelapa hijau (dipanggang), gula pasir (dicampur)",-,-,diminum
+854,196,sembur,"sembung gantung, lempuyang, temu tis, beras merah",tubuh,-,disembur
+855,196,urap,"umbi paspasan, umbi kasa, bawang adas",punggung sampai ke bawah perut di atas kelamin,-,-
+856,196,bedak,"wadori kuning, kesuna jangu, air cuka",kaki,-,-
+857,196,jamu,"cacing sirih, daun dapdap dumela, bawang (dibakar), minyak kelapa (dipanaskan)",-,-,diminum
+858,196,sembur,"uku-uku, rempah-rempah",kepala sampai ke pangkal telinga,-,disembur
+859,197,sembur,"kencur lanang, bunga kamboja, bunga kenanga, meswi, jebug arum, batang cengkeh",ubun-ubun,-,disembur
+860,197,sembur,merica jawa,mata,-,disembur
+861,197,kompres,"induk kunyit merah, pamor bubuk, air jeruk",hidung,-,dikompres
+862,198,kompres,"akar nasi-nasi, akar kaliapuh, kunyit merah, air jeruk",hidung,-,dikompres
+863,198,jamu,"ketan gajih, santan kané, bawang (dibakar), garam uku",-,-,diminun
+864,198,bedak,"buah kayu padi, rempah-rempah",tubuh,-,-
+865,198,bedak,"buah aba, kesuna jangu, air cuka",kaki,-,-
+866,198,urap,"daun beluntas, bawang adas",pinggang sampai ke bawah perut di atas kelamin,-,diurap
+867,198,boreh,"daun jerungga, daun limo, lempuyang, santan kané (dipanaskan)",-,-,-
+868,198,sembur,"kencur lanang, rempah-rempah",ubun-ubun sampai ke pangkal telinga,-,disembur
+869,198,obat pinggang,"dumelan dapdap, bawang (didinginkan)",pinggang,-,dipakai merendam pinggang pada pagi hari
+870,199,kompres,"induk kunyit, pamor bubuk, merica (3 buah), air jeruk",hidung,-,dikompres
+871,199,jamu,"pancer pule, kesuna jangu, garam arang",-,-,diminum
+872,199,urap,"kulit kayu kelor, kesuna jangu (hanya sedikit)",pinggang,-,diurap
+873,199,air mandi,"daun liligundi, daun lengkuas (direbus)",-,-,dipakai mandi pagi hari
+874,199,sembur,"isi kemiri, bawang adas",bawah perut di atas kelamin,-,disembur
+875,199,sembur,"uku-uku, rempah-rempah",ubun-ubun sampai ke pangkal telinga,-,disembur
+876,200,jamu,"layah omba, tuak lainan, gula pasir",-,-,dilulur terlebih dahulu
+877,200,bedak,"daun besar, kesuna jangu, air cuka (sedikit, dicampur)",tubuh,-,-
+878,200,air mandi,"daun awar-awar yang sudah berwarna kuning, daun kelampuak putih",-,-,dipakai mandi pada pagi hari (diusahakan bertepatan dengan hari Kajeng Kliwon)
+879,201,kompres,"jebug arum, sintok, meswi, ketumbar bolong (11 buah)",hidung,-,dikompres
+880,201,jamu,"kendal bituka (selengkapnya), kesuna jangu, air cuka",-,-,diminum
+881,201,bedak,"bulu bawon (seutuhnya), kesuna jangu, air cuka",tubuh,-,-
+882,201,air mandi,"daun tingulun, rempah-rempah (semuanya direbus)",-,-,dipakai mandi di pagi hari
+883,201,sembur,"bunga nagasari, kencur lanang, meswi, jebug arum, batang cengkeh, ketumbar bolong (11 buah)",ubun-ubun sampai ke pangkal telinga,-,disembur
+884,202,kompres,"akar jeruk purut, akar jeruk linglang, induk kunyit, pamor bubuk, air jeruk",hidung,-,dikompres
+885,202,jamu,"pancek kayu pule, garam (satu ceheng tertutup, selanjutnya dinyahnyah), merica (3 buah)",-,-,diminum
+886,202,bedak,"akar awar-awar yang tumbuh ditembok, akar waduri kuning, akar kesuna jangu, air cuka",tubuh sampai ke kaki,-,-
+887,202,urap,"embung bambu ampel, pulasai, bawang adas",pinggang sampai ke bawah perut di atas kelamin,-,diurap
+888,202,boreh,"daun jerungga yang masih muda, lempuyang lengkuas, santan kané (dipanaskan)",-,-,-
+889,202,sembur,"kencur lanang, rempah-rempah",ubun-ubun sampai ke pangkal telinga,-,disembur
+890,203,[1] bedak,"kapkap, mica, lengkuas kapur, kunyit merah, air jeruk (diperciki)",tubuh,-,-
+891,203,[1] kompres,"lengkuas kapur, induk kunyit, air jeruk",hidung,-,dikompres
+892,203,[1] jamu,"kapkap kumeros, induk kunyit, lengkuas (diiris), garam uku",-,-,diminum
+893,203,[1] boreh,"pucuk sembung gantung, pucuk pule, lengkuas, lempuyang, santan kané (dipanaskan)",-,-,-
+894,203,[2] obat,"induk kunyit, lunak tanek, minyak kelapa (dibakar)",bagian tubuh yang luka,-,"ditambal dengan robekan rajutan daun kelapa yang dipakai untuk atap dapur, jangan dibuka biarkan satu malam dua hari baru dibuka"
+895,203,[2] pereda sakit,daun asam yang masih muda (direbus),-,-,-
+896,204,kompres,"semua jenis akar bumbu-bumbu, kayu toktok, kaliapuh, kentut balu, uku-uku, kunyit, air jeruk",hidung,-,dikompres
+897,204,jamu,"rerambutan dapdap, rerambutan dalungdung, santan kané (dikukus), bawang dibakar, garam arang",-,-,diminum
+898,204,bedak,"kulit kayu kepah, rempah-rempah",tubuh,-,-
+899,204,bedak,"kulit kayu empag, kesuna jangu, air cuka",kaki,-,-
+900,204,urap,"daun damuh-damuh, bawang adas",pada pinggang sampai kebawah perut diatas kelamin,-,diurap
+901,204,boreh,"lublub empag, lempuyang, minyak kelapa (semuanya dipanaskan)",-,-,-
+902,204,sembur,"kencur lanang, jebugarum, meswi, batang cengkeh, ketumbar bolong (3 biji)",ubun-ubun sampai kepangkal telinga,-,disembur
+903,205,jamu,"ketan gajih, adonan kelapa (dibakar), sari kuning, garam arang",-,-,-
+904,205,bedak,"kerikan juwet putih, rempah-rempah",tubuh,-,-
+905,205,bedak,"kulit pohon kamboja, kesuna jangu, air cuka",kaki,-,-
+906,205,oles,"sumpitan sirih, daun kecemcem muda, lunak tanek, adas, ketumbar bolong (3 biji), minyak kelapa (dibakar)",kontol,-,-
+907,205,obat baseh,air cuka (direbus),-,-,-
+908,205,boreh,"cacing sirih, lempuyang, minyak kelapa (semua dipanaskan)",-,-,-
+909,206,jamu,"akar lempuyak, akar jeruk, lengkuas, air jeruk, garam arang",-,-,-
+910,206,bedak,"kerikan majagawu, rempah-rempah",tubuh,-,-
+911,206,bedak,"kulit langsat tulung, kesuna jangu, air cuka",kaki,-,-
+912,206,sembur,"kapkap kumeros, induk kunyit (3 iris), rempah-rempah",perut,-,disembur
+913,206,urap,"pangkal silagui lanang, pulasai, bawang adas",pinggang sampai ke bawah perut diatas kelamin,-,diurap
+914,206,boreh,"pucuk sembung gantang, pucuk pule, lempuyang, lengkuas, temu tis, santan kané (dipanaskan)",-,-,-
+915,207,jamu,"tombong, santan kané (dikukus), bawang (dibakar dan dicampur), garam arang",-,-,diminum
+916,207,sembur,"kulit panca petak (dipanggang), ketumbar, lengkuas",mulut,-,disembur
+917,207,air,kulit gatep (direbus),-,-,dikumur
+918,207,pereda sakit,air cuka (direbus),mulut,-,-
+919,207,bedak,"kerikan dapdap, rempah-rempah",tubuh,-,-
+920,207,bedak,"akar teter, kesuna jangu, air cuka",kaki,-,-
+921,207,boreh,"pucuk belimbing besi, daun ancak, bawang, minyak kelapa (semuanya dipanaskan)",-,-,-
+922,208,kompres,"induk kunyit, pamor bubuk, air jeruk",hidung,-,dikompres
+923,208,bedak,"kulit kayu tingulun, rempah-rempah",tubuh,-,-
+924,208,bedak,"tulang tikus putih, tulang penyu bersisik, sarang burung puyuh, akar labu merah puyuh, kesuna jangu, air cuka",kaki,-,-
+925,208,urap,"daun liligundi yang berwarna kuning, bangle, jahe pahit",pinggang,-,diurap
+926,208,pereda sakit,"liligundi, cabai dakep (semuanya direbus)",-,-,-
+927,208,boreh,"pucuk sembung gantung, pucuk dapdap, lempuyang, lengkuas, santan kané (dipanaskan)",-,-,-
+928,209,kompres,"akar bunga teleng putih, induk kunyit, air jeruk",hidung,-,-
+929,209,bedak,"jahe pahit, lempuyang, beras merah, kesuna jangu",tubuh,-,-
+930,209,sembur,"akar teter, kesuna jangu, rempah-rempah",mulut,-,-
+931,209,urap,"kemiri, bawang adas",pinggang sampai ke bawah perut di atas kelamin,-,diurap
+932,209,air mandi,"daun liligundi, cabai dakep",-,-,dipakai mandi di pagi hari
+933,210,kompres,"beligo harum, temu tis (dikuskus), bawang adas (dibakar)",hidung,-,dikompres
+934,210,jamu,"air perasan kecemcem putih, santan kané (dikuskus), bawang (dibakar), garam-uku",-,-,diminum
+935,210,minum,"kulit gatep, sari kuning, adas (direbus, dicampur)",-,-,diminum
+936,210,pijat,"daun sembung gantung, lempuyang, beras merah",-,-,-
+937,210,orang-orangan,"akar paspasan, bawang adas",-,-,-
+938,210,oles,"umbi kelongkang, santan kané, bawang (sudah dibakar)",mulut,-,-
+939,210,bedak,"kulit kayu juwet, kunyit, gambiran anom",tubuh,-,-
+940,210,bedak,"akar wadori kuning, kesuna jangu, air cuka",kaki,-,-
+941,210,urap,"kulit turi putih, bawang adas",pinggang sampai ke bawah perut di atas kelamin,-,diurap
+942,210,air mandi,"pucuk daun dapdap, cabai bun dakep (direbus)",-,-,dipakai mandi saat menjelang pagi
+943,210,sembur,"kotoran subatah maling, bunga kamboja, bunga kenanga, kerikan majegau, rempah-rempah",ubun-ubun,-,"disembur sebanyak tiga kali keprusan dengan melafalkan mentra, sebagai sarananya adalah katepuk tegah"

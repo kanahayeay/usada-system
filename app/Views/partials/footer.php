@@ -8,7 +8,6 @@
         <div>
             <h4 class="label">Eksplorasi</h4>
             <ul>
-                <li><a href="<?= base_url('/cari-tanggal') ?>">Cari Berdasarkan Tanggal</a></li>
                 <li><a href="<?= base_url('/cari-bahan') ?>">Cari Bahan Herbal</a></li>
                 <li><a href="<?= base_url('/struktur') ?>">Struktur & Detail Informasi Usada</a></li>
                 <li><a href="<?= base_url('/statistik') ?>">Statistik Data Usada</a></li>

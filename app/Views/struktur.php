@@ -1,6 +1,22 @@
 <?= $this->extend('layouts/main') ?>
 
 <?= $this->section('content') ?>
+    <?php
+    /**
+     * @var string $title
+     * @var string $active
+     * @var array $opsi
+     * @var array $filter
+     * @var int $totalSemua
+     * @var int $totalHasil
+     * @var array $daftar
+     * @var int $halaman
+     * @var int $jumlahHalaman
+     * @var array|null $terpilih
+     * @var array|null $sebelumnya
+     * @var array|null $berikutnya
+     */
+    ?>
 <?php
 // Bangun URL dengan mempertahankan filter yang sedang aktif.
 $url = function (array $tambah = []) use ($filter): string {
@@ -11,26 +27,8 @@ $u = $terpilih;
 ?>
 
 <section class="container page-head">
-    <span class="badge badge--soft-green"><i class="bi bi-journal-text"></i> Struktur Pengetahuan Naskah Usada</span>
     <h1>Struktur & Detail Informasi Usada</h1>
     <p>Jelajahi hubungan antara penanggalan Pawukon, penyakit, gejala, pengobatan, ritual, dan teks asli dalam <strong>Usada Tenung Wraspatikalpa</strong>.</p>
-</section>
-
-<section class="container">
-    <div class="card card--white">
-        <span class="label label--brown">Sistem Pengetahuan Terpadu</span>
-        <h2>Eksplorasi Struktur Usada</h2>
-        <p class="muted">Hubungan antar dimensi pengetahuan dalam naskah:</p>
-        <div class="flow">
-            <?php foreach ($dimensi as $i => [$ikon, $judul, $sub]): ?>
-                <?php if ($i > 0): ?><i class="bi bi-arrow-right flow__arrow"></i><?php endif; ?>
-                <div class="flow__item <?= $i === $dimensiAktif ? 'is-active' : '' ?>">
-                    <i class="bi <?= esc($ikon, 'attr') ?>"></i>
-                    <span><strong><?= esc($judul) ?></strong><small><?= esc($sub) ?></small></span>
-                </div>
-            <?php endforeach; ?>
-        </div>
-    </div>
 </section>
 
 <section class="container">
@@ -125,6 +123,13 @@ $u = $terpilih;
                 </div>
 
                 <div class="box">
+                    <h3 class="box__title"><i class="bi bi-flower1"></i> Ritual & Upakara Penyeimbang</h3>
+                    <p class="<?= $u['ritual'] ? '' : 'kosong' ?>"><?= teks_atau_strip($u['ritual']) ?></p>
+                </div>
+            </div>
+
+            <div class="stack">
+                <div class="box">
                     <h3 class="box__title"><i class="bi bi-capsule"></i> Pengobatan & Formulasi Herbal</h3>
                     <?php if ($u['pengobatan']): ?>
                         <ul class="obat-list">
@@ -137,76 +142,22 @@ $u = $terpilih;
                     <?php endif; ?>
                 </div>
             </div>
+        </div>
 
-            <div class="stack">
-                <div class="box">
-                    <h3 class="box__title"><i class="bi bi-calendar3"></i> Konteks Penanggalan Kosmologis</h3>
-                    <div class="three">
-                        <div class="mini"><small>Wuku</small><strong><?= esc($u['wuku']) ?></strong><small>Wuku ke-<?= esc($u['wuku_no']) ?></small></div>
-                        <div class="mini"><small>Saptawara</small><strong><?= esc($u['hari']) ?></strong><small><?= esc(nama_saptawara($u['hari'])) ?></small></div>
-                        <div class="mini"><small>Pancawara</small><strong><?= esc($u['pancawara']) ?></strong><small><?= esc(arah_pancawara($u['pancawara'])) ?></small></div>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <h3 class="box__title"><i class="bi bi-flower1"></i> Ritual & Upakara Penyeimbang</h3>
-                    <p class="<?= $u['ritual'] ? '' : 'kosong' ?>"><?= teks_atau_strip($u['ritual']) ?></p>
-                </div>
-
-                <div class="box">
-                    <h3 class="box__title"><i class="bi bi-journal-bookmark"></i> Referensi Naskah Lontar</h3>
-                    <dl class="refs small">
-                        <dt>Naskah:</dt><dd>Usada Tenung Wraspatikalpa</dd>
-                        <dt>Posisi lembar:</dt><dd><?= esc(lembar_label($u)) ?></dd>
-                        <dt>Urutan pawukon:</dt><dd>Hari ke-<?= esc($u['hari_ke']) ?></dd>
-                    </dl>
-                    <div class="row-between folio">
-                        <?php if ($sebelumnya): ?><a href="<?= esc(base_url('struktur?id=' . $sebelumnya['id']) . '#detail', 'attr') ?>"><i class="bi bi-chevron-left"></i> <?= esc($sebelumnya['wuku']) ?> <?= esc($sebelumnya['hari']) ?></a><?php else: ?><span></span><?php endif; ?>
-                        <?php if ($berikutnya): ?><a href="<?= esc(base_url('struktur?id=' . $berikutnya['id']) . '#detail', 'attr') ?>"><?= esc($berikutnya['wuku']) ?> <?= esc($berikutnya['hari']) ?> <i class="bi bi-chevron-right"></i></a><?php endif; ?>
-                    </div>
-                </div>
-            </div>
+        <div class="row-between folio">
+            <?php if ($sebelumnya): ?><a href="<?= esc(base_url('struktur?id=' . $sebelumnya['id']) . '#detail', 'attr') ?>"><i class="bi bi-chevron-left"></i> <?= esc($sebelumnya['wuku']) ?> <?= esc($sebelumnya['hari']) ?></a><?php else: ?><span></span><?php endif; ?>
+            <?php if ($berikutnya): ?><a href="<?= esc(base_url('struktur?id=' . $berikutnya['id']) . '#detail', 'attr') ?>"><?= esc($berikutnya['wuku']) ?> <?= esc($berikutnya['hari']) ?> <i class="bi bi-chevron-right"></i></a><?php endif; ?>
         </div>
     </div>
 </section>
 
 <section class="container" id="transkripsi">
     <div class="card card--mint">
-        <span class="label label--green"><i class="bi bi-patch-check"></i> Preservasi filologi autentik</span>
         <h2>Transkripsi Teks Asli Lontar</h2>
-        <p class="muted">Alih bahasa naskah sebagaimana tercatat, termasuk penanda lembar.</p>
         <details class="lanjut">
-            <summary class="btn btn--inverted"><i class="bi bi-book"></i> Lihat Transkripsi Teks Asli Lontar</summary>
+            <summary class="btn btn--inverted"><i class="bi bi-book"></i> Lihat Transkripsi</summary>
             <div class="teks-asli"><?= esc($u['teks_asli']) ?></div>
         </details>
-    </div>
-</section>
-
-<section class="container">
-    <div class="card card--white">
-        <span class="label label--brown">Pemetaan rantai kausalitas</span>
-        <h2>Visualisasi Alur Relasi Pengetahuan Usada</h2>
-        <p class="muted">Rantai penanggalan, penyakit, pengobatan, dan ritual dalam satu entri:</p>
-        <?php
-        $rantai = [
-            ['Wuku', $u['wuku']],
-            ['Saptawara', $u['hari']],
-            ['Pancawara', $u['pancawara']],
-            ['Penyakit', $u['nama_penyakit'] ?: '-'],
-            ['Pengobatan', count($u['pengobatan']) . ' ramuan'],
-            ['Ritual', $u['ritual'] ? 'Ada' : '-'],
-            ['Lembar', lembar_label($u)],
-        ];
-        ?>
-        <div class="chain">
-            <?php foreach ($rantai as $i => [$judul, $isi]): ?>
-                <?php if ($i > 0): ?><i class="bi bi-arrow-right flow__arrow"></i><?php endif; ?>
-                <div class="chain__item <?= $i === 3 ? 'is-active' : ($i === 6 ? 'is-brown' : '') ?>">
-                    <small><?= $i + 1 ?>. <?= esc($judul) ?></small>
-                    <strong><?= esc($isi) ?></strong>
-                </div>
-            <?php endforeach; ?>
-        </div>
     </div>
 </section>
 <?php endif; ?>

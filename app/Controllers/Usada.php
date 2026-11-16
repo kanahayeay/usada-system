@@ -7,6 +7,7 @@ use App\Models\UsadaModel;
 class Usada extends BaseController
 {
     private const PER_HALAMAN = 9;
+    private const PER_HALAMAN_BAHAN = 10;
 
     public function index(): string
     {
@@ -125,6 +126,50 @@ class Usada extends BaseController
             'terpilih'      => $terpilih,
             'sebelumnya'    => $sebelumnya,
             'berikutnya'    => $berikutnya,
+        ]);
+    }
+
+    public function cariBahan(): string
+    {
+        helper('usada');
+
+        $model = new UsadaModel();
+
+        $keyword = trim((string) $this->request->getGet('q'));
+
+        $hasil = $keyword !== ''
+            ? $model->cariBahan($keyword)
+            : [];
+
+        // Pagination Cari Bahan
+        $jumlahHalaman = max(
+            1,
+            (int) ceil(count($hasil) / self::PER_HALAMAN_BAHAN)
+        );
+
+        $halaman = min(
+            max(1, (int) $this->request->getGet('hal')),
+            $jumlahHalaman
+        );
+
+        $daftar = array_slice(
+            $hasil,
+            ($halaman - 1) * self::PER_HALAMAN_BAHAN,
+            self::PER_HALAMAN_BAHAN
+        );
+
+        return view('cari_bahan', [
+            'title'         => 'Cari Bahan Herbal',
+            'active'        => 'bahan',
+            'keyword'       => $keyword,
+
+            // Data hasil yang ditampilkan
+            'hasil'         => $daftar,
+            'total'         => count($hasil),
+
+            // Data pagination
+            'halaman'       => $halaman,
+            'jumlahHalaman' => $jumlahHalaman,
         ]);
     }
 }
