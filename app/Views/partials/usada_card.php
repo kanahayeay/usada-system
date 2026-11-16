@@ -1,4 +1,24 @@
 <?php
+/**
+ * Kartu daftar Usada.
+ *
+ * @var array{
+ *     id: int,
+ *     wuku: string,
+ *     hari: string,
+ *     pancawara: string,
+ *     nama_penyakit: ?string,
+ *     gejala: ?string,
+ *     lembar_awal: ?string,
+ *     lembar_akhir: ?string
+ * } $u
+ *
+ * @var bool $aktif
+ * @var string $urlDetail
+ */
+?>
+
+<?php
 /** Kartu daftar. Butuh $u (satu entri), $aktif (bool), $urlDetail (string). */
 ?>
 <article class="usada-card <?= $aktif ? 'is-active' : '' ?>">
