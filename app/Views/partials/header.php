@@ -2,7 +2,6 @@
 $active = $active ?? '';
 $menu = [
     'beranda'  => ['Beranda', '/'],
-    'tanggal'  => ['Cari Tanggal', '/cari-tanggal'],
     'bahan'    => ['Cari Bahan', '/cari-bahan'],
     'struktur' => ['Struktur & Detail Usada', '/struktur'],
     'statistik'=> ['Statistik', '/statistik'],
@@ -23,5 +22,10 @@ $menu = [
         <?php endforeach; ?>
     </nav>
 
-    <button class="icon-btn icon-btn--brown" aria-label="Akun"><i class="bi bi-person"></i></button>
+    <a href="<?= site_url('admin/login') ?>"
+        class="icon-btn icon-btn--brown"
+        aria-label="Login Admin"
+        title="Login Admin">
+            <i class="bi bi-person"></i>
+    </a>
 </header>
