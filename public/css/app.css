@@ -556,3 +556,680 @@ main { display: flex; flex-direction: column; gap: var(--s6); padding-block: var
 .lanjut summary { display: inline-flex; list-style: none; cursor: pointer; }
 .lanjut summary::-webkit-details-marker { display: none; }
 .teks-asli { margin-top: 16px; padding: 20px; max-height: 480px; overflow: auto; background: var(--white); border-radius: var(--r-md); font-size: .9rem; white-space: pre-line; }
+
+
+/* =========================================================
+   HALAMAN STATISTIK USADA
+   Seluruh selector menggunakan prefix stat-
+   ========================================================= */
+
+/* ===== Header halaman ===== */
+.stat-page-head {
+  gap: var(--s3);
+  margin-top: var(--s4);
+}
+
+.stat-page-head h1 {
+  margin: var(--s2) 0;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.stat-page-head > p {
+  max-width: 72ch;
+  line-height: 1.7;
+}
+
+/* ===== Filter Statistik ===== */
+.stat-filter {
+  gap: var(--s4);
+  border: 1px solid var(--line);
+}
+
+.stat-filter > .row-between {
+  align-items: center;
+}
+
+.stat-filter__grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: end;
+  margin-top: 0;
+}
+
+.stat-filter__grid label {
+  min-width: 0;
+}
+
+.stat-filter__grid select {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  transition: border-color .15s, box-shadow .15s;
+}
+
+.stat-filter__grid select:focus {
+  outline: 0;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--secondary-soft);
+}
+
+.stat-filter__action {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  align-items: flex-start;
+}
+
+.stat-filter__action .btn {
+  width: 100%;
+}
+
+.stat-active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s2);
+  padding-top: var(--s3);
+  border-top: 1px solid var(--line);
+}
+
+.stat-active-filters .label {
+  margin-right: var(--s1);
+}
+
+/* ===== Ringkasan metrik ===== */
+.stat-summary .list-head {
+  margin-bottom: var(--s4);
+}
+
+.stat-summary .list-head h2 {
+  font-size: var(--fs-xl);
+}
+
+.stat-metric-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--s4);
+}
+
+.stat-metric {
+  position: relative;
+  min-width: 0;
+  min-height: 174px;
+  padding: var(--s5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--s2);
+  border: 1px solid var(--line);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.stat-metric:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(18, 41, 31, .09);
+}
+
+.stat-metric__icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: var(--s1);
+  border-radius: var(--r-md);
+  background: var(--surface-2);
+  color: var(--primary-dark);
+  font-size: 1.2rem;
+}
+
+.stat-metric:nth-child(even) .stat-metric__icon {
+  background: var(--secondary-soft);
+  color: var(--secondary);
+}
+
+.stat-metric .label {
+  line-height: 1.4;
+}
+
+.stat-metric strong {
+  color: var(--neutral);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-metric small {
+  margin-top: auto;
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+  line-height: 1.45;
+}
+
+/* ===== Distribusi kalender ===== */
+.stat-distributions .list-head {
+  margin-bottom: var(--s4);
+}
+
+.stat-distributions .list-head h2 {
+  font-size: var(--fs-xl);
+}
+
+.stat-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: var(--s4);
+}
+
+.stat-chart-card {
+  min-width: 0;
+  padding: var(--s5);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s4);
+}
+
+.stat-chart-card__head {
+  min-height: 42px;
+  align-items: center;
+}
+
+.stat-chart-card__head h3 {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  min-width: 0;
+  font-size: var(--fs-md);
+  line-height: 1.4;
+}
+
+.stat-chart-card__head h3 i {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.stat-chart-card--saptawara .stat-chart-card__head h3 i {
+  color: var(--secondary);
+}
+
+.stat-chart-card--pancawara .stat-chart-card__head h3 i {
+  color: var(--primary-dark);
+}
+
+.stat-chart-card__head .badge {
+  flex-shrink: 0;
+}
+
+.stat-bar-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s3);
+  max-height: 440px;
+  overflow-y: auto;
+  padding-right: var(--s2);
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+.stat-bar-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.stat-bar-list::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: var(--r-pill);
+}
+
+.stat-bar-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s1);
+  min-width: 0;
+}
+
+.stat-bar-item__label {
+  gap: var(--s2);
+  font-size: var(--fs-sm);
+  line-height: 1.4;
+}
+
+.stat-bar-item__label span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: var(--text);
+}
+
+.stat-bar-item__label strong {
+  flex-shrink: 0;
+  color: var(--neutral);
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-bar {
+  width: 100%;
+  height: 9px;
+  overflow: hidden;
+  border-radius: var(--r-pill);
+  background: var(--surface-2);
+}
+
+.stat-bar__fill {
+  height: 100%;
+  min-width: 0;
+  border-radius: inherit;
+  background: var(--primary);
+  transition: width .35s ease;
+}
+
+.stat-bar__fill--brown {
+  background: var(--secondary);
+}
+
+.stat-empty {
+  min-height: 180px;
+  justify-content: center;
+  color: var(--text-muted);
+}
+
+.stat-empty > i {
+  font-size: 1.8rem;
+  color: var(--primary);
+}
+
+/* ===== Jenis pengobatan ===== */
+.stat-types > .card,
+.stat-completeness > .card,
+.stat-glossary > .card {
+  border: 1px solid var(--line);
+}
+
+.stat-types .list-head {
+  margin-bottom: var(--s5);
+}
+
+.stat-types .list-head h2,
+.stat-completeness .list-head h2 {
+  font-size: var(--fs-xl);
+}
+
+.stat-type-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s4) var(--s6);
+}
+
+.stat-type-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  min-width: 0;
+}
+
+.stat-type-item__label {
+  gap: var(--s3);
+  font-size: var(--fs-sm);
+}
+
+.stat-type-item__label span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.stat-type-item__label strong {
+  flex-shrink: 0;
+  color: var(--neutral);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ===== Kelengkapan data ===== */
+.stat-completeness .list-head {
+  margin-bottom: var(--s5);
+}
+
+.stat-completeness-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s5);
+}
+
+.stat-completeness-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  min-width: 0;
+  padding: var(--s4);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+}
+
+.stat-completeness-item__head {
+  align-items: center;
+}
+
+.stat-completeness-item__head h3 {
+  font-size: var(--fs-md);
+  font-weight: 700;
+}
+
+.stat-completeness-item__head strong {
+  flex-shrink: 0;
+  color: var(--primary-dark);
+  font-size: var(--fs-lg);
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-completeness-bar {
+  width: 100%;
+  height: 12px;
+  overflow: hidden;
+  border-radius: var(--r-pill);
+  background: var(--secondary-soft);
+}
+
+.stat-completeness-bar__complete {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--primary);
+  transition: width .35s ease;
+}
+
+.stat-completeness-item__meta {
+  gap: var(--s2);
+  flex-wrap: wrap;
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+}
+
+.stat-completeness-item__meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+}
+
+.stat-completeness-item__meta span:first-child i {
+  color: var(--primary);
+}
+
+.stat-completeness-item__meta span:last-child i {
+  color: var(--secondary);
+}
+
+.stat-completeness-note {
+  margin-top: var(--s4);
+  line-height: 1.6;
+}
+
+/* ===== Temuan statistik ===== */
+.stat-insights > .card {
+  gap: var(--s3);
+  border: 1px solid var(--line);
+}
+
+.stat-insights h2 {
+  font-size: var(--fs-xl);
+}
+
+.stat-insight-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s3);
+  width: 100%;
+  margin-top: var(--s2);
+}
+
+.stat-insight {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s3);
+  min-width: 0;
+  padding: var(--s4);
+  background: rgba(255, 255, 255, .72);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+}
+
+.stat-insight > i {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--r-sm);
+  background: var(--surface-2);
+  color: var(--primary-dark);
+  font-size: 1.1rem;
+}
+
+.stat-insight > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s1);
+  min-width: 0;
+}
+
+.stat-insight .label {
+  line-height: 1.45;
+}
+
+.stat-insight strong {
+  color: var(--neutral);
+  font-size: var(--fs-lg);
+  overflow-wrap: anywhere;
+}
+
+.stat-insight p {
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}
+
+/* ===== Kondisi tanpa data ===== */
+.stat-no-data {
+  gap: var(--s3);
+  border: 1px solid var(--line);
+}
+
+.stat-no-data > i {
+  font-size: 2.4rem;
+  color: var(--primary);
+}
+
+.stat-no-data h2 {
+  font-size: var(--fs-xl);
+}
+
+.stat-no-data p {
+  max-width: 55ch;
+}
+
+/* ===== Glosarium placeholder ===== */
+.stat-glossary > .card {
+  gap: var(--s4);
+}
+
+.stat-glossary h2 {
+  margin-top: var(--s2);
+  font-size: var(--fs-xl);
+}
+
+.stat-glossary .row-between {
+  align-items: flex-start;
+}
+
+.stat-glossary__placeholder {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  padding: var(--s5);
+  border: 1px dashed var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}
+
+.stat-glossary__placeholder i {
+  flex-shrink: 0;
+  color: var(--secondary);
+  font-size: 1.4rem;
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 1024px) {
+  .stat-metric-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .stat-chart-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stat-chart-card--wuku {
+    grid-column: 1 / -1;
+  }
+
+  .stat-chart-card--wuku .stat-bar-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--s5);
+  }
+
+  .stat-filter__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 720px) {
+  .stat-page-head {
+    margin-top: var(--s2);
+  }
+
+  .stat-filter {
+    padding: var(--s4);
+  }
+
+  .stat-filter__grid {
+    grid-template-columns: 1fr;
+    gap: var(--s3);
+  }
+
+  .stat-filter__action {
+    align-items: stretch;
+  }
+
+  .stat-filter__action .btn {
+    width: 100%;
+  }
+
+  .stat-active-filters {
+    align-items: flex-start;
+  }
+
+  .stat-active-filters .label {
+    width: 100%;
+  }
+
+  .stat-metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--s3);
+  }
+
+  .stat-metric {
+    min-height: 160px;
+    padding: var(--s4);
+  }
+
+  .stat-metric__icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .stat-metric .label {
+    font-size: .7rem;
+  }
+
+  .stat-metric strong {
+    font-size: 1.55rem;
+  }
+
+  .stat-chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-chart-card--wuku {
+    grid-column: auto;
+  }
+
+  .stat-chart-card--wuku .stat-bar-list {
+    display: flex;
+  }
+
+  .stat-chart-card {
+    padding: var(--s4);
+  }
+
+  .stat-bar-list {
+    max-height: 380px;
+  }
+
+  .stat-type-list,
+  .stat-completeness-list,
+  .stat-insight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-types > .card,
+  .stat-completeness > .card,
+  .stat-glossary > .card {
+    padding: var(--s5) var(--s4);
+  }
+
+  .stat-glossary .row-between {
+    flex-direction: column;
+  }
+
+  .stat-glossary__placeholder {
+    padding: var(--s4);
+  }
+}
+
+/* ===== Mobile kecil ===== */
+@media (max-width: 380px) {
+  .stat-metric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-metric {
+    min-height: 0;
+  }
+
+  .stat-metric small {
+    margin-top: 0;
+  }
+
+  .stat-chart-card__head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .stat-completeness-item__head h3 {
+    font-size: var(--fs-sm);
+  }
+}
+
+/* ===== Preferensi aksesibilitas ===== */
+@media (prefers-reduced-motion: reduce) {
+  .stat-metric,
+  .stat-bar__fill,
+  .stat-completeness-bar__complete {
+    transition: none;
+  }
+
+  .stat-metric:hover {
+    transform: none;
+  }
+}

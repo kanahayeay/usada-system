@@ -7,3 +7,4 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('struktur', 'Usada::index');
+$routes->get('statistik', 'Statistik::index');
