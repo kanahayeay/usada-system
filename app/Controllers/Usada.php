@@ -13,6 +13,7 @@ class Usada extends BaseController
         helper('usada');
         $model = new UsadaModel();
 
+        // Mengambil parameter filter dari URL.
         $filter = [
             'wuku'      => trim((string) $this->request->getGet('wuku')),
             'hari'      => trim((string) $this->request->getGet('hari')),
@@ -20,18 +21,67 @@ class Usada extends BaseController
             'q'         => trim((string) $this->request->getGet('q')),
         ];
 
-        $hasil         = $model->filter($filter);
-        $jumlahHalaman = max(1, (int) ceil(count($hasil) / self::PER_HALAMAN));
-        $halaman       = min(max(1, (int) $this->request->getGet('hal')), $jumlahHalaman);
-        $daftar        = array_slice($hasil, ($halaman - 1) * self::PER_HALAMAN, self::PER_HALAMAN);
+        // Mengambil data berdasarkan filter.
+        $hasil = $model->filter($filter);
 
-        // Entri yang detailnya ditampilkan: ?id=..., atau entri pertama pada halaman ini.
-        $id       = (int) $this->request->getGet('id');
-        $terpilih = ($id ? $model->cari($id) : null) ?? ($daftar[0] ?? null);
+        // Menghitung jumlah halaman.
+        $jumlahHalaman = max(
+            1,
+            (int) ceil(count($hasil) / self::PER_HALAMAN)
+        );
+
+        // Memastikan nomor halaman berada dalam rentang yang valid.
+        $halaman = min(
+            max(1, (int) $this->request->getGet('hal')),
+            $jumlahHalaman
+        );
+
+        // Mengambil data sesuai halaman aktif.
+        $daftar = array_slice(
+            $hasil,
+            ($halaman - 1) * self::PER_HALAMAN,
+            self::PER_HALAMAN
+        );
+
+        // Memilih entri berdasarkan ID yang tersedia pada halaman aktif.
+        $id = (int) $this->request->getGet('id');
+        $indeksTerpilih = null;
+
+        foreach ($daftar as $indeks => $entri) {
+            if ($id > 0 && (int) $entri['id'] === $id) {
+                $indeksTerpilih = $indeks;
+                break;
+            }
+        }
+
+        // Jika ID tidak ditemukan, pilih entri pertama pada halaman aktif.
+        if ($indeksTerpilih === null && !empty($daftar)) {
+            $indeksTerpilih = 0;
+        }
+
+        $terpilih = $indeksTerpilih !== null
+            ? $daftar[$indeksTerpilih]
+            : null;
+
+        // Navigasi mengikuti urutan hasil filter pada halaman aktif.
+        $sebelumnya = (
+            $indeksTerpilih !== null &&
+            $indeksTerpilih > 0
+        )
+            ? $daftar[$indeksTerpilih - 1]
+            : null;
+
+        $berikutnya = (
+            $indeksTerpilih !== null &&
+            isset($daftar[$indeksTerpilih + 1])
+        )
+            ? $daftar[$indeksTerpilih + 1]
+            : null;
 
         return view('struktur', [
             'title'         => 'Struktur & Detail Usada',
             'active'        => 'struktur',
+
             'dimensi'       => [
                 ['bi-calendar3', 'Wuku', 'Siklus 30'],
                 ['bi-brightness-high', 'Saptawara', '7 Hari'],
@@ -41,21 +91,40 @@ class Usada extends BaseController
                 ['bi-flower1', 'Ritual', 'Sesaji & Mantra'],
                 ['bi-book', 'Teks Asli', 'Naskah Lontar'],
             ],
+
             'dimensiAktif'  => 3,
+
             'opsi'          => [
                 'wuku'      => $model->daftarWuku(),
-                'hari'      => ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'],
-                'pancawara' => ['Umanis', 'Pahing', 'Pwon', 'Wage', 'Kliwon'],
+                'hari'      => [
+                    'Minggu',
+                    'Senin',
+                    'Selasa',
+                    'Rabu',
+                    'Kamis',
+                    'Jumat',
+                    'Sabtu',
+                ],
+                'pancawara' => [
+                    'Umanis',
+                    'Pahing',
+                    'Pwon',
+                    'Wage',
+                    'Kliwon',
+                ],
             ],
+
             'filter'        => $filter,
             'totalSemua'    => $model->total(),
             'totalHasil'    => count($hasil),
+
             'daftar'        => $daftar,
             'halaman'       => $halaman,
             'jumlahHalaman' => $jumlahHalaman,
+
             'terpilih'      => $terpilih,
-            'sebelumnya'    => $terpilih ? $model->cari($terpilih['id'] - 1) : null,
-            'berikutnya'    => $terpilih ? $model->cari($terpilih['id'] + 1) : null,
+            'sebelumnya'    => $sebelumnya,
+            'berikutnya'    => $berikutnya,
         ]);
     }
 }

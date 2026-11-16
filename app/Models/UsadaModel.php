@@ -2,71 +2,207 @@
 
 namespace App\Models;
 
-/**
- * DATA CONTOH. Membaca app/Data/usada.json.
- * Saat backend siap, ganti ISI method di bawah dengan query database,
- * tapi PERTAHANKAN nama method dan bentuk data yang dikembalikan
- * (lihat docs/KONTRAK_DATA.md). Controller dan view tidak perlu diubah.
- */
-class UsadaModel
-{
-    private array $semua = [];
+use CodeIgniter\Model;
 
-    public function __construct()
+class UsadaModel extends Model
+{
+    protected $table = 'entri_usada';
+    protected $primaryKey = 'id_entri';
+    protected $returnType = 'array';
+
+    /**
+     * Mengubah nilai kosong atau tanda "-" menjadi null.
+     */
+    private function nilaiAtauNull($nilai): ?string
     {
-        $file = APPPATH . 'Data/usada.json';
-        $this->semua = is_file($file) ? json_decode(file_get_contents($file), true) : [];
+        if ($nilai === null) {
+            return null;
+        }
+
+        $nilai = trim((string) $nilai);
+
+        return ($nilai === '' || $nilai === '-') ? null : $nilai;
     }
 
-    /** Semua entri (untuk daftar kartu). */
+    /**
+     * Mengambil data entri beserta informasi kalender.
+     */
+    private function queryEntri()
+    {
+        return $this->db->table('entri_usada e')
+            ->select([
+                'e.id_entri',
+                'e.id_wuku',
+                'e.id_saptawara',
+                'e.id_pancawara',
+                'e.nama_penyakit',
+                'e.gejala',
+                'e.penyebab',
+                'e.ritual',
+                'e.teks_asli',
+                'e.lembar_awal',
+                'e.lembar_akhir',
+                'w.nama_wuku',
+                's.nama_saptawara',
+                'p.nama_pancawara',
+            ])
+            ->join('wuku w', 'w.id_wuku = e.id_wuku')
+            ->join('saptawara s', 's.id_saptawara = e.id_saptawara')
+            ->join('pancawara p', 'p.id_pancawara = e.id_pancawara');
+    }
+
+    /**
+     * Membentuk array sesuai kontrak data frontend.
+     */
+    private function bentukData(array $rows): array
+    {
+        if (empty($rows)) {
+            return [];
+        }
+
+        // Ambil seluruh pengobatan untuk entri yang ditemukan.
+        $ids = array_column($rows, 'id_entri');
+
+        $daftarPengobatan = $this->db
+            ->table('pengobatan')
+            ->whereIn('id_entri', $ids)
+            ->orderBy('id_pengobatan', 'ASC')
+            ->get()
+            ->getResultArray();
+
+        // Kelompokkan pengobatan berdasarkan id_entri.
+        $pengobatanPerEntri = [];
+
+        foreach ($daftarPengobatan as $p) {
+            $pengobatanPerEntri[$p['id_entri']][] = [
+                'jenis'        => $this->nilaiAtauNull($p['jenis']),
+                'bahan'        => $this->nilaiAtauNull($p['bahan_asli']),
+                'bagian_tubuh' => $this->nilaiAtauNull($p['bagian_tubuh']),
+                'keterangan'   => $this->nilaiAtauNull($p['keterangan']),
+                'cara'         => $this->nilaiAtauNull($p['cara']),
+            ];
+        }
+
+        $hasil = [];
+
+        foreach ($rows as $row) {
+            $id = (int) $row['id_entri'];
+
+            $hasil[] = [
+                'id'            => $id,
+                'hari_ke'       => $id,
+                'wuku'          => $row['nama_wuku'],
+                'wuku_no'       => (int) $row['id_wuku'],
+                'hari'          => $row['nama_saptawara'],
+                'pancawara'     => $row['nama_pancawara'],
+                'nama_penyakit' => $this->nilaiAtauNull($row['nama_penyakit']),
+                'gejala'        => $this->nilaiAtauNull($row['gejala']),
+                'penyebab'      => $this->nilaiAtauNull($row['penyebab']),
+                'ritual'        => $this->nilaiAtauNull($row['ritual']),
+                'teks_asli'     => $row['teks_asli'] ?? '',
+                'lembar_awal'   => $this->nilaiAtauNull($row['lembar_awal']),
+                'lembar_akhir'  => $this->nilaiAtauNull($row['lembar_akhir']),
+                'pengobatan'    => $pengobatanPerEntri[$id] ?? [],
+            ];
+        }
+
+        return $hasil;
+    }
+
+    /**
+     * Semua entri Usada.
+     */
     public function semua(): array
     {
-        return $this->semua;
+        $rows = $this->queryEntri()
+            ->orderBy('e.id_entri', 'ASC')
+            ->get()
+            ->getResultArray();
+
+        return $this->bentukData($rows);
     }
 
+    /**
+     * Jumlah seluruh entri.
+     */
     public function total(): int
     {
-        return count($this->semua);
+        return $this->db->table('entri_usada')->countAllResults();
     }
 
-    /** Satu entri berdasarkan id, atau null jika tidak ada. */
+    /**
+     * Satu entri berdasarkan ID.
+     */
     public function cari(int $id): ?array
     {
-        foreach ($this->semua as $u) {
-            if ($u['id'] === $id) {
-                return $u;
-            }
-        }
-        return null;
+        $rows = $this->queryEntri()
+            ->where('e.id_entri', $id)
+            ->limit(1)
+            ->get()
+            ->getResultArray();
+
+        $hasil = $this->bentukData($rows);
+
+        return $hasil[0] ?? null;
     }
 
-    /** Satu entri berdasarkan hari pawukon ke-1..210. */
+    /**
+     * Satu entri berdasarkan hari Pawukon 1-210.
+     */
     public function berdasarkanHariKe(int $hariKe): ?array
     {
-        return $this->cari($hariKe); // id = hari_ke pada data contoh
+        if ($hariKe < 1 || $hariKe > 210) {
+            return null;
+        }
+
+        return $this->cari($hariKe);
     }
 
-    /** Pencarian teks sederhana + filter. Backend: ganti dengan WHERE/LIKE/FULLTEXT. */
+    /**
+     * Filter berdasarkan Wuku, Saptawara, Pancawara, dan kata kunci.
+     */
     public function filter(array $f = []): array
     {
-        return array_values(array_filter($this->semua, function ($u) use ($f) {
-            foreach (['wuku', 'hari', 'pancawara'] as $k) {
-                if (!empty($f[$k]) && strcasecmp($u[$k], $f[$k]) !== 0) {
-                    return false;
-                }
-            }
-            if (!empty($f['q'])) {
-                $isi = ($u['nama_penyakit'] ?? '') . ' ' . ($u['gejala'] ?? '') . ' ' . $u['wuku'];
-                if (stripos($isi, $f['q']) === false) {
-                    return false;
-                }
-            }
-            return true;
-        }));
+        $builder = $this->queryEntri();
+
+        if (!empty($f['wuku'])) {
+            $builder->where('w.nama_wuku', $f['wuku']);
+        }
+
+        if (!empty($f['hari'])) {
+            $builder->where('s.nama_saptawara', $f['hari']);
+        }
+
+        if (!empty($f['pancawara'])) {
+            $builder->where('p.nama_pancawara', $f['pancawara']);
+        }
+
+        if (!empty($f['q'])) {
+            $builder->groupStart()
+                ->like('e.nama_penyakit', $f['q'])
+                ->orLike('e.gejala', $f['q'])
+                ->groupEnd();
+        }
+
+        $rows = $builder
+            ->orderBy('e.id_entri', 'ASC')
+            ->get()
+            ->getResultArray();
+
+        return $this->bentukData($rows);
     }
 
+    /**
+     * Daftar 30 nama Wuku berdasarkan urutannya.
+     */
     public function daftarWuku(): array
     {
-        return array_values(array_unique(array_column($this->semua, 'wuku')));
+        $rows = $this->db->table('wuku')
+            ->select('nama_wuku')
+            ->orderBy('id_wuku', 'ASC')
+            ->get()
+            ->getResultArray();
+
+        return array_column($rows, 'nama_wuku');
     }
 }

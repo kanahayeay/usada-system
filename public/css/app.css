@@ -167,9 +167,18 @@ main { display: flex; flex-direction: column; gap: var(--s6); padding-block: var
 
 /* ===== Header ===== */
 .site-header {
-  display: flex; align-items: center; justify-content: space-between; gap: var(--s5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--bg);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s5);
   padding: var(--s4) max(var(--gutter), calc((100% - var(--container)) / 2));
 }
+
 .brand { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .brand__name { font-size: var(--fs-lg); font-weight: 800; color: var(--primary); line-height: 1.2; }
 .brand__sub  { font-size: var(--fs-xs); color: var(--secondary); }
