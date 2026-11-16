@@ -556,3 +556,357 @@ main { display: flex; flex-direction: column; gap: var(--s6); padding-block: var
 .lanjut summary { display: inline-flex; list-style: none; cursor: pointer; }
 .lanjut summary::-webkit-details-marker { display: none; }
 .teks-asli { margin-top: 16px; padding: 20px; max-height: 480px; overflow: auto; background: var(--white); border-radius: var(--r-md); font-size: .9rem; white-space: pre-line; }
+
+/* ===== Cari Bahan ===== */
+
+.cari-bahan-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s6);
+}
+
+.cari-bahan__form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s3);
+  width: 100%;
+  margin-top: var(--s2);
+}
+
+.cari-bahan__input {
+  flex: 1;
+  min-width: 280px;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  padding: 0 var(--s4);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+}
+
+.cari-bahan__input i {
+  color: var(--primary);
+}
+
+.cari-bahan__input input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--text);
+  font: 600 1rem var(--font);
+}
+
+.cari-bahan__input:focus-within {
+  outline: 3px solid var(--secondary-soft);
+  border-color: var(--secondary);
+}
+
+.cari-bahan__status {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  flex-wrap: wrap;
+  font-size: var(--fs-sm);
+  color: var(--primary-dark);
+}
+
+.cari-bahan__status i {
+  color: var(--primary);
+}
+
+.cari-bahan__results {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s5);
+}
+
+.cari-bahan__cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s5);
+}
+
+.cari-bahan-card {
+  padding: var(--s6);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s4);
+}
+
+.cari-bahan-card__meta {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s3);
+  flex-wrap: wrap;
+  padding-bottom: var(--s3);
+  border-bottom: 1px solid var(--line);
+  color: var(--secondary);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+}
+
+.cari-bahan-card__meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+}
+
+.cari-bahan-card__title {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  flex-wrap: wrap;
+}
+
+.cari-bahan-card__title h3 {
+  font-size: var(--fs-xl);
+}
+
+.cari-bahan-card__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+}
+
+.cari-bahan-card__section p {
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}
+
+.cari-bahan-card__match {
+  padding: var(--s5);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s3);
+}
+
+.cari-bahan-card__match-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3);
+}
+
+.cari-bahan-card__match-head h4 {
+  margin-top: var(--s1);
+  font-size: var(--fs-lg);
+}
+
+.cari-bahan-match {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s3);
+  padding: var(--s4);
+  background: var(--white);
+  border: 2px solid var(--primary);
+  border-radius: var(--r-md);
+}
+
+.cari-bahan-match__icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--tertiary);
+  color: var(--primary-dark);
+}
+
+.cari-bahan-match__content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+}
+
+.cari-bahan-match__main strong {
+  color: var(--neutral);
+  line-height: 1.5;
+}
+
+.cari-bahan-match__cara {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  flex-wrap: wrap;
+  padding: var(--s2) var(--s3);
+  background: var(--secondary-soft);
+  border-radius: var(--r-sm);
+  color: var(--secondary);
+  font-size: var(--fs-sm);
+}
+
+.cari-bahan-match__cara span {
+  font-weight: 700;
+}
+
+.cari-bahan-match__content small {
+  color: var(--text-muted);
+}
+
+.cari-bahan-card__other {
+  border-top: 1px solid var(--line);
+  padding-top: var(--s4);
+}
+
+.cari-bahan-card__other summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3);
+  cursor: pointer;
+  list-style: none;
+  color: var(--neutral);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+}
+
+.cari-bahan-card__other summary::-webkit-details-marker {
+  display: none;
+}
+
+.cari-bahan-card__other summary span {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s2);
+}
+
+.cari-bahan-card__other .obat-list {
+  margin-top: var(--s3);
+}
+
+.cari-bahan-card__ritual {
+  padding: var(--s4);
+  background: #FDF8F2;
+  border: 1px solid #F3DCC8;
+  border-radius: var(--r-md);
+}
+
+.cari-bahan-card__ritual p {
+  margin-top: var(--s2);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+
+.cari-bahan-card__source {
+  margin-top: var(--s1);
+}
+
+@media (max-width: 720px) {
+  .cari-bahan__form {
+    flex-direction: column;
+  }
+
+  .cari-bahan__input {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .cari-bahan__form .btn {
+    width: 100%;
+  }
+
+  .cari-bahan-card {
+    padding: var(--s5) var(--s4);
+  }
+
+  .cari-bahan-card__match-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.cari-bahan-card__title .cari-bahan-card__disease-name {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  line-height: 1.2;
+  padding: 0.65rem 1.2rem;
+  border-radius: var(--r-pill);
+}
+
+/* =========================================================
+   PAGINATION CARI BAHAN
+   ========================================================= */
+
+.cari-bahan__results-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--s6);
+}
+
+.cari-bahan__pagination {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 2px 8px;
+  scrollbar-width: thin;
+  white-space: nowrap;
+}
+
+.cari-bahan__pagination-pages {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.cari-bahan__pagination-btn,
+.cari-bahan__pagination-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  color: var(--neutral);
+  font-weight: 700;
+}
+
+.cari-bahan__pagination-btn {
+  width: 52px;
+  min-width: 52px;
+  height: 52px;
+  padding: 0;
+  border: 1px solid #e1e6e2;
+  border-radius: 50%;
+  background: #fff;
+  gap: 0;
+}
+
+.cari-bahan__pagination-number {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.cari-bahan__pagination-number:hover {
+  background: var(--surface-2);
+}
+
+.cari-bahan__pagination-number.is-active {
+  background: #d0e7d8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+}
+
+.cari-bahan__pagination-btn.is-disabled {
+  color: #aac5b6;
+  background: #f5f8f6;
+  cursor: default;
+}
