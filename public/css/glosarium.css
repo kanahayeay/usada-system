@@ -1,0 +1,218 @@
+/* ==========================================================
+   Glosarium Usada Bali
+   Memakai token yang sudah ada di app.css (--primary, --secondary,
+   --surface-2, --line, --r-*, --shadow, dll). Semua kelas berawalan
+   .gl- supaya tidak bentrok dengan halaman lain.
+   Kalau navbar kalian sticky, atur: :root { --gl-sticky-top: 72px; }
+   ========================================================== */
+
+:root { --gl-sticky-top: 0px; }
+
+/* ---------- Hero ---------- */
+.gl-hero-wrap { padding-top: 8px; }
+.gl-hero {
+    padding: 40px 40px 32px;
+    border-radius: var(--r-lg);
+    background: linear-gradient(135deg, #CDEFDD 0%, #DDF3E6 100%);
+    border: 1px solid var(--line);
+}
+.gl-hero h1 {
+    margin: 14px 0 8px;
+    font-size: clamp(2rem, 4.2vw, 2.75rem);
+    line-height: 1.1;
+    color: var(--neutral);
+}
+.gl-hero > p { max-width: 58ch; color: var(--text-muted); line-height: 1.6; margin: 0 0 24px; }
+.gl-hero > p strong { color: var(--text); }
+
+.gl-search { margin: 0; }
+.gl-search__field {
+    display: flex; align-items: center; gap: 12px;
+    padding: 0 18px; height: 56px;
+    background: var(--white);
+    border: 1.5px solid transparent;
+    border-radius: var(--r-pill);
+    box-shadow: var(--shadow);
+    transition: border-color .15s, box-shadow .15s;
+}
+.gl-search__field:focus-within { border-color: var(--primary); box-shadow: 0 0 0 4px rgba(46,125,91,.15); }
+.gl-search__field > .bi-search { color: var(--primary); font-size: 1.05rem; }
+.gl-search__field input {
+    flex: 1; min-width: 0; height: 100%;
+    border: 0; outline: 0; background: transparent;
+    font: inherit; font-size: var(--fs-md); color: var(--text);
+}
+.gl-search__field input::placeholder { color: #86A094; }
+.gl-search__field input::-webkit-search-cancel-button { display: none; }
+.gl-search__clear {
+    display: grid; place-items: center; width: 32px; height: 32px; flex: none;
+    border: 0; border-radius: 50%; cursor: pointer;
+    background: var(--surface-2); color: var(--text-muted);
+}
+.gl-search__clear:hover { background: var(--line); color: var(--text); }
+
+.gl-stats { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 20px 0 0; padding: 0; list-style: none; font-size: var(--fs-sm); color: var(--text-muted); }
+.gl-stats li { display: inline-flex; align-items: center; gap: 6px; }
+.gl-stats i { color: var(--primary); }
+.gl-stats strong { color: var(--text); }
+
+/* ---------- Filter + navigasi A-Z (hanya A-Z yang sticky) ---------- */
+.gl-toolbar { margin-top: 20px; }
+.gl-filters { display: flex; flex-direction: column; gap: 10px; }
+
+.gl-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.gl-az { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.gl-az::-webkit-scrollbar { display: none; }
+
+.gl-chip {
+    flex: none; display: inline-flex; align-items: center; gap: 6px;
+    padding: 7px 14px; border-radius: var(--r-pill);
+    border: 1px solid var(--line); background: var(--white);
+    font: inherit; font-size: var(--fs-sm); font-weight: 700; color: var(--neutral);
+    cursor: pointer; white-space: nowrap;
+    transition: background .15s, color .15s, border-color .15s;
+}
+.gl-chip i { color: var(--primary); font-size: .95rem; }
+.gl-chip span {
+    padding: 1px 8px; border-radius: var(--r-pill);
+    background: var(--surface-2); color: var(--text-muted);
+    font-size: var(--fs-xs); font-weight: 800;
+}
+.gl-chip:hover { border-color: var(--primary); }
+.gl-chip.is-active { background: var(--primary); border-color: var(--primary); color: #fff; }
+.gl-chip.is-active i { color: #CFF5E1; }
+.gl-chip.is-active span { background: rgba(255,255,255,.2); color: #fff; }
+
+.gl-lang-filter { display: flex; align-items: center; gap: 6px; font-size: var(--fs-sm); }
+.gl-lang-filter__label {
+    margin-right: 4px; font-size: var(--fs-xs); font-weight: 800;
+    letter-spacing: .08em; text-transform: uppercase; color: var(--text-muted);
+}
+.gl-seg {
+    padding: 4px 12px; border-radius: var(--r-pill); border: 0;
+    background: transparent; font: inherit; font-size: var(--fs-sm); font-weight: 700;
+    color: var(--text-muted); cursor: pointer;
+}
+.gl-seg:hover { background: var(--surface-2); }
+.gl-seg.is-active { background: var(--secondary); color: #fff; }
+
+.gl-azbar {
+    position: sticky; top: var(--gl-sticky-top); z-index: 20;
+    margin-top: 14px; padding: 8px 0;
+    background: rgba(234, 249, 240, .94); backdrop-filter: blur(8px);
+    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.gl-az a, .gl-az span {
+    flex: 1 0 28px; display: grid; place-items: center; height: 32px;
+    border-radius: 10px; font-size: var(--fs-sm); font-weight: 800; text-decoration: none;
+}
+.gl-az a { color: var(--primary-dark); }
+.gl-az a:hover, .gl-az a.is-current { background: var(--primary); color: #fff; }
+.gl-az a.is-off { color: #A9C2B4; pointer-events: none; }
+.gl-az span.is-empty { color: #C4D8CC; }
+
+/* ---------- Daftar ---------- */
+.gl-list { padding-top: 20px; padding-bottom: 56px; }
+.gl-result { display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 36px; margin-bottom: 8px; color: var(--text-muted); font-size: var(--fs-sm); }
+.gl-result p { margin: 0; }
+.gl-result strong { color: var(--text); }
+.gl-reset {
+    display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px;
+    border-radius: var(--r-pill); border: 1px solid var(--line); background: var(--white);
+    font: inherit; font-size: var(--fs-sm); font-weight: 700; color: var(--primary-dark); cursor: pointer;
+}
+.gl-reset:hover { border-color: var(--primary); }
+.gl-result [hidden], .gl-list [hidden] { display: none !important; }
+
+.gl-group { scroll-margin-top: calc(var(--gl-sticky-top) + 64px); margin-top: 28px; }
+.gl-group__head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+.gl-letter {
+    display: grid; place-items: center; width: 52px; height: 52px; flex: none;
+    border-radius: 16px; background: var(--secondary); color: #fff;
+    font-size: 1.6rem; font-weight: 800; line-height: 1;
+    box-shadow: 0 6px 16px rgba(123, 74, 43, .25);
+}
+.gl-group__line { flex: 1; height: 1px; background: var(--line); }
+.gl-group__count { font-size: var(--fs-sm); color: var(--text-muted); }
+.gl-group__count b { color: var(--text); }
+
+.gl-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+
+/* ---------- Kartu istilah ---------- */
+.gl-entry {
+    display: flex; flex-direction: column; gap: 8px;
+    padding: 20px 22px; background: var(--white);
+    border: 1px solid var(--line); border-radius: var(--r-md);
+    box-shadow: var(--shadow);
+    transition: transform .15s, border-color .15s;
+}
+.gl-entry:hover { transform: translateY(-2px); border-color: #9ED3B7; }
+.gl-entry[hidden] { display: none; }
+
+.gl-entry__top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.gl-tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 4px 12px; border-radius: var(--r-pill);
+    background: var(--surface-2); color: #1B633F;
+    font-size: var(--fs-xs); font-weight: 800; letter-spacing: .02em;
+}
+.gl-lang {
+    padding: 3px 10px; border-radius: var(--r-pill);
+    font-size: var(--fs-xs); font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+    background: #F1F7F3; color: var(--text-muted);
+}
+.gl-lang--bali { background: var(--tertiary); color: #1B633F; }
+.gl-lang--kawi { background: var(--secondary-soft); color: #623A21; }
+
+.gl-entry__term { margin: 4px 0 0; font-size: var(--fs-xl); line-height: 1.2; color: var(--neutral); }
+.gl-entry__alt { margin: 0; font-size: var(--fs-sm); color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 4px 6px; align-items: center; }
+.gl-entry__alt span { font-weight: 700; }
+.gl-entry__alt em {
+    font-style: normal; padding: 1px 10px; border-radius: var(--r-pill);
+    border: 1px solid var(--line); background: var(--surface); color: var(--text);
+}
+.gl-entry__meaning { margin: 2px 0 0; font-size: var(--fs-md); line-height: 1.55; color: var(--text); font-weight: 600; }
+
+/* Cuplikan naskah: gaya "lontar" memakai warna ritual (#FDF8F2) yang sudah ada */
+.gl-quote {
+    margin: 8px 0 0; padding: 12px 14px;
+    background: #FDF8F2; border: 1px solid #F3DCC8; border-left: 4px solid var(--secondary);
+    border-radius: 0 var(--r-sm) var(--r-sm) 0;
+}
+.gl-quote figcaption {
+    display: flex; align-items: center; gap: 4px; margin-bottom: 6px;
+    font-size: .6875rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--secondary);
+}
+.gl-quote figcaption i { font-size: 1rem; }
+.gl-quote blockquote { margin: 0; font-size: var(--fs-sm); line-height: 1.65; color: #5A4636; }
+.gl-quote mark { background: var(--secondary-soft); color: #4A2A14; font-weight: 800; padding: 0 3px; border-radius: 4px; }
+
+/* ---------- Kosong & tombol ke atas ---------- */
+.gl-empty { margin-top: 28px; text-align: center; padding: 48px 24px; }
+.gl-empty > i { font-size: 2rem; color: var(--primary); }
+.gl-top {
+    position: fixed; right: 20px; bottom: 20px; z-index: 30;
+    display: grid; place-items: center; width: 46px; height: 46px;
+    border: 0; border-radius: 50%; cursor: pointer;
+    background: var(--primary); color: #fff; box-shadow: var(--shadow);
+}
+.gl-top:hover { background: var(--primary-dark); }
+
+/* atribut hidden harus menang atas display: grid/flex di atas */
+.gl-search__clear[hidden], .gl-top[hidden], .gl-reset[hidden], .gl-empty[hidden] { display: none !important; }
+
+/* ---------- Responsif ---------- */
+@media (max-width: 860px) {
+    .gl-grid { grid-template-columns: 1fr; }
+    .gl-hero { padding: 28px 20px 24px; }
+    .gl-search__field { height: 52px; }
+    .gl-letter { width: 44px; height: 44px; font-size: 1.35rem; border-radius: 14px; }
+    .gl-chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+    .gl-chips::-webkit-scrollbar { display: none; }
+    .gl-lang-filter { overflow-x: auto; scrollbar-width: none; }
+    .gl-az a, .gl-az span { flex: 0 0 30px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .gl-entry, .gl-chip { transition: none; }
+    .gl-entry:hover { transform: none; }
+}
