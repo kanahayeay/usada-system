@@ -10,6 +10,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('struktur', 'Usada::index');
 $routes->get('statistik', 'Statistik::index');
+$routes->get('glosarium', 'Glosarium::index');
 $routes->get('cari-bahan', 'Usada::cariBahan');
 
 // Autentikasi Admin
@@ -18,6 +19,6 @@ $routes->post('admin/login', 'Auth::attempt');
 
 // Halaman Admin yang membutuhkan autentikasi
 $routes->group('admin', ['filter' => 'adminauth'], static function ($routes) {
-  $routes->get('/', 'Admin\Dashboard::index');
-  $routes->post('logout', 'Auth::logout');
+    $routes->get('/', 'Admin\Dashboard::index');
+    $routes->post('logout', 'Auth::logout');
 });

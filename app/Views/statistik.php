@@ -449,11 +449,6 @@ $kelengkapanFields = [
                 </article>
             <?php endforeach; ?>
         </div>
-
-        <p class="muted small stat-completeness-note">
-            Keterangan kosong mencakup nilai NULL, teks kosong, atau tanda strip (-).
-            Kelengkapan pengobatan menunjukkan entri yang memiliki setidaknya satu catatan pengobatan.
-        </p>
     </div>
 </section>
 

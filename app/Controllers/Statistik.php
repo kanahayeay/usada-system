@@ -20,6 +20,8 @@ class Statistik extends BaseController
         ];
 
         $data = [
+            'title' => 'Statistik',
+            'active' => 'statistik',
             'filter' => $filter,
             'opsi' => $model->opsiFilterStatistik(),
             'ringkasan' => $model->statistikRingkasan($filter),
