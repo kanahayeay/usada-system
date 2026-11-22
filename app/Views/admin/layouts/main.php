@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="<?= base_url('css/app.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('css/admin.css') ?>">
 </head>
 
 <body class="admin-body">
@@ -58,13 +59,11 @@
 
                 <!-- Data Usada -->
                 <a
-                    href="#"
-                    class="admin-nav__link is-disabled"
-                    aria-disabled="true"
+                    href="<?= site_url('admin/entri-usada') ?>"
+                    class="admin-nav__link <?= ($active ?? '') === 'entri-usada' ? 'is-active' : '' ?>"
                 >
                     <i class="bi bi-journal-text"></i>
                     Data Usada
-                    <small>Segera</small>
                 </a>
 
                 <!-- Pengobatan -->
@@ -122,13 +121,12 @@
 
             <!-- TOPBAR -->
             <header class="admin-topbar">
-
                 <div>
                     <span class="admin-topbar__eyebrow">
-                        ADMINISTRATION
+                        USADA BALI
                     </span>
 
-                    <h1><?= esc($title ?? 'Dashboard') ?></h1>
+                    <h1>Panel Administrasi</h1>
                 </div>
 
                 <div class="admin-profile">

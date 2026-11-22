@@ -1,6 +1,7 @@
 <?= $this->extend('admin/layouts/main') ?>
 
 <?= $this->section('content') ?>
+<link rel="stylesheet" href="<?= base_url('css/admin-glosarium.css') ?>">
 
 <?php
 $keyword = $keyword ?? '';
@@ -17,8 +18,8 @@ $pager = $pager ?? service('pager');
     <div class="gl-page-header">
         <div>
             <span class="gl-eyebrow">MANAJEMEN DATA</span>
-            <h4>Kelola Glosarium</h4>
-            <p>Kelola istilah dan makna dalam Glosarium Usada Bali.</p>
+            <h4>Glosarium</h4>
+            <p>Daftar istilah dan makna dalam pengetahuan Usada Bali.</p>
         </div>
 
         <button type="button"
@@ -229,7 +230,7 @@ $pager = $pager ?? service('pager');
             </div>
 
             <!-- PAGINATION -->
-            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-3">
+            <div class="admin-table-footer">
                 <small class="text-muted">
                     Menampilkan <?= count($glosarium) ?> data pada halaman ini.
                 </small>

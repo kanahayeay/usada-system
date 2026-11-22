@@ -30,5 +30,9 @@ $routes->group('admin', ['filter' => 'adminauth'], static function ($routes) {
     $routes->post('glosarium/update/(:num)', 'Admin\Glosarium::update/$1');
     $routes->post('glosarium/hapus/(:num)', 'Admin\Glosarium::hapus/$1');
 
-    
+     // Pengelolaan Data Usada
+    $routes->get('entri-usada', 'Admin\EntriUsada::index');
+    $routes->post('entri-usada/simpan', 'Admin\EntriUsada::simpan');
+    $routes->post('entri-usada/update/(:num)', 'Admin\EntriUsada::update/$1');
+    $routes->post('entri-usada/hapus/(:num)', 'Admin\EntriUsada::hapus/$1');
 });
