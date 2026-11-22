@@ -35,4 +35,9 @@ $routes->group('admin', ['filter' => 'adminauth'], static function ($routes) {
     $routes->post('entri-usada/simpan', 'Admin\EntriUsada::simpan');
     $routes->post('entri-usada/update/(:num)', 'Admin\EntriUsada::update/$1');
     $routes->post('entri-usada/hapus/(:num)', 'Admin\EntriUsada::hapus/$1');
+
+    $routes->get('pengobatan', 'Admin\Pengobatan::index');
+    $routes->post('pengobatan/simpan', 'Admin\Pengobatan::simpan');
+    $routes->post('pengobatan/update/(:num)', 'Admin\Pengobatan::update/$1');
+    $routes->post('pengobatan/hapus/(:num)', 'Admin\Pengobatan::hapus/$1');
 });

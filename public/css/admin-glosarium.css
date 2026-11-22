@@ -502,6 +502,17 @@ body.gl-modal-open {
     transition: transform .28s ease;
 }
 
+/* POSISI TOMBOL MODAL HAPUS */
+.gl-delete-dialog .gl-modal-footer {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    gap: 10px;
+    padding: 17px 0 0;
+    border-top: 1px solid #EDF2EE;
+    background: #FCFEFC;
+}
+
 .gl-modal.is-open .gl-delete-dialog {
     transform: translateY(0) scale(1);
 }

@@ -68,13 +68,11 @@
 
                 <!-- Pengobatan -->
                 <a
-                    href="#"
-                    class="admin-nav__link is-disabled"
-                    aria-disabled="true"
+                    href="<?= site_url('admin/pengobatan') ?>"
+                    class="admin-nav__link <?= ($active ?? '') === 'pengobatan' ? 'is-active' : '' ?>"
                 >
                     <i class="bi bi-capsule"></i>
                     Pengobatan
-                    <small>Segera</small>
                 </a>
 
                 <!-- Akun Admin -->
