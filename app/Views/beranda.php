@@ -147,7 +147,7 @@
                 <span class="label">Pancawara</span>
                 <strong><?= esc($usada['pancawara']) ?></strong>
                 <span class="chip">
-                    <?= esc(arah_pancawara($usada['pancawara'])) ?>
+                    Pancawara
                 </span>
             </div>
         </div>
