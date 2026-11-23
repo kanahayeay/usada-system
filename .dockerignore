@@ -1,0 +1,13 @@
+.git
+.vscode
+.env
+vendor
+tests
+docs
+builds
+konversi.py
+writable/cache/*
+writable/logs/*
+writable/session/*
+writable/debugbar/*
+!writable/**/index.html

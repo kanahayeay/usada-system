@@ -8,7 +8,12 @@ class AdminSeeder extends Seeder
 {
     public function run()
     {
-        $username = 'adminusada';
+        $username = env('ADMIN_USERNAME') ?: 'adminusada';
+        $password = env('ADMIN_PASSWORD');
+
+        if (! $password) {
+            throw new \RuntimeException('Variabel ADMIN_PASSWORD belum diatur.');
+        }
 
         // Periksa apakah akun Admin sudah terdaftar.
         $sudahAda = $this->db
@@ -24,10 +29,7 @@ class AdminSeeder extends Seeder
         // Buat akun Admin pertama.
         $this->db->table('users')->insert([
             'username' => $username,
-            'password' => password_hash(
-                'UsadaJaya',
-                PASSWORD_DEFAULT
-            ),
+            'password' => password_hash($password, PASSWORD_DEFAULT),
             'nama' => 'Administrator Usada Bali',
             'status' => 'aktif',
         ]);

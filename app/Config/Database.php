@@ -194,6 +194,15 @@ class Database extends Config
     {
         parent::__construct();
 
+        // Railway: ambil kredensial dari variabel layanan MySQL jika tersedia.
+        if (env('MYSQLHOST')) {
+            $this->default['hostname'] = (string) env('MYSQLHOST');
+            $this->default['port']     = (int) env('MYSQLPORT', 3306);
+            $this->default['username'] = (string) env('MYSQLUSER');
+            $this->default['password'] = (string) env('MYSQLPASSWORD');
+            $this->default['database'] = (string) env('MYSQLDATABASE');
+        }
+
         // Ensure that we always set the database group to 'tests' if
         // we are currently running an automated test suite, so that
         // we don't overwrite live data on accident.
