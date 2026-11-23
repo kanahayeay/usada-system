@@ -757,14 +757,6 @@
     .admin-topbar h1 {
         font-size: 16px;
     }
-
-    .admin-profile small {
-        display: none;
-    }
-
-    .admin-profile strong {
-        font-size: 12px;
-    }
 }
 
 /* =====================================================
@@ -959,10 +951,9 @@
     }
 }
 
-/* Sembunyikan informasi administrator pada tampilan mobile */
+/* Tampilan profil administrator di mobile */
 @media (max-width: 768px) {
-    .admin-profile strong,
-    .admin-profile small {
+    .admin-profile > span:not(.admin-profile__icon) {
         display: none !important;
     }
 
@@ -974,6 +965,5 @@
         display: grid;
         width: 42px;
         height: 42px;
-        flex-shrink: 0;
     }
 }
