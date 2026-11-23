@@ -958,3 +958,19 @@
         justify-content: flex-start;
     }
 }
+
+/* Sembunyikan teks profil pada tampilan mobile */
+@media (max-width: 768px) {
+    .admin-profile > div {
+        display: none;
+    }
+
+    .admin-profile {
+        flex-shrink: 0;
+    }
+
+    .admin-profile__icon {
+        width: 42px;
+        height: 42px;
+    }
+}
