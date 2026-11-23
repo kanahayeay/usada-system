@@ -30,4 +30,12 @@ fi
 # File log/cache yang dibuat spark (root) harus bisa ditulis Apache (www-data).
 chown -R www-data:www-data writable
 
+# Pastikan hanya satu MPM (prefork) yang aktif. Dilakukan saat container jalan
+# karena penghapusan di tahap build bisa "hidup lagi" di lingkungan Railway.
+a2dismod mpm_event mpm_worker >/dev/null 2>&1 || true
+rm -f /etc/apache2/mods-enabled/mpm_event.* /etc/apache2/mods-enabled/mpm_worker.*
+a2enmod mpm_prefork >/dev/null 2>&1 || true
+echo ">> MPM aktif: $(ls /etc/apache2/mods-enabled | grep '^mpm_' | tr '\n' ' ')"
+apache2ctl configtest || true
+
 exec apache2-foreground
