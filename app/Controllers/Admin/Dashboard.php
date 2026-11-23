@@ -28,19 +28,13 @@ class Dashboard extends BaseController
                 'jumlah' => $db->table('wuku')->countAllResults(),
                 'icon' => 'bi-calendar-week',
             ],
-            [
-                'nama' => 'Akun Admin',
-                'jumlah' => $db->table('users')
-                    ->where('status', 'aktif')
-                    ->countAllResults(),
-                'icon' => 'bi-people',
-            ],
         ];
 
         return view('admin/dashboard', [
             'title' => 'Dashboard Admin',
             'stats' => $stats,
             'namaAdmin' => session()->get('admin_nama'),
+            'active' => 'dashboard',
         ]);
     }
 }

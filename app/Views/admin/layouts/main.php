@@ -75,17 +75,6 @@
                     Pengobatan
                 </a>
 
-                <!-- Akun Admin -->
-                <a
-                    href="#"
-                    class="admin-nav__link is-disabled"
-                    aria-disabled="true"
-                >
-                    <i class="bi bi-people"></i>
-                    Akun Admin
-                    <small>Segera</small>
-                </a>
-
             </nav>
 
             <!-- SIDEBAR BOTTOM -->

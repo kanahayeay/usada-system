@@ -16,7 +16,7 @@ class EntriUsada extends BaseController
     {
         return array_merge([
             'namaAdmin' => session()->get('admin_nama') ?? 'Admin',
-            'active'    => 'entri_usada',
+            'active'    => 'entri-usada',
         ], $data);
     }
 
