@@ -93,6 +93,62 @@
     background: #F8FBF8;
 }
 
+
+/* =========================================
+   TABEL RESPONSIVE PENGOBATAN
+========================================= */
+
+.admin-pengobatan .card-body {
+    min-width: 0;
+}
+
+.admin-pengobatan .table-responsive {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+}
+
+.admin-pengobatan .table {
+    width: 100%;
+    min-width: 1100px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.admin-pengobatan .table th,
+.admin-pengobatan .table td {
+    white-space: normal;
+    vertical-align: middle;
+}
+
+.admin-pengobatan .table thead th {
+    white-space: nowrap;
+}
+
+.admin-pengobatan .table td:last-child {
+    white-space: nowrap;
+    min-width: 100px;
+}
+
+/* Layar tablet dan HP */
+@media (max-width: 768px) {
+    .admin-pengobatan .card-body {
+        padding: 14px;
+    }
+
+    .admin-pengobatan .table {
+        min-width: 1100px;
+    }
+
+    .admin-pengobatan .table-responsive {
+        overflow-x: auto;
+    }
+}
+
 /* =========================================
    TOMBOL AKSI
 ========================================= */
