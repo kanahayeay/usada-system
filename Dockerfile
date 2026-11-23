@@ -14,6 +14,10 @@ RUN apt-get update \
     && a2enmod rewrite headers \
     && rm -rf /var/lib/apt/lists/*
 
+# Pastikan hanya satu MPM (prefork) yang aktif, wajib untuk mod_php.
+RUN rm -f /etc/apache2/mods-enabled/mpm_event.* /etc/apache2/mods-enabled/mpm_worker.* \
+    && a2enmod mpm_prefork
+
 # Document root mengarah ke public/ dan .htaccess diizinkan
 ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
 RUN sed -ri "s!/var/www/html!${APACHE_DOCUMENT_ROOT}!g" /etc/apache2/sites-available/*.conf \
