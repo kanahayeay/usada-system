@@ -1,0 +1,434 @@
+
+<?= $this->extend('layouts/main') ?>
+
+<?= $this->section('content') ?>
+
+<?php
+/**
+ * Variabel yang dikirim dari Usada::index().
+ *
+ * @var string $title
+ * @var string $active
+ *
+ * @var array{
+ *     wuku: array<int, string>,
+ *     hari: array<int, string>,
+ *     pancawara: array<int, string>
+ * } $opsi
+ *
+ * @var array{
+ *     wuku: string,
+ *     hari: string,
+ *     pancawara: string,
+ *     q: string
+ * } $filter
+ *
+ * @var int $totalSemua
+ * @var int $totalHasil
+ *
+ * @var array<int, array{
+ *     id: int,
+ *     hari_ke: int,
+ *     wuku: string,
+ *     wuku_no: int,
+ *     hari: string,
+ *     pancawara: string,
+ *     nama_penyakit: string|null,
+ *     gejala: string|null,
+ *     penyebab: string|null,
+ *     ritual: string|null,
+ *     teks_asli: string,
+ *     lembar_awal: string|null,
+ *     lembar_akhir: string|null,
+ *     pengobatan: array<int, array{
+ *         jenis: string|null,
+ *         bahan: string|null,
+ *         bagian_tubuh: string|null,
+ *         keterangan: string|null,
+ *         cara: string|null
+ *     }>
+ * }> $daftar
+ *
+ * @var int $halaman
+ * @var int $jumlahHalaman
+ *
+ * @var array{
+ *     id: int,
+ *     hari_ke: int,
+ *     wuku: string,
+ *     wuku_no: int,
+ *     hari: string,
+ *     pancawara: string,
+ *     nama_penyakit: string|null,
+ *     gejala: string|null,
+ *     penyebab: string|null,
+ *     ritual: string|null,
+ *     teks_asli: string,
+ *     lembar_awal: string|null,
+ *     lembar_akhir: string|null,
+ *     pengobatan: array<int, array{
+ *         jenis: string|null,
+ *         bahan: string|null,
+ *         bagian_tubuh: string|null,
+ *         keterangan: string|null,
+ *         cara: string|null
+ *     }>
+ * }|null $terpilih
+ *
+ * @var array|null $sebelumnya
+ * @var array|null $berikutnya
+ */
+?>
+
+<?php
+// Bangun URL dengan mempertahankan filter yang sedang aktif.
+$url = function (array $tambah = []) use ($filter): string {
+    $q = array_filter(
+        array_merge($filter, $tambah),
+        static fn($v) => $v !== '' && $v !== null
+    );
+
+    return base_url(
+        'struktur' . ($q ? '?' . http_build_query($q) : '')
+    );
+};
+
+$u = $terpilih;
+?>
+
+<!-- HEADER HALAMAN -->
+<section class="container page-head">
+    <h1>Struktur & Detail Informasi Usada</h1>
+    <p>
+        Jelajahi hubungan antara penanggalan Pawukon, penyakit, gejala,
+        pengobatan, ritual, dan teks asli dalam
+        <strong>Usada Tenung Wraspatikalpa</strong>.
+    </p>
+</section>
+
+<!-- FILTER INFORMASI USADA -->
+<section class="container">
+    <form class="filter" method="get" action="<?= base_url('struktur') ?>">
+        <div class="row-between">
+            <h3>
+                <i class="bi bi-sliders"></i>
+                Filter Informasi Usada
+            </h3>
+
+            <a href="<?= base_url('struktur') ?>" class="reset">
+                <i class="bi bi-arrow-repeat"></i>
+                Reset Filter
+            </a>
+        </div>
+
+        <div class="filter__grid">
+            <?php foreach ([
+                'wuku' => 'Siklus Wuku',
+                'hari' => 'Saptawara (Hari)',
+                'pancawara' => 'Pancawara (Pasaran)'
+            ] as $nama => $label): ?>
+
+                <label>
+                    <?= esc($label) ?>
+
+                    <select
+                        name="<?= esc($nama, 'attr') ?>"
+                        onchange="this.form.submit()"
+                    >
+                        <option value="">Semua</option>
+
+                        <?php foreach ($opsi[$nama] as $o): ?>
+                            <option
+                                value="<?= esc($o, 'attr') ?>"
+                                <?= $filter[$nama] === $o ? 'selected' : '' ?>
+                            >
+                                <?= esc($o) ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
+                </label>
+
+            <?php endforeach; ?>
+
+            <label>
+                Cari Naskah
+
+                <span class="search">
+                    <i class="bi bi-search"></i>
+
+                    <input
+                        type="text"
+                        name="q"
+                        value="<?= esc($filter['q'], 'attr') ?>"
+                        placeholder="Nama penyakit atau gejala"
+                    >
+                </span>
+            </label>
+        </div>
+    </form>
+</section>
+
+<!-- DAFTAR INFORMASI USADA -->
+<section class="container" id="daftar">
+    <div class="row-between list-head">
+        <div>
+            <h2>Daftar Informasi Usada</h2>
+            <p class="muted">
+                Menampilkan entri Usada yang sesuai dengan filter.
+            </p>
+        </div>
+
+        <span class="badge badge--soft-green">
+            <i class="bi bi-archive"></i>
+            <?= esc($totalHasil) ?> dari <?= esc($totalSemua) ?> Entri
+        </span>
+    </div>
+
+    <?php if ($daftar): ?>
+
+        <div class="cards">
+            <?php foreach ($daftar as $item): ?>
+
+                <?= $this->setVar('u', $item)
+                    ->setVar(
+                        'aktif',
+                        $terpilih !== null &&
+                        $item['id'] === $terpilih['id']
+                    )
+                    ->setVar(
+                        'urlDetail',
+                        $url([
+                            'hal' => $halaman,
+                            'id' => $item['id']
+                        ]) . '#detail'
+                    )
+                    ->include('partials/usada_card') ?>
+
+            <?php endforeach; ?>
+        </div>
+
+        <!-- PAGINATION -->
+        <?php if ($jumlahHalaman > 1): ?>
+            <nav class="pager" aria-label="Halaman">
+
+                <?php if ($halaman > 1): ?>
+                    <a href="<?= esc(
+                        $url(['hal' => $halaman - 1]) . '#daftar',
+                        'attr'
+                    ) ?>">
+                        <i class="bi bi-chevron-left"></i>
+                        Sebelumnya
+                    </a>
+                <?php endif; ?>
+
+                <span>
+                    Halaman <?= esc($halaman) ?>
+                    dari <?= esc($jumlahHalaman) ?>
+                </span>
+
+                <?php if ($halaman < $jumlahHalaman): ?>
+                    <a href="<?= esc(
+                        $url(['hal' => $halaman + 1]) . '#daftar',
+                        'attr'
+                    ) ?>">
+                        Berikutnya
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                <?php endif; ?>
+
+            </nav>
+        <?php endif; ?>
+
+    <?php else: ?>
+
+        <div class="card card--mint kosong-state">
+            <i class="bi bi-search"></i>
+            <h3>Tidak ada entri yang cocok</h3>
+            <p class="muted">
+                Coba ubah kata kunci atau reset filter.
+            </p>
+
+            <a href="<?= base_url('struktur') ?>" class="btn btn--primary btn--sm">
+                Reset Filter
+            </a>
+        </div>
+
+    <?php endif; ?>
+</section>
+
+<!-- DETAIL INFORMASI USADA -->
+<?php if ($u): ?>
+
+<section class="container" id="detail">
+    <div class="card card--white detail">
+
+        <div class="row-between">
+            <a href="#daftar" class="back">
+                <i class="bi bi-arrow-left"></i>
+                Kembali ke Daftar Usada
+            </a>
+
+            <div class="badges">
+                <span class="badge badge--brown">
+                    <?= esc(strtoupper(lembar_label($u))) ?>
+                </span>
+
+                <span class="badge badge--tag">
+                    Hari ke-<?= esc($u['hari_ke']) ?> dari 210
+                </span>
+            </div>
+        </div>
+
+        <!-- JUDUL DETAIL -->
+        <div class="row-between detail__title">
+            <div>
+                <h2 class="display">
+                    <?= teks_atau_strip($u['nama_penyakit']) ?>
+                </h2>
+
+                <p class="detail__sub">
+                    Wuku <?= esc($u['wuku']) ?>
+                    · <?= esc($u['hari']) ?>
+                    · <?= esc($u['pancawara']) ?>
+                </p>
+            </div>
+
+            <a href="#transkripsi" class="btn btn--primary btn--sm">
+                <i class="bi bi-book"></i>
+                Baca Naskah Lontar
+            </a>
+        </div>
+
+        <!-- GRID DETAIL -->
+        <div class="detail__grid">
+
+            <!-- PENYAKIT DAN GEJALA -->
+            <div class="stack">
+                <div class="box">
+                    <h3 class="box__title">
+                        <i class="bi bi-activity"></i>
+                        Penyakit & Gejala Klinis Lontar
+                    </h3>
+
+                    <span class="label label--brown">
+                        Gejala yang tertulis:
+                    </span>
+
+                    <p>
+                        <?= teks_atau_strip($u['gejala']) ?>
+                    </p>
+
+                    <div class="inner inner--tint">
+                        <span class="label label--brown">
+                            Penyebab:
+                        </span>
+
+                        <p class="small">
+                            <?= teks_atau_strip($u['penyebab']) ?>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- RITUAL -->
+                <div class="box">
+                    <h3 class="box__title">
+                        <i class="bi bi-flower1"></i>
+                        Ritual & Upakara Penyeimbang
+                    </h3>
+
+                    <p class="<?= $u['ritual'] ? '' : 'kosong' ?>">
+                        <?= teks_atau_strip($u['ritual']) ?>
+                    </p>
+                </div>
+            </div>
+
+            <!-- PENGOBATAN -->
+            <div class="stack">
+                <div class="box">
+                    <h3 class="box__title">
+                        <i class="bi bi-capsule"></i>
+                        Pengobatan & Formulasi Herbal
+                    </h3>
+
+                    <?php if ($u['pengobatan']): ?>
+
+                        <ul class="obat-list">
+                            <?php foreach ($u['pengobatan'] as $p): ?>
+
+                                <?= $this->setVar('p', $p)
+                                    ->include('partials/pengobatan_item') ?>
+
+                            <?php endforeach; ?>
+                        </ul>
+
+                    <?php else: ?>
+
+                        <p class="kosong">
+                            Tidak ada keterangan pengobatan pada naskah ini.
+                        </p>
+
+                    <?php endif; ?>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- NAVIGASI ENTRI SEBELUMNYA DAN BERIKUTNYA -->
+        <div class="row-between folio">
+
+            <?php if ($sebelumnya): ?>
+
+                <a href="<?= esc(
+                    base_url('struktur?id=' . $sebelumnya['id']) . '#detail',
+                    'attr'
+                ) ?>">
+                    <i class="bi bi-chevron-left"></i>
+                    <?= esc($sebelumnya['wuku']) ?>
+                    <?= esc($sebelumnya['hari']) ?>
+                </a>
+
+            <?php else: ?>
+
+                <span></span>
+
+            <?php endif; ?>
+
+            <?php if ($berikutnya): ?>
+
+                <a href="<?= esc(
+                    base_url('struktur?id=' . $berikutnya['id']) . '#detail',
+                    'attr'
+                ) ?>">
+                    <?= esc($berikutnya['wuku']) ?>
+                    <?= esc($berikutnya['hari']) ?>
+                    <i class="bi bi-chevron-right"></i>
+                </a>
+
+            <?php endif; ?>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- TRANSKRIPSI TEKS ASLI -->
+<section class="container" id="transkripsi">
+    <div class="card card--mint">
+        <h2>Transkripsi Teks Asli Lontar</h2>
+
+        <details class="lanjut">
+            <summary class="btn btn--inverted">
+                <i class="bi bi-book"></i>
+                Lihat Transkripsi
+            </summary>
+
+            <div class="teks-asli">
+                <?= esc($u['teks_asli']) ?>
+            </div>
+        </details>
+    </div>
+</section>
+
+<?php endif; ?>
+
+<?= $this->endSection() ?>

@@ -1,0 +1,657 @@
+/* Tombol aksi tabel */
+.gl-action-btn {
+    display: inline-grid;
+    place-items: center;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.gl-edit-btn {
+    color: #2E7D5B;
+    background: #EAF5ED;
+}
+
+.gl-edit-btn:hover {
+    color: white;
+    background: #2E7D5B;
+    transform: translateY(-2px);
+}
+
+.gl-delete-btn {
+    color: #C65A5A;
+    background: #FFF1F0;
+}
+
+.gl-delete-btn:hover {
+    color: white;
+    background: #C65A5A;
+    transform: translateY(-2px);
+}
+
+/* Modal utama */
+.gl-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .25s ease, visibility .25s ease;
+}
+
+.gl-modal.is-open {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.gl-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 37, 27, .48);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.gl-modal-dialog {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 650px);
+    max-height: min(90vh, 760px);
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid rgba(255, 255, 255, .7);
+    border-radius: 22px;
+    box-shadow: 0 24px 80px rgba(15, 37, 27, .22);
+    transform: translateY(18px) scale(.97);
+    transition: transform .28s cubic-bezier(.2, .8, .2, 1);
+}
+
+.gl-modal.is-open .gl-modal-dialog {
+    transform: translateY(0) scale(1);
+}
+
+body.gl-modal-open {
+    overflow: hidden;
+}
+
+/* Modal header */
+.gl-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px 28px 20px;
+    border-bottom: 1px solid #EDF2EE;
+}
+
+.gl-modal-header h4 {
+    margin: 0 0 6px;
+    color: #1B4332;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.gl-modal-header p {
+    margin: 0;
+    color: #718579;
+    font-size: 12px;
+}
+
+.gl-modal-close {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 10px;
+    color: #718579;
+    background: #F2F7F3;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.gl-modal-close:hover {
+    color: #fff;
+    background: #C65A5A;
+    transform: rotate(90deg);
+}
+
+/* Modal body */
+.gl-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding: 23px 28px;
+}
+
+.gl-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    min-width: 0;
+}
+
+.gl-form-group label {
+    color: #355B46;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.gl-form-group label span {
+    color: #D65D5D;
+}
+
+.gl-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.gl-modal .form-control {
+    width: 100%;
+    min-height: 43px;
+    padding: 10px 13px;
+    border: 1px solid #E1EBE4;
+    border-radius: 10px;
+    background: #FBFDFC;
+    color: #1B4332;
+    font: inherit;
+    font-size: 13px;
+    outline: none;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.gl-modal textarea.form-control {
+    min-height: 85px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.gl-modal .form-control::placeholder {
+    color: #A1B0A6;
+}
+
+.gl-modal .form-control:focus {
+    border-color: #75B794;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(46, 125, 91, .10);
+}
+
+/* Modal footer */
+.gl-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 17px 28px 23px;
+    border-top: 1px solid #EDF2EE;
+    background: #FCFEFC;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .gl-modal {
+        padding: 12px;
+    }
+
+    .gl-modal-dialog {
+        max-height: 94vh;
+        border-radius: 17px;
+    }
+
+    .gl-modal-header {
+        padding: 20px 18px 16px;
+    }
+
+    .gl-modal-body {
+        padding: 18px;
+        gap: 14px;
+    }
+
+    .gl-modal-footer {
+        padding: 14px 18px 18px;
+    }
+
+    .gl-form-row {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .gl-page-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gl-modal,
+    .gl-modal-dialog,
+    .gl-btn,
+    .gl-action-btn {
+        transition: none !important;
+    }
+}
+
+
+/* =====================================================
+   FIX ADMIN GLOSARIUM - LIST PAGE
+===================================================== */
+
+/* Area utama */
+.admin-glosarium {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 14px 0 32px;
+    color: #1B4332;
+}
+
+/* Header */
+.admin-glosarium .gl-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.admin-glosarium .gl-page-header h4 {
+    margin: 0 0 7px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.admin-glosarium .gl-page-header p {
+    margin: 0;
+    color: #718579;
+    font-size: 13px;
+}
+
+/* Card filter dan tabel */
+.admin-glosarium .card {
+    display: block;
+    width: 100%;
+    margin-bottom: 24px;
+    overflow: hidden;
+    background: #FFFFFF;
+    border: 1px solid #E3ECE6 !important;
+    border-radius: 17px;
+    box-shadow: 0 5px 22px rgba(27, 67, 50, .045) !important;
+}
+
+.admin-glosarium .card-body {
+    display: block;
+    padding: 24px;
+}
+
+.admin-glosarium .card-header {
+    display: block;
+    padding: 20px 24px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #E3ECE6;
+}
+
+/* Grid filter - tidak bergantung Bootstrap */
+.admin-glosarium .card-body > form > .row {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 16px;
+    align-items: end;
+}
+
+.admin-glosarium .card-body > form > .row > .col-md-5 {
+    grid-column: span 5;
+    width: 100%;
+}
+
+.admin-glosarium .card-body > form > .row > .col-md-3 {
+    grid-column: span 3;
+    width: 100%;
+}
+
+.admin-glosarium .card-body > form > .row > .col-md-2 {
+    grid-column: span 2;
+    width: 100%;
+}
+
+/* Label dan input */
+.admin-glosarium .form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #355B46;
+    font-size: 12px;
+    font-weight: 750;
+}
+
+.admin-glosarium .form-control,
+.admin-glosarium .form-select {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 13px;
+    border: 1px solid #E1EBE4;
+    border-radius: 10px;
+    background: #FBFDFC;
+    color: #1B4332;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.admin-glosarium .form-control:focus,
+.admin-glosarium .form-select:focus {
+    border-color: #75B794;
+    background: #FFFFFF;
+    box-shadow: 0 0 0 4px rgba(46, 125, 91, .10);
+}
+
+.admin-glosarium .form-control::placeholder {
+    color: #A1B0A6;
+}
+
+/* Tombol filter */
+.admin-glosarium .gl-btn {
+    min-height: 42px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.admin-glosarium .card-body > form > .row > .col-md-2.d-flex {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.admin-glosarium .flex-grow-1 {
+    flex: 1;
+}
+
+/* Tabel */
+.admin-glosarium .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.admin-glosarium table.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: #355B46;
+    font-size: 13px;
+}
+
+.admin-glosarium .table thead th {
+    padding: 15px 13px;
+    background: #F4F8F5;
+    color: #718579;
+    border-bottom: 1px solid #E3ECE6;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.admin-glosarium .table tbody td {
+    padding: 16px 13px;
+    border-bottom: 1px solid #EDF2EE;
+    vertical-align: middle;
+    line-height: 1.65;
+}
+
+.admin-glosarium .table tbody tr:hover {
+    background: #F7FBF8;
+}
+
+/* Aksi harus berdampingan */
+.admin-glosarium td .d-flex {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.admin-glosarium td form {
+    display: block;
+    margin: 0;
+}
+
+/* Tombol edit dan hapus */
+.admin-glosarium .gl-action-btn {
+    flex-shrink: 0;
+    width: 35px;
+    height: 35px;
+}
+
+/* Badge */
+.admin-glosarium .badge {
+    display: inline-flex;
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: #EAF5ED !important;
+    color: #0F5B3E !important;
+    font-size: 10px;
+    font-weight: 750;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .admin-glosarium {
+        padding: 24px 18px;
+    }
+
+    .admin-glosarium .card-body > form > .row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .admin-glosarium .card-body > form > .row > [class*="col-md-"] {
+        grid-column: span 1;
+    }
+
+    .admin-glosarium .card-body > form > .row > .col-md-5 {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .admin-glosarium {
+        padding: 20px 12px;
+    }
+
+    .admin-glosarium .gl-page-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .admin-glosarium .card-body > form > .row {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-glosarium .card-body > form > .row > [class*="col-md-"] {
+        grid-column: span 1;
+    }
+
+    .admin-glosarium .table {
+        min-width: 800px;
+    }
+}
+/* MODAL KONFIRMASI HAPUS */
+.gl-delete-dialog {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 420px);
+    padding: 30px;
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 22px;
+    box-shadow: 0 24px 80px rgba(15, 37, 27, .22);
+    transform: translateY(18px) scale(.97);
+    transition: transform .28s ease;
+}
+
+/* POSISI TOMBOL MODAL HAPUS */
+.gl-delete-dialog .gl-modal-footer {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    gap: 10px;
+    padding: 17px 0 0;
+    border-top: 1px solid #EDF2EE;
+    background: #FCFEFC;
+}
+
+.gl-modal.is-open .gl-delete-dialog {
+    transform: translateY(0) scale(1);
+}
+
+.gl-delete-icon {
+    display: grid;
+    place-items: center;
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 17px;
+    border-radius: 50%;
+    background: #FFF0EF;
+    color: #C65A5A;
+    font-size: 23px;
+}
+
+.gl-delete-dialog h4 {
+    margin-bottom: 10px;
+    color: #1B4332;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.gl-delete-dialog p {
+    margin-bottom: 22px;
+    color: #718579;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.gl-btn-danger {
+    color: #FFFFFF;
+    background: #C65A5A;
+}
+
+.gl-btn-danger:hover {
+    color: #FFFFFF;
+    background: #AC4444;
+}
+
+/* TOAST NOTIFICATION */
+.gl-toast {
+    position: fixed;
+    top: 105px;
+    right: 30px;
+    z-index: 99999;
+    width: 360px;
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 18px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.13);
+    animation: glToastIn .4s ease forwards;
+    overflow: hidden;
+}
+
+.gl-toast-success {
+    border-left: 4px solid #4B8062;
+}
+
+.gl-toast-error {
+    border-left: 4px solid #D9534F;
+}
+
+.gl-toast-icon {
+    font-size: 25px;
+    color: #4B8062;
+}
+
+.gl-toast-error .gl-toast-icon {
+    color: #D9534F;
+}
+
+.gl-toast-content {
+    flex: 1;
+}
+
+.gl-toast-content strong {
+    display: block;
+    font-size: 14px;
+    color: #294B3A;
+    margin-bottom: 4px;
+}
+
+.gl-toast-content p {
+    margin: 0;
+    font-size: 12px;
+    color: #718078;
+}
+
+.gl-toast-close {
+    border: none;
+    background: transparent;
+    color: #9AA59E;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.gl-toast-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #4B8062;
+    transform-origin: left;
+    animation: glToastProgress 4s linear forwards;
+}
+
+.gl-toast-error .gl-toast-progress {
+    background: #D9534F;
+}
+
+.gl-toast.gl-toast-out {
+    animation: glToastOut .3s ease forwards;
+}
+
+@keyframes glToastIn {
+    from {
+        opacity: 0;
+        transform: translateX(35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes glToastOut {
+    to {
+        opacity: 0;
+        transform: translateX(35px);
+    }
+}
+
+@keyframes glToastProgress {
+    from { transform: scaleX(1); }
+    to { transform: scaleX(0); }
+}
