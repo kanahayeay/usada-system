@@ -959,10 +959,11 @@
     }
 }
 
-/* Sembunyikan teks profil pada tampilan mobile */
+/* Sembunyikan informasi administrator pada tampilan mobile */
 @media (max-width: 768px) {
-    .admin-profile > div {
-        display: none;
+    .admin-profile strong,
+    .admin-profile small {
+        display: none !important;
     }
 
     .admin-profile {
@@ -970,7 +971,9 @@
     }
 
     .admin-profile__icon {
+        display: grid;
         width: 42px;
         height: 42px;
+        flex-shrink: 0;
     }
 }
