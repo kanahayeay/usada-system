@@ -203,10 +203,25 @@ body:has(.site-footer) > main {
 /* Brand */
 .brand {
   display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+.brand__logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.brand__text {
+  display: flex;
   flex-direction: column;
   gap: 3px;
   min-width: 0;
-  flex-shrink: 0;
 }
 
 .brand__name {

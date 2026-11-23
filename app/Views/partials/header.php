@@ -10,8 +10,16 @@ $menu = [
 ?>
 <header class="site-header">
     <a class="brand" href="<?= base_url('/') ?>">
-        <span class="brand__name">Usada Tenung Wraspatikalpa</span>
-        <span class="brand__sub">Arsip Digital Pengetahuan Lontar Usada Bali</span>
+        <img
+            src="<?= base_url('widyasada.png') ?>"
+            alt="Logo Widyasada"
+            class="brand__logo"
+        >
+
+        <div class="brand__text">
+            <span class="brand__name">Widyasada</span>
+            <span class="brand__sub">Arsip Digital Pengetahuan Lontar Usada Bali</span>
+        </div>
     </a>
 
     <nav class="nav-pill" aria-label="Menu utama">

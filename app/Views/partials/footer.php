@@ -18,7 +18,6 @@
             <h4 class="label">Sumber Data</h4>
             <ul>
                 <li><i class="bi bi-file-earmark-text"></i> Transkripsi naskah lontar Usada Tenung Wraspatikalpa</li>
-                <li><i class="bi bi-folder2-open"></i> Arsip dokumentasi kearifan usada pengobatan tradisional Bali</li>
             </ul>
         </div>
     </div>
