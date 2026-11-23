@@ -12,6 +12,7 @@ class Usada extends BaseController
     public function index(): string
     {
         helper('usada');
+
         $model = new UsadaModel();
 
         // Mengambil parameter filter dari URL.
@@ -44,25 +45,25 @@ class Usada extends BaseController
             self::PER_HALAMAN
         );
 
-        // Memilih entri berdasarkan ID yang tersedia pada halaman aktif.
+        // Mengambil ID detail dari URL.
         $id = (int) $this->request->getGet('id');
+
+        // Mengambil detail langsung berdasarkan ID dari database.
+        $terpilih = $id > 0
+            ? $model->cari($id)
+            : null;
+
+        // Menentukan posisi entri terpilih pada daftar halaman aktif.
         $indeksTerpilih = null;
 
-        foreach ($daftar as $indeks => $entri) {
-            if ($id > 0 && (int) $entri['id'] === $id) {
-                $indeksTerpilih = $indeks;
-                break;
+        if ($terpilih !== null) {
+            foreach ($daftar as $indeks => $entri) {
+                if ((int) $entri['id'] === (int) $terpilih['id']) {
+                    $indeksTerpilih = $indeks;
+                    break;
+                }
             }
         }
-
-        // Jika ID tidak ditemukan, pilih entri pertama pada halaman aktif.
-        if ($indeksTerpilih === null && !empty($daftar)) {
-            $indeksTerpilih = 0;
-        }
-
-        $terpilih = $indeksTerpilih !== null
-            ? $daftar[$indeksTerpilih]
-            : null;
 
         // Navigasi mengikuti urutan hasil filter pada halaman aktif.
         $sebelumnya = (
@@ -141,7 +142,7 @@ class Usada extends BaseController
             ? $model->cariBahan($keyword)
             : [];
 
-        // Pagination Cari Bahan
+        // Pagination Cari Bahan.
         $jumlahHalaman = max(
             1,
             (int) ceil(count($hasil) / self::PER_HALAMAN_BAHAN)
@@ -163,11 +164,11 @@ class Usada extends BaseController
             'active'        => 'bahan',
             'keyword'       => $keyword,
 
-            // Data hasil yang ditampilkan
+            // Data hasil yang ditampilkan.
             'hasil'         => $daftar,
             'total'         => count($hasil),
 
-            // Data pagination
+            // Data pagination.
             'halaman'       => $halaman,
             'jumlahHalaman' => $jumlahHalaman,
         ]);
